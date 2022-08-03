@@ -1,6 +1,6 @@
 {
-    "name": "appufapev2",
-    "short_name": "appufapev2",
+    "name": "thunderapp",
+    "short_name": "thunderapp",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
