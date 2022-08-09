@@ -42,6 +42,7 @@ class _CarouselScreenState extends State<CarouselScreen> {
                     children: [
                       const FirstPage(),
                       const SecondPage(),
+                      const ThirdPage(),
                     ],
                   ),
                 ),
@@ -67,24 +68,26 @@ class _CarouselScreenState extends State<CarouselScreen> {
                 ),
               ],
             ),
-            Align(
-              alignment: Alignment.bottomRight,
-              child: InkWell(
-                onTap: () {
-                  setState(() {
-                    if (pageIndex >= 1) return;
-                    pageIndex++;
-                  });
-                  pageController.animateToPage(pageIndex,
-                      curve: Curves.easeInOut,
-                      duration: const Duration(milliseconds: 200));
-                },
-                child: const Text(
-                  'Próximo',
-                  style: kcaption1,
-                ),
-              ),
-            ),
+            pageIndex >= 2
+                ? const SizedBox.shrink()
+                : Align(
+                    alignment: Alignment.bottomRight,
+                    child: InkWell(
+                      onTap: () {
+                        setState(() {
+                          if (pageIndex >= 2) return;
+                          pageIndex++;
+                        });
+                        pageController.animateToPage(pageIndex,
+                            curve: Curves.easeInOut,
+                            duration: const Duration(milliseconds: 200));
+                      },
+                      child: const Text(
+                        'Próximo',
+                        style: kcaption1,
+                      ),
+                    ),
+                  ),
             pageIndex <= 0
                 ? const SizedBox.shrink()
                 : Align(
@@ -138,7 +141,7 @@ class SecondPage extends StatelessWidget {
           'Para que as Informações sejam do seu interesse, selecione o tipo de perfil',
           style: kBody1,
         ),
-        const VerticalSpacerBox(size: SpacerSize.medium),
+        const VerticalSpacerBox(size: SpacerSize.large),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
@@ -151,5 +154,25 @@ class SecondPage extends StatelessWidget {
         )
       ],
     );
+  }
+}
+
+class ThirdPage extends StatelessWidget {
+  const ThirdPage({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        child: Column(
+      children: [
+        Text(
+            'Maracujá (do tupi mara kuya, "fruto que se serve" ou "alimento na cuia") é um fruto produzido pelas plantas do género Passiflora (essencialmente da espécie Passiflora edulis) da família Passifloraceae. A planta, também conhecida como maracujazeiro, é espontânea nas zonas tropicais e subtropicais da América.',
+            style: kBody1),
+        Spacer(),
+        PrimaryButton(text: 'Entendi', onPressed: () {})
+      ],
+    ));
   }
 }

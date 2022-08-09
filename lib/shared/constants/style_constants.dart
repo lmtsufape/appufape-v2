@@ -19,5 +19,7 @@ const Color kOnBackgroundColor = Color(0xFF1b2d4f);
 const TextStyle kBody1 = TextStyle(color: kPrimaryColor, fontSize: 18);
 const TextStyle kcaption1 =
     TextStyle(color: kPrimaryColor, fontSize: 16, fontWeight: FontWeight.bold);
+const TextStyle kcaption2 = TextStyle(
+    color: kOnBackgroundColor, fontSize: 16, fontWeight: FontWeight.bold);
 /**========>TEXT STYLES<=========== */
 
