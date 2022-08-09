@@ -31,7 +31,7 @@ class _SplashScreenState extends State<SplashScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             // Image.asset(Assets.logo),//* if you want to use some logo, uncomment this line and pass the path
-            Text('Carregando...'),
+            Text('Logo'),
             const CircularProgressIndicator(),
           ],
         ),
