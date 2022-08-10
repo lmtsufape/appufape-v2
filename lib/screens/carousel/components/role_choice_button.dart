@@ -24,7 +24,7 @@ class RoleChoiceButton extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(
+              const Icon(
                 Icons.school,
                 color: kOnBackgroundColor,
                 size: 84,

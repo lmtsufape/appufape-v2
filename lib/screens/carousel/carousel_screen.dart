@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:thunderapp/components/buttons/primary_button.dart';
 import 'package:thunderapp/components/utils/horizontal_spacer_box.dart';
 import 'package:thunderapp/components/utils/vertical_spacer_box.dart';
 import 'package:thunderapp/screens/carousel/components/role_choice_button.dart';
+import 'package:thunderapp/screens/home/home_screen.dart';
+import 'package:thunderapp/screens/screens_index.dart';
 import 'package:thunderapp/shared/constants/app_enums.dart';
 import 'package:thunderapp/shared/constants/app_number_constants.dart';
 import 'package:thunderapp/shared/constants/style_constants.dart';
@@ -39,27 +39,27 @@ class _CarouselScreenState extends State<CarouselScreen> {
                   flex: 2,
                   child: PageView(
                     controller: pageController,
-                    children: [
-                      const FirstPage(),
-                      const SecondPage(),
-                      const ThirdPage(),
+                    children: const [
+                      FirstPage(),
+                      SecondPage(),
+                      ThirdPage(),
                     ],
                   ),
                 ),
                 const Spacer(),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
+                  children: const <Widget>[
                     CircleAvatar(
                       backgroundColor: kOnSurfaceColor,
                       radius: radius,
                     ),
-                    const HorizontalSpacerBox(size: SpacerSize.small),
+                    HorizontalSpacerBox(size: SpacerSize.small),
                     CircleAvatar(
                       backgroundColor: kOnSurfaceColor,
                       radius: radius,
                     ),
-                    const HorizontalSpacerBox(size: SpacerSize.small),
+                    HorizontalSpacerBox(size: SpacerSize.small),
                     CircleAvatar(
                       backgroundColor: kOnSurfaceColor,
                       radius: radius,
@@ -144,9 +144,9 @@ class SecondPage extends StatelessWidget {
         const VerticalSpacerBox(size: SpacerSize.large),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: <Widget>[
+          children: const <Widget>[
             RoleChoiceButton(text: 'Discente'),
-            const HorizontalSpacerBox(size: SpacerSize.small),
+            HorizontalSpacerBox(size: SpacerSize.small),
             RoleChoiceButton(
               text: 'Docente',
             )
@@ -164,15 +164,18 @@ class ThirdPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        child: Column(
+    return Column(
       children: [
-        Text(
+        const Text(
             'Maracujá (do tupi mara kuya, "fruto que se serve" ou "alimento na cuia") é um fruto produzido pelas plantas do género Passiflora (essencialmente da espécie Passiflora edulis) da família Passifloraceae. A planta, também conhecida como maracujazeiro, é espontânea nas zonas tropicais e subtropicais da América.',
             style: kBody1),
         Spacer(),
-        PrimaryButton(text: 'Entendi', onPressed: () {})
+        PrimaryButton(
+            text: 'Entendi',
+            onPressed: () {
+              Navigator.popAndPushNamed(context, Screens.home);
+            })
       ],
-    ));
+    );
   }
 }

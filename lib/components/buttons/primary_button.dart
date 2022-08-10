@@ -9,10 +9,13 @@ class PrimaryButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: MediaQuery.of(context).size.width * 0.5,
-      height: MediaQuery.of(context).size.height * 0.06,
+      width: MediaQuery.of(context).size.width * 0.6,
+      height: MediaQuery.of(context).size.height * 0.055,
       child: ElevatedButton(
-        style: ElevatedButton.styleFrom(primary: kPrimaryColor),
+        style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all<Color>(kPrimaryColor),
+            shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(25)))),
         onPressed: () => onPressed(),
         child: Text(text, style: kcaption2),
       ),
