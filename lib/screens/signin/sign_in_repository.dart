@@ -8,7 +8,7 @@ class SignInRepository {
     required String password,
     required VoidCallback onSuccess,}
   ) async {
-    print('sadasd');
+    
     await Future.delayed(const Duration(seconds: 1));
     if(email != 'teste@teste.com' && password!= '12345678'){
       throw Exception('Email ou senha inválidos');

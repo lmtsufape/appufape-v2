@@ -29,9 +29,7 @@ class SignInController with ChangeNotifier {
           if (kDebugMode) {
             print('success');
           }
-          // status = SignInStatus.done;
-          // notifyListeners();
-          // Navigator.pushNamed(context, Screens.home);
+          
         },
       );
       status = SignInStatus.done;
