@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:thunderapp/components/buttons/primary_button.dart';
 import 'package:thunderapp/components/utils/horizontal_spacer_box.dart';
-import 'package:thunderapp/components/utils/vertical_spacer_box.dart';
-import 'package:thunderapp/screens/carousel/components/role_choice_button.dart';
-import 'package:thunderapp/screens/home/home_screen.dart';
 import 'package:thunderapp/screens/screens_index.dart';
 import 'package:thunderapp/shared/constants/app_enums.dart';
 import 'package:thunderapp/shared/constants/app_number_constants.dart';
@@ -42,7 +39,6 @@ class _CarouselScreenState extends State<CarouselScreen> {
                     children: const [
                       FirstPage(),
                       SecondPage(),
-                      ThirdPage(),
                     ],
                   ),
                 ),
@@ -50,11 +46,6 @@ class _CarouselScreenState extends State<CarouselScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
-                    CircleAvatar(
-                      backgroundColor: kOnSurfaceColor,
-                      radius: radius,
-                    ),
-                    HorizontalSpacerBox(size: SpacerSize.small),
                     CircleAvatar(
                       backgroundColor: kOnSurfaceColor,
                       radius: radius,
@@ -138,38 +129,9 @@ class SecondPage extends StatelessWidget {
     return Column(
       children: [
         const Text(
-          'Para que as Informações sejam do seu interesse, selecione o tipo de perfil',
-          style: kBody1,
-        ),
-        const VerticalSpacerBox(size: SpacerSize.large),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: const <Widget>[
-            RoleChoiceButton(text: 'Discente'),
-            HorizontalSpacerBox(size: SpacerSize.small),
-            RoleChoiceButton(
-              text: 'Docente',
-            )
-          ],
-        )
-      ],
-    );
-  }
-}
-
-class ThirdPage extends StatelessWidget {
-  const ThirdPage({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        const Text(
             'Maracujá (do tupi mara kuya, "fruto que se serve" ou "alimento na cuia") é um fruto produzido pelas plantas do género Passiflora (essencialmente da espécie Passiflora edulis) da família Passifloraceae. A planta, também conhecida como maracujazeiro, é espontânea nas zonas tropicais e subtropicais da América.',
             style: kBody1),
-        Spacer(),
+        const Spacer(),
         PrimaryButton(
             text: 'Entendi',
             onPressed: () {
