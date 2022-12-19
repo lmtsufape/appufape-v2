@@ -1,9 +1,9 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
-import 'package:thunderapp/screens/carousel/carousel_screen.dart';
-import 'package:thunderapp/screens/screens_index.dart';
-import 'package:thunderapp/shared/constants/app_theme.dart';
+import 'package:appufape/screens/carousel/carousel_screen.dart';
+import 'package:appufape/screens/screens_index.dart';
+import 'package:appufape/shared/constants/app_theme.dart';
 
 import 'screens/home/home_screen.dart';
 import 'screens/signin/sign_in_screen.dart';

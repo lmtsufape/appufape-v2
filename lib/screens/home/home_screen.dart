@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:thunderapp/screens/home/components/home_drawer.dart';
-import 'package:thunderapp/shared/constants/app_number_constants.dart';
-import 'package:thunderapp/shared/constants/style_constants.dart';
+import 'package:appufape/screens/home/components/home_drawer.dart';
+import 'package:appufape/shared/constants/app_number_constants.dart';
+import 'package:appufape/shared/constants/style_constants.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);

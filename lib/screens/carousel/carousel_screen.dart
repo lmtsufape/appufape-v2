@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:thunderapp/components/buttons/primary_button.dart';
-import 'package:thunderapp/components/utils/horizontal_spacer_box.dart';
-import 'package:thunderapp/screens/screens_index.dart';
-import 'package:thunderapp/shared/constants/app_enums.dart';
-import 'package:thunderapp/shared/constants/app_number_constants.dart';
-import 'package:thunderapp/shared/constants/style_constants.dart';
+import 'package:appufape/components/buttons/primary_button.dart';
+import 'package:appufape/components/utils/horizontal_spacer_box.dart';
+import 'package:appufape/screens/screens_index.dart';
+import 'package:appufape/shared/constants/app_enums.dart';
+import 'package:appufape/shared/constants/app_number_constants.dart';
+import 'package:appufape/shared/constants/style_constants.dart';
 
 class CarouselScreen extends StatefulWidget {
   const CarouselScreen({Key? key}) : super(key: key);
