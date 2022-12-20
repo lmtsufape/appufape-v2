@@ -4,4 +4,5 @@ class Screens {
   static const String splash = '/splash';
   static const String signin = '/sign_in';
   static const String carousel = '/carousel';
+  static const String start = '/start';
 }

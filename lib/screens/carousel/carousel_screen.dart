@@ -20,10 +20,6 @@ class _CarouselScreenState extends State<CarouselScreen> {
     PageController pageController = PageController(initialPage: pageIndex);
     const double radius = 6;
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('LOGO'),
-        centerTitle: true,
-      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(
             horizontal: kDefaultPadding, vertical: kDefaultPadding + 8),
@@ -47,12 +43,12 @@ class _CarouselScreenState extends State<CarouselScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     CircleAvatar(
-                      backgroundColor: kOnSurfaceColor,
+                      backgroundColor: kPrimaryColor,
                       radius: radius,
                     ),
                     HorizontalSpacerBox(size: SpacerSize.small),
                     CircleAvatar(
-                      backgroundColor: kOnSurfaceColor,
+                      backgroundColor: kPrimaryColor,
                       radius: radius,
                     ),
                   ],
@@ -114,7 +110,7 @@ class FirstPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Text(
       'Maracujá (do tupi mara kuya, "fruto que se serve" ou "alimento na cuia") é um fruto produzido pelas plantas do género Passiflora (essencialmente da espécie Passiflora edulis) da família Passifloraceae. A planta, também conhecida como maracujazeiro, é espontânea nas zonas tropicais e subtropicais da América.',
-      style: kBody1,
+      style: kTitle2,
     );
   }
 }
@@ -130,13 +126,15 @@ class SecondPage extends StatelessWidget {
       children: [
         const Text(
             'Maracujá (do tupi mara kuya, "fruto que se serve" ou "alimento na cuia") é um fruto produzido pelas plantas do género Passiflora (essencialmente da espécie Passiflora edulis) da família Passifloraceae. A planta, também conhecida como maracujazeiro, é espontânea nas zonas tropicais e subtropicais da América.',
-            style: kBody1),
+            style: kTitle2),
         const Spacer(),
         PrimaryButton(
-            text: 'Entendi',
-            onPressed: () {
-              Navigator.popAndPushNamed(context, Screens.home);
-            })
+          text: 'Entendi',
+          onPressed: () {
+            Navigator.popAndPushNamed(context, Screens.home);
+          },
+          color: kTextButtonColor,
+        )
       ],
     );
   }
