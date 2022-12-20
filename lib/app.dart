@@ -1,3 +1,4 @@
+import 'package:appufape/screens/start/start_screen.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
@@ -37,7 +38,8 @@ class App extends StatelessWidget {
         Screens.splash: (BuildContext context) => const SplashScreen(),
         Screens.home: (BuildContext context) => const HomeScreen(),
         Screens.signin: (BuildContext context) => const SignInScreen(),
-        Screens.carousel: (BuildContext context) => const CarouselScreen()
+        Screens.carousel: (BuildContext context) => const CarouselScreen(),
+        Screens.start: (BuildContext context) => const StartScreen()
       },
     );
   }
