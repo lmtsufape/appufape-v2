@@ -1,3 +1,4 @@
+import 'package:appufape/shared/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:appufape/components/buttons/primary_button.dart';
@@ -41,7 +42,11 @@ class SignInScreen extends StatelessWidget {
                     const Spacer(),
                     controller.status == SignInStatus.loading
                         ? const CircularProgressIndicator()
-                        : PrimaryButton(text: 'Continuar', onPressed: () => controller.signIn(context))
+                        : PrimaryButton(
+                            text: 'Continuar',
+                            onPressed: () => controller.signIn(context),
+                            color: kTextSign,
+                          )
                   ],
                 ),
               ),
