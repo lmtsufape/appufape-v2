@@ -6,4 +6,5 @@ class Assets {
   static const String qrCode = 'lib/assets/images/qr_code_2.png';
   static const String school = 'lib/assets/images/school.png';
   static const String textsnippet = 'lib/assets/images/text_snippet.png';
+  static const String mapa = 'lib/assets/images/mapa.png';
 }
