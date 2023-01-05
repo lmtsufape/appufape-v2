@@ -27,20 +27,31 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: kPrimaryColor,
+      backgroundColor: kBack1,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const Spacer(),
-            const CircularProgressIndicator(color: kTextSign),
+            Center(
+                child: Image.asset(
+              Assets.ufape,
+              scale: 0.6,
+            )),
+            const VerticalSpacerBox(size: SpacerSize.large),
+            const VerticalSpacerBox(size: SpacerSize.medium),
+            const CircularProgressIndicator(color: kBack2),
             const Spacer(),
-            Padding(
+            Container(
               padding: const EdgeInsets.all(kDefaultPadding),
+              decoration: const BoxDecoration(color: kBack2),
+              width: size.width,
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
                     'Desenvolvido por:',
