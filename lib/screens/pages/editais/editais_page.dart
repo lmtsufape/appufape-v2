@@ -32,36 +32,16 @@ class _EditaisPageState extends State<EditaisPage> {
                       const VerticalSpacerBox(size: SpacerSize.large),
                       const Padding(
                         padding: EdgeInsets.all(10.0),
-                        child: Text('EDITAIS', style: kTitle),
-                      ),
-                      const VerticalSpacerBox(size: SpacerSize.large),
-                      const Padding(
-                        padding: EdgeInsets.all(5.0),
-                        child: TextField(
-                            keyboardType: TextInputType.text,
-                            decoration: InputDecoration(
-                              border: OutlineInputBorder(
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(30))),
-                              hintText: 'Faça sua busca',
-                              contentPadding: EdgeInsets.symmetric(
-                                  vertical: 15, horizontal: 15),
-                              isDense: true,
-                              prefixIcon: Icon(
-                                Icons.search,
-                                color: kText,
-                                size: 25,
-                              ),
-                            )),
+                        child: Text('Editais', style: kTitle2),
                       ),
                       const VerticalSpacerBox(size: SpacerSize.large),
                       const Align(
                         alignment: Alignment.bottomLeft,
-                        child: Text('Editais',
+                        child: Text('PIBAE',
                             style: TextStyle(
                                 fontSize: 21,
-                                color: kText,
-                                fontWeight: FontWeight.bold)),
+                                color: kText2,
+                                fontWeight: FontWeight.w500)),
                       ),
                       const VerticalSpacerBox(size: SpacerSize.large),
                       InkWell(
@@ -70,14 +50,14 @@ class _EditaisPageState extends State<EditaisPage> {
                           children: [
                             Container(
                               width: 440,
-                              height: 115,
+                              height: 75,
                               decoration: BoxDecoration(
-                                color: kTextButtonColor,
+                                color: kBack3,
                                 borderRadius:
                                     const BorderRadius.all(Radius.circular(20)),
                                 boxShadow: [
                                   BoxShadow(
-                                    color: kTextButtonColor.withOpacity(0.5),
+                                    color: kText2.withOpacity(0.5),
                                     spreadRadius: 0,
                                     blurRadius: 3,
                                     offset: const Offset(
@@ -94,13 +74,11 @@ class _EditaisPageState extends State<EditaisPage> {
                                         decoration: const BoxDecoration(
                                           shape: BoxShape.circle,
                                         ),
-                                      ),
-                                      const Text(
-                                        'EDITAL BIA',
-                                        style: TextStyle(
-                                            fontSize: 20,
-                                            fontWeight: FontWeight.bold),
-                                        textAlign: TextAlign.start,
+                                        child: Row(
+                                          children: const [
+                                            Text(''),
+                                          ],
+                                        ),
                                       ),
                                     ],
                                   ),
@@ -110,8 +88,8 @@ class _EditaisPageState extends State<EditaisPage> {
                                         HorizontalSpacerBox(
                                             size: SpacerSize.huge),
                                         Text(
-                                          'EDITAL BIA EDITAL BIA EDITAL BIA EDITAL BIA',
-                                          style: TextStyle(fontSize: 17),
+                                          'Resultado Final PIBAE-PREC-UFAPE',
+                                          style: kTitle5,
                                         ),
                                       ],
                                     ),
@@ -130,14 +108,14 @@ class _EditaisPageState extends State<EditaisPage> {
                           children: [
                             Container(
                               width: 440,
-                              height: 115,
+                              height: 75,
                               decoration: BoxDecoration(
-                                color: kTextButtonColor,
+                                color: kBack3,
                                 borderRadius:
                                     const BorderRadius.all(Radius.circular(20)),
                                 boxShadow: [
                                   BoxShadow(
-                                    color: kTextButtonColor.withOpacity(0.5),
+                                    color: kText2.withOpacity(0.5),
                                     spreadRadius: 0,
                                     blurRadius: 3,
                                     offset: const Offset(
@@ -154,13 +132,11 @@ class _EditaisPageState extends State<EditaisPage> {
                                         decoration: const BoxDecoration(
                                           shape: BoxShape.circle,
                                         ),
-                                      ),
-                                      const Text(
-                                        'EDITAL BIA',
-                                        style: TextStyle(
-                                            fontSize: 20,
-                                            fontWeight: FontWeight.bold),
-                                        textAlign: TextAlign.start,
+                                        child: Row(
+                                          children: const [
+                                            Text(''),
+                                          ],
+                                        ),
                                       ),
                                     ],
                                   ),
@@ -170,8 +146,8 @@ class _EditaisPageState extends State<EditaisPage> {
                                         HorizontalSpacerBox(
                                             size: SpacerSize.huge),
                                         Text(
-                                          'EDITAL BIA EDITAL BIA EDITAL BIA EDITAL BIA',
-                                          style: TextStyle(fontSize: 17),
+                                          'Resultado Final PIBAE-PREC-UFAPE',
+                                          style: kTitle5,
                                         ),
                                       ],
                                     ),
@@ -183,6 +159,16 @@ class _EditaisPageState extends State<EditaisPage> {
                         ),
                         onTap: () {},
                       ),
+                      const VerticalSpacerBox(size: SpacerSize.large),
+                      const Align(
+                        alignment: Alignment.bottomLeft,
+                        child: Text('PIBEX',
+                            style: TextStyle(
+                                fontSize: 21,
+                                color: kText2,
+                                fontWeight: FontWeight.w500)),
+                      ),
+                      const VerticalSpacerBox(size: SpacerSize.large),
                       const VerticalSpacerBox(size: SpacerSize.medium),
                       InkWell(
                         child: Row(
@@ -190,14 +176,14 @@ class _EditaisPageState extends State<EditaisPage> {
                           children: [
                             Container(
                               width: 440,
-                              height: 115,
+                              height: 75,
                               decoration: BoxDecoration(
-                                color: kTextButtonColor,
+                                color: kBack3,
                                 borderRadius:
                                     const BorderRadius.all(Radius.circular(20)),
                                 boxShadow: [
                                   BoxShadow(
-                                    color: kTextButtonColor.withOpacity(0.5),
+                                    color: kText2.withOpacity(0.5),
                                     spreadRadius: 0,
                                     blurRadius: 3,
                                     offset: const Offset(
@@ -214,13 +200,11 @@ class _EditaisPageState extends State<EditaisPage> {
                                         decoration: const BoxDecoration(
                                           shape: BoxShape.circle,
                                         ),
-                                      ),
-                                      const Text(
-                                        'EDITAL BIA',
-                                        style: TextStyle(
-                                            fontSize: 20,
-                                            fontWeight: FontWeight.bold),
-                                        textAlign: TextAlign.start,
+                                        child: Row(
+                                          children: const [
+                                            Text(''),
+                                          ],
+                                        ),
                                       ),
                                     ],
                                   ),
@@ -230,8 +214,8 @@ class _EditaisPageState extends State<EditaisPage> {
                                         HorizontalSpacerBox(
                                             size: SpacerSize.huge),
                                         Text(
-                                          'EDITAL BIA EDITAL BIA EDITAL BIA EDITAL BIA',
-                                          style: TextStyle(fontSize: 17),
+                                          'Edital PIBEX-UFAPE 2022',
+                                          style: kTitle5,
                                         ),
                                       ],
                                     ),
@@ -243,187 +227,25 @@ class _EditaisPageState extends State<EditaisPage> {
                         ),
                         onTap: () {},
                       ),
-                      const VerticalSpacerBox(size: SpacerSize.medium),
-                      InkWell(
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Container(
-                              width: 440,
-                              height: 115,
-                              decoration: BoxDecoration(
-                                color: kTextButtonColor,
-                                borderRadius:
-                                    const BorderRadius.all(Radius.circular(20)),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: kTextButtonColor.withOpacity(0.5),
-                                    spreadRadius: 0,
-                                    blurRadius: 3,
-                                    offset: const Offset(
-                                        0, 0), // changes position of shadow
-                                  ),
-                                ],
-                              ),
-                              child: Wrap(
-                                children: [
-                                  Row(
-                                    children: [
-                                      Container(
-                                        width: 30.0,
-                                        decoration: const BoxDecoration(
-                                          shape: BoxShape.circle,
-                                        ),
-                                      ),
-                                      const Text(
-                                        'EDITAL BIA',
-                                        style: TextStyle(
-                                            fontSize: 20,
-                                            fontWeight: FontWeight.bold),
-                                        textAlign: TextAlign.start,
-                                      ),
-                                    ],
-                                  ),
-                                  Center(
-                                    child: Row(
-                                      children: const [
-                                        HorizontalSpacerBox(
-                                            size: SpacerSize.huge),
-                                        Text(
-                                          'EDITAL BIA EDITAL BIA EDITAL BIA EDITAL BIA',
-                                          style: TextStyle(fontSize: 17),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                        onTap: () {},
-                      ),
-                      const VerticalSpacerBox(size: SpacerSize.medium),
-                      InkWell(
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Container(
-                              width: 440,
-                              height: 115,
-                              decoration: BoxDecoration(
-                                color: kTextButtonColor,
-                                borderRadius:
-                                    const BorderRadius.all(Radius.circular(20)),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: kTextButtonColor.withOpacity(0.5),
-                                    spreadRadius: 0,
-                                    blurRadius: 3,
-                                    offset: const Offset(
-                                        0, 0), // changes position of shadow
-                                  ),
-                                ],
-                              ),
-                              child: Wrap(
-                                children: [
-                                  Row(
-                                    children: [
-                                      Container(
-                                        width: 30.0,
-                                        decoration: const BoxDecoration(
-                                          shape: BoxShape.circle,
-                                        ),
-                                      ),
-                                      const Text(
-                                        'EDITAL BIA',
-                                        style: TextStyle(
-                                            fontSize: 20,
-                                            fontWeight: FontWeight.bold),
-                                        textAlign: TextAlign.start,
-                                      ),
-                                    ],
-                                  ),
-                                  Center(
-                                    child: Row(
-                                      children: const [
-                                        HorizontalSpacerBox(
-                                            size: SpacerSize.huge),
-                                        Text(
-                                          'EDITAL BIA EDITAL BIA EDITAL BIA EDITAL BIA',
-                                          style: TextStyle(fontSize: 17),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                        onTap: () {},
-                      ),
-                      const VerticalSpacerBox(size: SpacerSize.medium),
-                      InkWell(
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Container(
-                              width: 440,
-                              height: 115,
-                              decoration: BoxDecoration(
-                                color: kTextButtonColor,
-                                borderRadius:
-                                    const BorderRadius.all(Radius.circular(20)),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: kTextButtonColor.withOpacity(0.5),
-                                    spreadRadius: 0,
-                                    blurRadius: 3,
-                                    offset: const Offset(
-                                        0, 0), // changes position of shadow
-                                  ),
-                                ],
-                              ),
-                              child: Wrap(
-                                children: [
-                                  Row(
-                                    children: [
-                                      Container(
-                                        width: 30.0,
-                                        decoration: const BoxDecoration(
-                                          shape: BoxShape.circle,
-                                        ),
-                                      ),
-                                      const Text(
-                                        'EDITAL BIA',
-                                        style: TextStyle(
-                                            fontSize: 20,
-                                            fontWeight: FontWeight.bold),
-                                        textAlign: TextAlign.start,
-                                      ),
-                                    ],
-                                  ),
-                                  Center(
-                                    child: Row(
-                                      children: const [
-                                        HorizontalSpacerBox(
-                                            size: SpacerSize.huge),
-                                        Text(
-                                          'EDITAL BIA EDITAL BIA EDITAL BIA EDITAL BIA',
-                                          style: TextStyle(fontSize: 17),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                        onTap: () {},
-                      ),
-                      const VerticalSpacerBox(size: SpacerSize.medium),
+                      const VerticalSpacerBox(size: SpacerSize.huge),
+                      const VerticalSpacerBox(size: SpacerSize.huge),
+                      const VerticalSpacerBox(size: SpacerSize.huge),
+                      const VerticalSpacerBox(size: SpacerSize.huge),
+                      const VerticalSpacerBox(size: SpacerSize.huge),
+                      const VerticalSpacerBox(size: SpacerSize.huge),
+                      const VerticalSpacerBox(size: SpacerSize.huge),
+                      const VerticalSpacerBox(size: SpacerSize.huge),
+                      const VerticalSpacerBox(size: SpacerSize.huge),
+                      const VerticalSpacerBox(size: SpacerSize.huge),
+                      const VerticalSpacerBox(size: SpacerSize.huge),
+                      const VerticalSpacerBox(size: SpacerSize.huge),
+                      const VerticalSpacerBox(size: SpacerSize.huge),
+                      const VerticalSpacerBox(size: SpacerSize.huge),
+                      const VerticalSpacerBox(size: SpacerSize.huge),
+                      const VerticalSpacerBox(size: SpacerSize.huge),
+                      const VerticalSpacerBox(size: SpacerSize.huge),
+                      const VerticalSpacerBox(size: SpacerSize.huge),
+                      const VerticalSpacerBox(size: SpacerSize.huge),
                     ],
                   ),
                 ),

@@ -23,18 +23,18 @@ class StartScreen extends StatelessWidget {
                     flex: 2,
                     child: Center(
                       child: Text(
-                        'Bem-vindo ao App UFAPE',
+                        'Seja bem-vindo(a) ao aplicativo da UFAPE',
                         style: kTitle,
                       ),
                     ),
                   ),
                   const Spacer(),
                   PrimaryButton(
-                    text: 'Começar',
+                    text: 'Entendi',
                     onPressed: () {
-                      Navigator.popAndPushNamed(context, Screens.home);
+                      Navigator.popAndPushNamed(context, Screens.menu);
                     },
-                    color: kTextButtonColor,
+                    color: kBack1,
                   )
                 ],
               ),

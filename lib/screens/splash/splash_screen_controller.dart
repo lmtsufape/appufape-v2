@@ -10,12 +10,12 @@ class SplashScreenController {
   final Logger _logger = Logger('Splash screen logger');
 
   void initApplication() async {
-    // Future.delayed(const Duration(seconds: 3), () async {
-    //   await configDefaultAppSettings();
+    Future.delayed(const Duration(seconds: 5), () async {
+      //   await configDefaultAppSettings();
 
-    //   // ignore: use_build_context_synchronously
-    Navigator.popAndPushNamed(context, Screens.home);
-    // });
+      //   // ignore: use_build_context_synchronously
+      Navigator.popAndPushNamed(context, Screens.start);
+    });
   }
 
   Future configDefaultAppSettings() async {

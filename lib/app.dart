@@ -1,3 +1,4 @@
+import 'package:appufape/screens/menu/menu.dart';
 import 'package:appufape/screens/pages/calendario/calendario_page.dart';
 import 'package:appufape/screens/pages/contatos/contatos_page.dart';
 import 'package:appufape/screens/pages/cursos/cursos_page.dart';
@@ -52,7 +53,7 @@ class App extends StatelessWidget {
         Screens.editais: (BuildContext context) => const EditaisPage(),
         Screens.mapa: (BuildContext context) => const MapaPage(),
         Screens.qrcode: (BuildContext context) => const QrCodePage(),
-        
+        Screens.menu: (BuildContext context) => const Menu(),
       },
     );
   }

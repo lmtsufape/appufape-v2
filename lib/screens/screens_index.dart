@@ -10,4 +10,5 @@ class Screens {
   static const String editais = 'pages/calendario/editais_page.dart';
   static const String mapa = 'pages/calendario/mapa_page.dart';
   static const String qrcode = 'pages/calendario/qrcode_page.dart';
+  static const String menu = 'pages/menu/menu.dart';
 }
