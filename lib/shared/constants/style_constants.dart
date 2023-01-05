@@ -14,7 +14,7 @@ const Color kPrimaryColor = Colors.white;
 const Color kBackgroundColor = Color(0xFF1b2d4f);
 const Color kSecondaryColor = Colors.white;
 const Color kDetailColor = Color(0xFF1b2d4f);
-const Color kOnSurfaceColor = Colors.white;
+const Color kOnSurfaceColor = Color(0xFFFDFDFD);
 const Color kOnBackgroundColor = Color(0xFF1b2d4f);
 const Color kTextButtonColor = Color.fromARGB(255, 206, 201, 201);
 const Color kTextSign = Colors.blue;
@@ -23,6 +23,11 @@ const Color kText = Colors.black;
 const Color kButtom2 = Colors.red;
 const Color kTextFirst = Colors.blueGrey;
 const Color kColorBottom = Color.fromARGB(255, 228, 255, 198);
+const Color kBack1 = Color(0xFFB3093F);
+const Color kBack2 = Color(0xFFFDFDFD);
+const Color kBack3 = Color(0xFFFFFFFF);
+const Color kText1 = Color(0xFFCACACA);
+const Color kText2 = Color(0xFF000000);
 
 /// ========>TEXT STYLES<=========== */
 
@@ -34,14 +39,32 @@ const TextStyle kcaption2 = TextStyle(
 
 const TextStyle kTitle = TextStyle(
   fontSize: 28,
-  fontWeight: FontWeight.w900,
-  color: kText,
+  fontWeight: FontWeight.w500,
+  color: kText2,
 );
 
 const TextStyle kTitle2 = TextStyle(
   fontSize: 24,
-  fontWeight: FontWeight.w900,
-  color: kText,
+  fontWeight: FontWeight.w500,
+  color: kText2,
+);
+
+const TextStyle kTitle3 = TextStyle(
+  fontSize: 24,
+  fontWeight: FontWeight.w500,
+  color: kBack3,
+);
+const TextStyle kTitle4 = TextStyle(
+  fontSize: 15,
+  fontWeight: FontWeight.w600,
+  color: kText2,
+);
+
+const TextStyle kTitle5 = TextStyle(
+  fontSize: 20,
+  fontWeight: FontWeight.w700,
+  color: kBack1,
+  decoration: TextDecoration.underline,
 );
 
 const TextStyle kTitle1 = TextStyle(
