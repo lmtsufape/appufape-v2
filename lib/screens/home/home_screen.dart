@@ -3,6 +3,7 @@ import 'package:appufape/components/utils/horizontal_spacer_box.dart';
 import 'package:appufape/components/utils/vertical_spacer_box.dart';
 import 'package:appufape/screens/home/home_screen_controller.dart';
 import 'package:appufape/screens/screens_index.dart';
+import 'package:appufape/shared/components/BottomNavigation.dart';
 import 'package:appufape/shared/constants/app_enums.dart';
 import 'package:flutter/material.dart';
 import 'package:appufape/shared/constants/style_constants.dart';
@@ -13,11 +14,15 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int selectedIndex = 0;
     Size size = MediaQuery.of(context).size;
+
     return ChangeNotifierProvider(
       create: (_) => HomeScreenController(),
       builder: (context, child) => Consumer<HomeScreenController>(
         builder: ((context, controller, child) => Scaffold(
+              // bottomNavigationBar:
+              //     BottomNavigation(selectedIndex: selectedIndex),
               body: Container(
                 color: kOnSurfaceColor,
                 width: size.width,
@@ -25,11 +30,6 @@ class HomeScreen extends StatelessWidget {
                 child: Column(
                   // ignore: prefer_const_literals_to_create_immutables
                   children: [
-                    const VerticalSpacerBox(size: SpacerSize.large),
-                    const Padding(
-                      padding: EdgeInsets.all(10.0),
-                      child: Text('APP UFAPE', style: kTitle),
-                    ),
                     const VerticalSpacerBox(size: SpacerSize.large),
                     const Padding(
                       padding: EdgeInsets.all(5.0),
@@ -50,14 +50,15 @@ class HomeScreen extends StatelessWidget {
                             ),
                           )),
                     ),
-                    const VerticalSpacerBox(size: SpacerSize.large),
+                    const VerticalSpacerBox(size: SpacerSize.huge),
+                    const VerticalSpacerBox(size: SpacerSize.medium),
                     const Align(
                       alignment: Alignment.bottomLeft,
                       child: Text('Notícias',
                           style: TextStyle(
-                              fontSize: 21,
-                              color: kText,
-                              fontWeight: FontWeight.bold)),
+                              fontSize: 25,
+                              color: kText2,
+                              fontWeight: FontWeight.w500)),
                     ),
                     const VerticalSpacerBox(size: SpacerSize.large),
                     InkWell(
@@ -96,31 +97,32 @@ class HomeScreen extends StatelessWidget {
                       child: Text('Ver mais notícias',
                           style: TextStyle(
                               fontSize: 21,
-                              color: kText,
-                              fontWeight: FontWeight.bold)),
+                              color: kBack1,
+                              fontWeight: FontWeight.w500)),
                     ),
-                    const Spacer(),
+                    const VerticalSpacerBox(size: SpacerSize.huge),
+                    const VerticalSpacerBox(size: SpacerSize.huge),
                     Center(
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           InkWell(
                               onTap: () {
-                                Navigator.pushNamed(context, Screens.editais);
+                                Navigator.popAndPushNamed(
+                                    context, Screens.editais);
                               },
                               child: Row(
                                 children: [
                                   Container(
-                                    width: 138,
-                                    height: 138,
+                                    width: 120,
+                                    height: 120,
                                     decoration: BoxDecoration(
-                                      color: kTextButtonColor,
+                                      color: kBack3,
                                       borderRadius: const BorderRadius.all(
                                           Radius.circular(20)),
                                       boxShadow: [
                                         BoxShadow(
-                                          color:
-                                              kTextButtonColor.withOpacity(0.5),
+                                          color: kText2.withOpacity(0.5),
                                           spreadRadius: 0,
                                           blurRadius: 3,
                                           offset: const Offset(0,
@@ -143,6 +145,7 @@ class HomeScreen extends StatelessWidget {
                                             alignment: Alignment.bottomCenter,
                                             child: const Text(
                                               'Editais',
+                                              style: kTitle4,
                                               strutStyle: StrutStyle(
                                                   fontSize: 20,
                                                   fontWeight: FontWeight.bold),
@@ -157,21 +160,21 @@ class HomeScreen extends StatelessWidget {
                           const HorizontalSpacerBox(size: SpacerSize.medium),
                           InkWell(
                               onTap: () {
-                                // Navigator.pushNamed(context, Screens.menu);
+                                Navigator.popAndPushNamed(
+                                    context, Screens.calendario);
                               },
                               child: Row(
                                 children: [
                                   Container(
-                                    width: 138,
-                                    height: 138,
+                                    width: 120,
+                                    height: 120,
                                     decoration: BoxDecoration(
-                                      color: kTextButtonColor,
+                                      color: kBack3,
                                       borderRadius: const BorderRadius.all(
                                           Radius.circular(20)),
                                       boxShadow: [
                                         BoxShadow(
-                                          color:
-                                              kTextButtonColor.withOpacity(0.5),
+                                          color: kText2.withOpacity(0.5),
                                           spreadRadius: 0,
                                           blurRadius: 3,
                                           offset: const Offset(0,
@@ -192,6 +195,7 @@ class HomeScreen extends StatelessWidget {
                                             alignment: Alignment.bottomCenter,
                                             child: const Text(
                                               'Calendário',
+                                              style: kTitle4,
                                             ),
                                           ),
                                         ],
@@ -203,21 +207,21 @@ class HomeScreen extends StatelessWidget {
                           const HorizontalSpacerBox(size: SpacerSize.medium),
                           InkWell(
                               onTap: () {
-                                Navigator.pushNamed(context, Screens.cursos);
+                                Navigator.popAndPushNamed(
+                                    context, Screens.cursos);
                               },
                               child: Row(
                                 children: [
                                   Container(
-                                    width: 138,
-                                    height: 138,
+                                    width: 120,
+                                    height: 120,
                                     decoration: BoxDecoration(
-                                      color: kTextButtonColor,
+                                      color: kBack3,
                                       borderRadius: const BorderRadius.all(
                                           Radius.circular(20)),
                                       boxShadow: [
                                         BoxShadow(
-                                          color:
-                                              kTextButtonColor.withOpacity(0.5),
+                                          color: kText2.withOpacity(0.5),
                                           spreadRadius: 0,
                                           blurRadius: 3,
                                           offset: const Offset(0,
@@ -238,6 +242,7 @@ class HomeScreen extends StatelessWidget {
                                             alignment: Alignment.bottomCenter,
                                             child: const Text(
                                               'Cursos',
+                                              style: kTitle4,
                                             ),
                                           ),
                                         ],
@@ -251,287 +256,289 @@ class HomeScreen extends StatelessWidget {
                     ),
                     const VerticalSpacerBox(size: SpacerSize.medium),
                     Center(
-                      child: Row(children: [
-                        InkWell(
-                            onTap: () {
-                              // Navigator.pushNamed(context, Screens.menu);
-                            },
-                            child: Row(
-                              children: [
-                                Container(
-                                  width: 138,
-                                  height: 138,
-                                  decoration: BoxDecoration(
-                                    color: kTextButtonColor,
-                                    borderRadius: const BorderRadius.all(
-                                        Radius.circular(20)),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color:
-                                            kTextButtonColor.withOpacity(0.5),
-                                        spreadRadius: 0,
-                                        blurRadius: 3,
-                                        offset: const Offset(
-                                            0, 0), // changes position of shadow
-                                      ),
-                                    ],
-                                  ),
-                                  child: Center(
-                                    child: Wrap(
-                                      children: [
-                                        Center(
-                                            child: Image.asset(
-                                          Assets.mail,
-                                          fit: BoxFit.cover,
-                                          height: 55,
-                                        )),
-                                        Container(
-                                          alignment: Alignment.bottomCenter,
-                                          child: const Text(
-                                            'Contatos',
+                      child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            InkWell(
+                                onTap: () {
+                                  Navigator.popAndPushNamed(
+                                      context, Screens.contatos);
+                                },
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      width: 120,
+                                      height: 120,
+                                      decoration: BoxDecoration(
+                                        color: kBack3,
+                                        borderRadius: const BorderRadius.all(
+                                            Radius.circular(20)),
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: kText2.withOpacity(0.5),
+                                            spreadRadius: 0,
+                                            blurRadius: 3,
+                                            offset: const Offset(0,
+                                                0), // changes position of shadow
                                           ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            )),
-                        const HorizontalSpacerBox(size: SpacerSize.medium),
-                        InkWell(
-                            onTap: () {
-                              Navigator.pushNamed(context, Screens.mapa);
-                            },
-                            child: Row(
-                              children: [
-                                Container(
-                                  width: 138,
-                                  height: 138,
-                                  decoration: BoxDecoration(
-                                    color: kTextButtonColor,
-                                    borderRadius: const BorderRadius.all(
-                                        Radius.circular(20)),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color:
-                                            kTextButtonColor.withOpacity(0.5),
-                                        spreadRadius: 0,
-                                        blurRadius: 3,
-                                        offset: const Offset(
-                                            0, 0), // changes position of shadow
+                                        ],
                                       ),
-                                    ],
-                                  ),
-                                  child: Center(
-                                    child: Wrap(
-                                      children: [
-                                        Center(
-                                            child: Image.asset(
-                                          Assets.pinDrop,
-                                          fit: BoxFit.cover,
-                                          height: 55,
-                                        )),
-                                        Container(
-                                          alignment: Alignment.bottomCenter,
-                                          child: const Text(
-                                            'Mapa',
-                                          ),
+                                      child: Center(
+                                        child: Wrap(
+                                          children: [
+                                            Center(
+                                                child: Image.asset(
+                                              Assets.mail,
+                                              fit: BoxFit.cover,
+                                              height: 55,
+                                            )),
+                                            Container(
+                                              alignment: Alignment.bottomCenter,
+                                              child: const Text(
+                                                'Contatos',
+                                                style: kTitle4,
+                                              ),
+                                            ),
+                                          ],
                                         ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            )),
-                        const HorizontalSpacerBox(size: SpacerSize.medium),
-                        InkWell(
-                            onTap: () {
-                              Navigator.pushNamed(context, Screens.qrcode);
-                            },
-                            child: Row(
-                              children: [
-                                Container(
-                                  width: 138,
-                                  height: 138,
-                                  decoration: BoxDecoration(
-                                    color: kTextButtonColor,
-                                    borderRadius: const BorderRadius.all(
-                                        Radius.circular(20)),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color:
-                                            kTextButtonColor.withOpacity(0.5),
-                                        spreadRadius: 0,
-                                        blurRadius: 3,
-                                        offset: const Offset(
-                                            0, 0), // changes position of shadow
                                       ),
-                                    ],
-                                  ),
-                                  child: Center(
-                                    child: Wrap(
-                                      children: [
-                                        Center(
-                                            child: Image.asset(
-                                          Assets.qrCode,
-                                          fit: BoxFit.cover,
-                                          height: 55,
-                                        )),
-                                        Container(
-                                          alignment: Alignment.bottomCenter,
-                                          child: const Text(
-                                            'Onde estou',
-                                          ),
-                                        ),
-                                      ],
                                     ),
-                                  ),
-                                ),
-                              ],
-                            ))
-                      ]),
+                                  ],
+                                )),
+                            const HorizontalSpacerBox(size: SpacerSize.medium),
+                            InkWell(
+                                onTap: () {
+                                  Navigator.popAndPushNamed(
+                                      context, Screens.mapa);
+                                },
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      width: 120,
+                                      height: 120,
+                                      decoration: BoxDecoration(
+                                        color: kBack3,
+                                        borderRadius: const BorderRadius.all(
+                                            Radius.circular(20)),
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: kText2.withOpacity(0.5),
+                                            spreadRadius: 0,
+                                            blurRadius: 3,
+                                            offset: const Offset(0,
+                                                0), // changes position of shadow
+                                          ),
+                                        ],
+                                      ),
+                                      child: Center(
+                                        child: Wrap(
+                                          children: [
+                                            Center(
+                                                child: Image.asset(
+                                              Assets.pinDrop,
+                                              fit: BoxFit.cover,
+                                              height: 55,
+                                            )),
+                                            Container(
+                                              alignment: Alignment.bottomCenter,
+                                              child: const Text(
+                                                'Mapa',
+                                                style: kTitle4,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                            const HorizontalSpacerBox(size: SpacerSize.medium),
+                            InkWell(
+                                onTap: () {
+                                  Navigator.popAndPushNamed(
+                                      context, Screens.qrcode);
+                                },
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      width: 120,
+                                      height: 120,
+                                      decoration: BoxDecoration(
+                                        color: kBack3,
+                                        borderRadius: const BorderRadius.all(
+                                            Radius.circular(20)),
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: kText2.withOpacity(0.5),
+                                            spreadRadius: 0,
+                                            blurRadius: 3,
+                                            offset: const Offset(0,
+                                                0), // changes position of shadow
+                                          ),
+                                        ],
+                                      ),
+                                      child: Center(
+                                        child: Wrap(
+                                          children: [
+                                            Center(
+                                                child: Image.asset(
+                                              Assets.qrCode,
+                                              fit: BoxFit.cover,
+                                              height: 55,
+                                            )),
+                                            Container(
+                                              alignment: Alignment.bottomCenter,
+                                              child: const Text(
+                                                'Onde estou',
+                                                style: kTitle4,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ))
+                          ]),
                     ),
                     const VerticalSpacerBox(size: SpacerSize.medium),
                     Center(
-                      child: Row(children: [
-                        InkWell(
-                            onTap: () {
-                              // Navigator.pushNamed(context, Screens.menu);
-                            },
-                            child: Row(
-                              children: [
-                                Container(
-                                  width: 138,
-                                  height: 138,
-                                  decoration: BoxDecoration(
-                                    color: kTextButtonColor,
-                                    borderRadius: const BorderRadius.all(
-                                        Radius.circular(20)),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color:
-                                            kTextButtonColor.withOpacity(0.5),
-                                        spreadRadius: 0,
-                                        blurRadius: 3,
-                                        offset: const Offset(
-                                            0, 0), // changes position of shadow
+                      child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            InkWell(
+                                onTap: () {},
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      width: 120,
+                                      height: 120,
+                                      decoration: BoxDecoration(
+                                        color: kBack3,
+                                        borderRadius: const BorderRadius.all(
+                                            Radius.circular(20)),
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: kText2.withOpacity(0.5),
+                                            spreadRadius: 0,
+                                            blurRadius: 3,
+                                            offset: const Offset(0,
+                                                0), // changes position of shadow
+                                          ),
+                                        ],
                                       ),
-                                    ],
-                                  ),
-                                  child: Center(
-                                    child: Wrap(
-                                      children: [
-                                        // Center(
-                                        //     child: Image.asset(
-                                        //   Assets.mail,
-                                        //   fit: BoxFit.cover,
-                                        //   height: 55,
-                                        // )),
-                                        Container(
-                                          alignment: Alignment.bottomCenter,
-                                          // child: const Text(
-                                          //   'Contatos',
-                                          // ),
+                                      child: Center(
+                                        child: Wrap(
+                                          children: [
+                                            Center(
+                                                child: Image.asset(
+                                              Assets.ru,
+                                              fit: BoxFit.cover,
+                                              height: 55,
+                                            )),
+                                            Container(
+                                              alignment: Alignment.bottomCenter,
+                                              child: const Text(
+                                                'RU',
+                                                style: kTitle4,
+                                              ),
+                                            ),
+                                          ],
                                         ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            )),
-                        const HorizontalSpacerBox(size: SpacerSize.medium),
-                        InkWell(
-                            onTap: () {
-                              // Navigator.pushNamed(context, Screens.menu);
-                            },
-                            child: Row(
-                              children: [
-                                Container(
-                                  width: 138,
-                                  height: 138,
-                                  decoration: BoxDecoration(
-                                    color: kTextButtonColor,
-                                    borderRadius: const BorderRadius.all(
-                                        Radius.circular(20)),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color:
-                                            kTextButtonColor.withOpacity(0.5),
-                                        spreadRadius: 0,
-                                        blurRadius: 3,
-                                        offset: const Offset(
-                                            0, 0), // changes position of shadow
                                       ),
-                                    ],
-                                  ),
-                                  child: Center(
-                                    child: Wrap(
-                                      children: [
-                                        // Center(
-                                        //     child: Image.asset(
-                                        //   Assets.mail,
-                                        //   fit: BoxFit.cover,
-                                        //   height: 55,
-                                        // )),
-                                        Container(
-                                          alignment: Alignment.bottomCenter,
-                                          // child: const Text(
-                                          //   'Contatos',
-                                          // ),
-                                        ),
-                                      ],
                                     ),
-                                  ),
-                                ),
-                              ],
-                            )),
-                        const HorizontalSpacerBox(size: SpacerSize.medium),
-                        InkWell(
-                            onTap: () {
-                              // Navigator.pushNamed(context, Screens.menu);
-                            },
-                            child: Row(
-                              children: [
-                                Container(
-                                  width: 138,
-                                  height: 138,
-                                  decoration: BoxDecoration(
-                                    color: kTextButtonColor,
-                                    borderRadius: const BorderRadius.all(
-                                        Radius.circular(20)),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color:
-                                            kTextButtonColor.withOpacity(0.5),
-                                        spreadRadius: 0,
-                                        blurRadius: 3,
-                                        offset: const Offset(
-                                            0, 0), // changes position of shadow
+                                  ],
+                                )),
+                            const HorizontalSpacerBox(size: SpacerSize.medium),
+                            InkWell(
+                                onTap: () {},
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      width: 120,
+                                      height: 120,
+                                      decoration: BoxDecoration(
+                                        color: kBack3,
+                                        borderRadius: const BorderRadius.all(
+                                            Radius.circular(20)),
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: kText2.withOpacity(0.5),
+                                            spreadRadius: 0,
+                                            blurRadius: 3,
+                                            offset: const Offset(0,
+                                                0), // changes position of shadow
+                                          ),
+                                        ],
                                       ),
-                                    ],
-                                  ),
-                                  child: Center(
-                                    child: Wrap(
-                                      children: [
-                                        // Center(
-                                        //     child: Image.asset(
-                                        //   Assets.mail,
-                                        //   fit: BoxFit.cover,
-                                        //   height: 55,
-                                        // )),
-                                        Container(
-                                          alignment: Alignment.bottomCenter,
-                                          // child: const Text(
-                                          //   'Contatos',
-                                          // ),
+                                      child: Center(
+                                        child: Wrap(
+                                          children: [
+                                            Center(
+                                                child: Image.asset(
+                                              Assets.alert,
+                                              fit: BoxFit.cover,
+                                              height: 65,
+                                              width: 65,
+                                            )),
+                                            Container(
+                                              alignment: Alignment.bottomCenter,
+                                              child: const Text(
+                                                'Notícias',
+                                                style: kTitle4,
+                                              ),
+                                            ),
+                                          ],
                                         ),
-                                      ],
+                                      ),
                                     ),
-                                  ),
-                                ),
-                              ],
-                            )),
-                      ]),
+                                  ],
+                                )),
+                            const HorizontalSpacerBox(size: SpacerSize.medium),
+                            InkWell(
+                                onTap: () {},
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      width: 120,
+                                      height: 120,
+                                      decoration: BoxDecoration(
+                                        color: kBack3,
+                                        borderRadius: const BorderRadius.all(
+                                            Radius.circular(20)),
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: kText2.withOpacity(0.5),
+                                            spreadRadius: 0,
+                                            blurRadius: 3,
+                                            offset: const Offset(0,
+                                                0), // changes position of shadow
+                                          ),
+                                        ],
+                                      ),
+                                      child: Center(
+                                        child: Wrap(
+                                          children: [
+                                            Center(
+                                                child: Image.asset(
+                                              Assets.cart,
+                                              fit: BoxFit.cover,
+                                              height: 55,
+                                            )),
+                                            Container(
+                                              alignment: Alignment.bottomCenter,
+                                              child: const Text(
+                                                'Lanches',
+                                                style: kTitle4,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ]),
                     ),
                   ],
                 ),
