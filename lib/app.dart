@@ -2,7 +2,7 @@ import 'package:appufape/screens/menu/menu.dart';
 import 'package:appufape/screens/pages/calendario/calendario_page.dart';
 import 'package:appufape/screens/pages/contatos/contatos_page.dart';
 import 'package:appufape/screens/pages/cursos/cursos_page.dart';
-import 'package:appufape/screens/pages/editais/editais_page.dart';
+import 'package:appufape/screens/pages/editais/editais_screen.dart';
 import 'package:appufape/screens/pages/mapa/mapa_page.dart';
 import 'package:appufape/screens/pages/qrcode/qrcode_page.dart';
 import 'package:appufape/screens/start/start_screen.dart';
@@ -14,6 +14,7 @@ import 'package:appufape/screens/screens_index.dart';
 import 'package:appufape/shared/constants/app_theme.dart';
 
 import 'screens/home/home_screen.dart';
+import 'screens/pages/noticias/noticias_page.dart';
 import 'screens/signin/sign_in_screen.dart';
 import 'screens/splash/splash_screen.dart';
 
@@ -50,10 +51,11 @@ class App extends StatelessWidget {
         Screens.calendario: (BuildContext context) => const CalendarioPage(),
         Screens.contatos: (BuildContext context) => const ContatosPage(),
         Screens.cursos: (BuildContext context) => const CursosPage(),
-        Screens.editais: (BuildContext context) => const EditaisPage(),
+        Screens.editais: (BuildContext context) => const EditaisScreen(),
         Screens.mapa: (BuildContext context) => const MapaPage(),
         Screens.qrcode: (BuildContext context) => const QrCodePage(),
         Screens.menu: (BuildContext context) => const Menu(),
+        Screens.noticias: (BuildContext context) => const NoticiasPage(),
       },
     );
   }

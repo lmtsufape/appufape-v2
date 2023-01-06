@@ -16,4 +16,7 @@ class Assets {
   static const String add = 'lib/assets/images/add.png';
   static const String apps = 'lib/assets/images/apps.png';
   static const String alert = 'lib/assets/images/alert.png';
+  static const String seta = 'lib/assets/images/seta.png';
+  static const String exemplo = 'lib/assets/images/exemplo.png';
+  static const String document = 'lib/assets/images/document.png';
 }

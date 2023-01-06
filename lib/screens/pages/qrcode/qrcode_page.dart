@@ -1,4 +1,5 @@
 import 'package:appufape/components/utils/vertical_spacer_box.dart';
+import 'package:appufape/shared/components/default_alert_dialog.dart';
 import 'package:appufape/shared/constants/app_enums.dart';
 import 'package:appufape/shared/constants/style_constants.dart';
 import 'package:flutter/material.dart';
@@ -29,10 +30,11 @@ class _QrCodePageState extends State<QrCodePage> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: kTextButtonColor,
+        toolbarOpacity: 0,
+        backgroundColor:kBack1 ,
       ),
       body: Container(
-        color: kTextButtonColor,
+        color: kBack1,
         width: size.width,
         padding: const EdgeInsets.all(17),
         child: Center(
@@ -60,7 +62,7 @@ class _QrCodePageState extends State<QrCodePage> {
               Center(
                 child: (result != null)
                     ? Text('${result!.code}')
-                    : const Text('Scan a code'),
+                    : DefaultAlertDialog(title: 'Código não identificado ', body: 'Não foi possível identificar um código para leitura.', cancelText: 'Tentar Novamente', onConfirm: (){}, confirmText: 'Fechar'),
               )
             ],
           ),

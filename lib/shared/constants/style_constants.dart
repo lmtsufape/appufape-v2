@@ -28,6 +28,7 @@ const Color kBack2 = Color(0xFFFDFDFD);
 const Color kBack3 = Color(0xFFFFFFFF);
 const Color kText1 = Color(0xFFCACACA);
 const Color kText2 = Color(0xFF000000);
+const Color kText3 = Color(0xFF094DB3);
 
 /// ========>TEXT STYLES<=========== */
 
@@ -66,7 +67,34 @@ const TextStyle kTitle5 = TextStyle(
   color: kBack1,
   decoration: TextDecoration.underline,
 );
+const TextStyle kTitle51 = TextStyle(
+  fontSize: 18,
+  fontWeight: FontWeight.w400,
+  color: kBack1,
+  decoration: TextDecoration.underline,
+);
 
+const TextStyle kTitle6 = TextStyle(
+  fontSize: 18,
+  fontWeight: FontWeight.w400,
+  color: kText2,
+);
+const TextStyle kTitle7 = TextStyle(
+  fontSize: 20,
+  fontWeight: FontWeight.w600,
+  color: kText2,
+);
+
+const TextStyle kTitle8 = TextStyle(
+  fontSize: 20,
+  fontWeight: FontWeight.w500,
+  color: kText2,
+);
+const TextStyle kTitle9 = TextStyle(
+  fontSize: 22,
+  fontWeight: FontWeight.w600,
+  color: kBack1,
+);
 const TextStyle kTitle1 = TextStyle(
   fontSize: 28,
   fontWeight: FontWeight.bold,

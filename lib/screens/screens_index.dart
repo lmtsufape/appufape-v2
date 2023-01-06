@@ -7,8 +7,10 @@ class Screens {
   static const String calendario = 'pages/calendario/calendario_page.dart';
   static const String contatos = 'pages/calendario/contatos_page.dart';
   static const String cursos = 'pages/calendario/cursos_page.dart';
-  static const String editais = 'pages/calendario/editais_page.dart';
+  static const String editais = 'pages/calendario/editais_screen.dart';
+  static const String editalPage = 'pages/calendario/edital_page.dart';
   static const String mapa = 'pages/calendario/mapa_page.dart';
   static const String qrcode = 'pages/calendario/qrcode_page.dart';
   static const String menu = 'pages/menu/menu.dart';
+  static const String noticias = 'pages/noticias/noticias_page.dart';
 }

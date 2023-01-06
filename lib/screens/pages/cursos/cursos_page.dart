@@ -21,6 +21,11 @@ class _CursosPageState extends State<CursosPage> {
       create: (_) => HomeScreenController(),
       builder: (context, child) => Consumer<HomeScreenController>(
         builder: ((context, controller, child) => Scaffold(
+              appBar: AppBar(
+                title: const Text('Cursos', style: kTitle2),
+                toolbarOpacity: 0,
+                backgroundColor:kOnSurfaceColor ,
+              ),
               body: Container(
                 color: kOnSurfaceColor,
                 width: size.width,
@@ -30,20 +35,6 @@ class _CursosPageState extends State<CursosPage> {
                     // ignore: prefer_const_literals_to_create_immutables
                     children: [
                       const VerticalSpacerBox(size: SpacerSize.large),
-                      const Padding(
-                        padding: EdgeInsets.all(10.0),
-                        child: Text('CURSOS', style: kTitle),
-                      ),
-                      const VerticalSpacerBox(size: SpacerSize.large),
-                      const VerticalSpacerBox(size: SpacerSize.large),
-                      const Align(
-                        alignment: Alignment.bottomLeft,
-                        child: Text('Cursos',
-                            style: TextStyle(
-                                fontSize: 21,
-                                color: kText,
-                                fontWeight: FontWeight.bold)),
-                      ),
                       const VerticalSpacerBox(size: SpacerSize.large),
                       InkWell(
                         child: Row(
@@ -53,12 +44,12 @@ class _CursosPageState extends State<CursosPage> {
                               width: 440,
                               height: 115,
                               decoration: BoxDecoration(
-                                color: kTextButtonColor,
+                                color: kBack3,
                                 borderRadius:
                                     const BorderRadius.all(Radius.circular(20)),
                                 boxShadow: [
                                   BoxShadow(
-                                    color: kTextButtonColor.withOpacity(0.5),
+                                    color: kText2.withOpacity(0.5),
                                     spreadRadius: 0,
                                     blurRadius: 3,
                                     offset: const Offset(
@@ -76,8 +67,9 @@ class _CursosPageState extends State<CursosPage> {
                                   Text(
                                     'Agronomia',
                                     style: TextStyle(
+                                        color: kBack1,
                                         fontSize: 23,
-                                        fontWeight: FontWeight.bold),
+                                        fontWeight: FontWeight.w700),
                                     textAlign: TextAlign.center,
                                   ),
                                 ],
@@ -96,12 +88,12 @@ class _CursosPageState extends State<CursosPage> {
                               width: 440,
                               height: 115,
                               decoration: BoxDecoration(
-                                color: kTextButtonColor,
+                                color: kBack3,
                                 borderRadius:
                                     const BorderRadius.all(Radius.circular(20)),
                                 boxShadow: [
                                   BoxShadow(
-                                    color: kTextButtonColor.withOpacity(0.5),
+                                    color: kText2.withOpacity(0.5),
                                     spreadRadius: 0,
                                     blurRadius: 3,
                                     offset: const Offset(
@@ -118,8 +110,9 @@ class _CursosPageState extends State<CursosPage> {
                                   Text(
                                     'Ciência da Computação',
                                     style: TextStyle(
+                                        color: kBack1,
                                         fontSize: 23,
-                                        fontWeight: FontWeight.bold),
+                                        fontWeight: FontWeight.w700),
                                     textAlign: TextAlign.center,
                                   ),
                                 ],
@@ -138,12 +131,12 @@ class _CursosPageState extends State<CursosPage> {
                               width: 440,
                               height: 115,
                               decoration: BoxDecoration(
-                                color: kTextButtonColor,
+                                color: kBack3,
                                 borderRadius:
                                     const BorderRadius.all(Radius.circular(20)),
                                 boxShadow: [
                                   BoxShadow(
-                                    color: kTextButtonColor.withOpacity(0.5),
+                                    color: kText2.withOpacity(0.5),
                                     spreadRadius: 0,
                                     blurRadius: 3,
                                     offset: const Offset(
@@ -159,8 +152,9 @@ class _CursosPageState extends State<CursosPage> {
                                   Text(
                                     'Engenharia de Alimentos',
                                     style: TextStyle(
+                                        color: kBack1,
                                         fontSize: 23,
-                                        fontWeight: FontWeight.bold),
+                                        fontWeight: FontWeight.w700),
                                     textAlign: TextAlign.center,
                                   ),
                                 ],
@@ -179,12 +173,12 @@ class _CursosPageState extends State<CursosPage> {
                               width: 440,
                               height: 115,
                               decoration: BoxDecoration(
-                                color: kTextButtonColor,
+                                color: kBack3,
                                 borderRadius:
                                     const BorderRadius.all(Radius.circular(20)),
                                 boxShadow: [
                                   BoxShadow(
-                                    color: kTextButtonColor.withOpacity(0.5),
+                                    color: kText2.withOpacity(0.5),
                                     spreadRadius: 0,
                                     blurRadius: 3,
                                     offset: const Offset(
@@ -201,8 +195,9 @@ class _CursosPageState extends State<CursosPage> {
                                   Text(
                                     'Medicina Veterinária',
                                     style: TextStyle(
+                                        color: kBack1,
                                         fontSize: 23,
-                                        fontWeight: FontWeight.bold),
+                                        fontWeight: FontWeight.w700),
                                     textAlign: TextAlign.center,
                                   ),
                                 ],
@@ -221,12 +216,12 @@ class _CursosPageState extends State<CursosPage> {
                               width: 440,
                               height: 115,
                               decoration: BoxDecoration(
-                                color: kTextButtonColor,
+                                color: kBack3,
                                 borderRadius:
                                     const BorderRadius.all(Radius.circular(20)),
                                 boxShadow: [
                                   BoxShadow(
-                                    color: kTextButtonColor.withOpacity(0.5),
+                                    color: kText2.withOpacity(0.5),
                                     spreadRadius: 0,
                                     blurRadius: 3,
                                     offset: const Offset(
@@ -245,8 +240,9 @@ class _CursosPageState extends State<CursosPage> {
                                   Text(
                                     'Letras',
                                     style: TextStyle(
+                                        color: kBack1,
                                         fontSize: 23,
-                                        fontWeight: FontWeight.bold),
+                                        fontWeight: FontWeight.w700),
                                     textAlign: TextAlign.center,
                                   ),
                                 ],
@@ -265,12 +261,12 @@ class _CursosPageState extends State<CursosPage> {
                               width: 440,
                               height: 115,
                               decoration: BoxDecoration(
-                                color: kTextButtonColor,
+                                color: kBack3,
                                 borderRadius:
                                     const BorderRadius.all(Radius.circular(20)),
                                 boxShadow: [
                                   BoxShadow(
-                                    color: kTextButtonColor.withOpacity(0.5),
+                                    color: kText2.withOpacity(0.5),
                                     spreadRadius: 0,
                                     blurRadius: 3,
                                     offset: const Offset(
@@ -288,8 +284,9 @@ class _CursosPageState extends State<CursosPage> {
                                   Text(
                                     'Pedagogia',
                                     style: TextStyle(
+                                        color: kBack1,
                                         fontSize: 23,
-                                        fontWeight: FontWeight.bold),
+                                        fontWeight: FontWeight.w700),
                                     textAlign: TextAlign.center,
                                   ),
                                 ],
