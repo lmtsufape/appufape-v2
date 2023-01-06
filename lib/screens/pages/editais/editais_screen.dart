@@ -1,3 +1,4 @@
+import 'package:appufape/assets/index.dart';
 import 'package:flutter/material.dart';
 import 'package:appufape/components/utils/horizontal_spacer_box.dart';
 import 'package:appufape/components/utils/vertical_spacer_box.dart';
@@ -6,14 +7,14 @@ import 'package:appufape/shared/constants/app_enums.dart';
 import 'package:appufape/shared/constants/style_constants.dart';
 import 'package:provider/provider.dart';
 
-class EditaisPage extends StatefulWidget {
-  const EditaisPage({Key? key}) : super(key: key);
+class EditaisScreen extends StatefulWidget {
+  const EditaisScreen({Key? key}) : super(key: key);
 
   @override
-  State<EditaisPage> createState() => _EditaisPageState();
+  State<EditaisScreen> createState() => _EditaisScreenState();
 }
 
-class _EditaisPageState extends State<EditaisPage> {
+class _EditaisScreenState extends State<EditaisScreen> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -21,6 +22,11 @@ class _EditaisPageState extends State<EditaisPage> {
       create: (_) => HomeScreenController(),
       builder: (context, child) => Consumer<HomeScreenController>(
         builder: ((context, controller, child) => Scaffold(
+              appBar: AppBar(
+                title: const Text('Editais', style: kTitle2),
+                toolbarOpacity: 0,
+                backgroundColor:kOnSurfaceColor ,
+              ),
               body: Container(
                 color: kOnSurfaceColor,
                 width: size.width,
@@ -30,10 +36,6 @@ class _EditaisPageState extends State<EditaisPage> {
                     // ignore: prefer_const_literals_to_create_immutables
                     children: [
                       const VerticalSpacerBox(size: SpacerSize.large),
-                      const Padding(
-                        padding: EdgeInsets.all(10.0),
-                        child: Text('Editais', style: kTitle2),
-                      ),
                       const VerticalSpacerBox(size: SpacerSize.large),
                       const Align(
                         alignment: Alignment.bottomLeft,
@@ -42,6 +44,14 @@ class _EditaisPageState extends State<EditaisPage> {
                                 fontSize: 21,
                                 color: kText2,
                                 fontWeight: FontWeight.w500)),
+                      ),
+                      InkWell(
+                        child: Align(
+                            alignment: Alignment.bottomLeft,
+                            child: Image.asset(
+                              Assets.seta,
+                            )),
+                        onTap: () {},
                       ),
                       const VerticalSpacerBox(size: SpacerSize.large),
                       InkWell(
@@ -167,6 +177,14 @@ class _EditaisPageState extends State<EditaisPage> {
                                 fontSize: 21,
                                 color: kText2,
                                 fontWeight: FontWeight.w500)),
+                      ),
+                      InkWell(
+                        child: Align(
+                            alignment: Alignment.bottomLeft,
+                            child: Image.asset(
+                              Assets.seta,
+                            )),
+                        onTap: () {},
                       ),
                       const VerticalSpacerBox(size: SpacerSize.large),
                       const VerticalSpacerBox(size: SpacerSize.medium),
