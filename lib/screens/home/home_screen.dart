@@ -3,7 +3,6 @@ import 'package:appufape/components/utils/horizontal_spacer_box.dart';
 import 'package:appufape/components/utils/vertical_spacer_box.dart';
 import 'package:appufape/screens/home/home_screen_controller.dart';
 import 'package:appufape/screens/screens_index.dart';
-import 'package:appufape/shared/components/BottomNavigation.dart';
 import 'package:appufape/shared/constants/app_enums.dart';
 import 'package:flutter/material.dart';
 import 'package:appufape/shared/constants/style_constants.dart';
@@ -14,13 +13,14 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int selectedIndex = 0;
+    // int selectedIndex = 0;
     Size size = MediaQuery.of(context).size;
 
     return ChangeNotifierProvider(
       create: (_) => HomeScreenController(),
       builder: (context, child) => Consumer<HomeScreenController>(
         builder: ((context, controller, child) => Scaffold(
+             
               // bottomNavigationBar:
               //     BottomNavigation(selectedIndex: selectedIndex),
               body: Container(
@@ -64,11 +64,11 @@ class HomeScreen extends StatelessWidget {
                     InkWell(
                       child: Container(
                         width: 440,
-                        height: 250,
+                        height: 260,
                         decoration: BoxDecoration(
                           color: kTextButtonColor,
                           borderRadius:
-                              const BorderRadius.all(Radius.circular(45)),
+                              const BorderRadius.all(Radius.circular(40)),
                           boxShadow: [
                             BoxShadow(
                               color: kTextButtonColor.withOpacity(0.5),
@@ -82,8 +82,18 @@ class HomeScreen extends StatelessWidget {
                         child: Center(
                           child: Wrap(
                             children: [
-                              Row(
-                                children: const [],
+                              Image.asset(
+                                Assets.exemplo,
+                                scale: 0.5,
+                                fit: BoxFit.cover,
+                                height: 245,
+                              ),
+                              Container(
+                                alignment: Alignment.center,
+                                child: const Text(
+                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper orci cras.',
+                                  style: kTitle4,
+                                ),
                               ),
                             ],
                           ),
@@ -104,7 +114,7 @@ class HomeScreen extends StatelessWidget {
                     const VerticalSpacerBox(size: SpacerSize.huge),
                     Center(
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           InkWell(
                               onTap: () {
@@ -157,7 +167,7 @@ class HomeScreen extends StatelessWidget {
                                   ),
                                 ],
                               )),
-                          const HorizontalSpacerBox(size: SpacerSize.medium),
+                          const HorizontalSpacerBox(size: SpacerSize.large),
                           InkWell(
                               onTap: () {
                                 Navigator.popAndPushNamed(
@@ -204,7 +214,7 @@ class HomeScreen extends StatelessWidget {
                                   ),
                                 ],
                               )),
-                          const HorizontalSpacerBox(size: SpacerSize.medium),
+                          const HorizontalSpacerBox(size: SpacerSize.large),
                           InkWell(
                               onTap: () {
                                 Navigator.popAndPushNamed(
@@ -239,7 +249,7 @@ class HomeScreen extends StatelessWidget {
                                             height: 55,
                                           )),
                                           Container(
-                                            alignment: Alignment.bottomCenter,
+                                            alignment: Alignment.center,
                                             child: const Text(
                                               'Cursos',
                                               style: kTitle4,
@@ -257,7 +267,7 @@ class HomeScreen extends StatelessWidget {
                     const VerticalSpacerBox(size: SpacerSize.medium),
                     Center(
                       child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             InkWell(
                                 onTap: () {
@@ -305,7 +315,7 @@ class HomeScreen extends StatelessWidget {
                                     ),
                                   ],
                                 )),
-                            const HorizontalSpacerBox(size: SpacerSize.medium),
+                            const HorizontalSpacerBox(size: SpacerSize.large),
                             InkWell(
                                 onTap: () {
                                   Navigator.popAndPushNamed(
@@ -352,7 +362,7 @@ class HomeScreen extends StatelessWidget {
                                     ),
                                   ],
                                 )),
-                            const HorizontalSpacerBox(size: SpacerSize.medium),
+                            const HorizontalSpacerBox(size: SpacerSize.large),
                             InkWell(
                                 onTap: () {
                                   Navigator.popAndPushNamed(
@@ -404,7 +414,7 @@ class HomeScreen extends StatelessWidget {
                     const VerticalSpacerBox(size: SpacerSize.medium),
                     Center(
                       child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             InkWell(
                                 onTap: () {},
@@ -449,7 +459,7 @@ class HomeScreen extends StatelessWidget {
                                     ),
                                   ],
                                 )),
-                            const HorizontalSpacerBox(size: SpacerSize.medium),
+                            const HorizontalSpacerBox(size: SpacerSize.large),
                             InkWell(
                                 onTap: () {},
                                 child: Row(
@@ -494,7 +504,7 @@ class HomeScreen extends StatelessWidget {
                                     ),
                                   ],
                                 )),
-                            const HorizontalSpacerBox(size: SpacerSize.medium),
+                            const HorizontalSpacerBox(size: SpacerSize.large),
                             InkWell(
                                 onTap: () {},
                                 child: Row(
