@@ -38,6 +38,13 @@ const TextStyle kcaption1 =
 const TextStyle kcaption2 = TextStyle(
     color: kOnBackgroundColor, fontSize: 16, fontWeight: FontWeight.bold);
 
+
+const TextStyle kAppBar = TextStyle(
+  fontSize: 18,
+  fontWeight: FontWeight.w600,
+  color: kBack2,
+);
+
 const TextStyle kTitle = TextStyle(
   fontSize: 28,
   fontWeight: FontWeight.w500,
