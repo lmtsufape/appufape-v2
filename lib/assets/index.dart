@@ -19,4 +19,5 @@ class Assets {
   static const String seta = 'lib/assets/images/seta.png';
   static const String exemplo = 'lib/assets/images/exemplo.png';
   static const String document = 'lib/assets/images/document.png';
+  static const String LogoAppBar = 'lib/assets/images/logo_app_bar.png';
 }
