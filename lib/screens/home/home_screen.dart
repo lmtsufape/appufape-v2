@@ -20,37 +20,58 @@ class HomeScreen extends StatelessWidget {
       create: (_) => HomeScreenController(),
       builder: (context, child) => Consumer<HomeScreenController>(
         builder: ((context, controller, child) => Scaffold(
-             
+              appBar: AppBar(
+                title: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(Assets.LogoAppBar,
+                        alignment: Alignment.center,
+                        fit: BoxFit.cover,
+                        height: 70),
+                    Container(
+                      padding: const EdgeInsets.only(left: 5),
+                      child: const Text(
+                        'Universidade Federal do Agreste de Pernambuco',
+                        style: kAppBar,
+                        textAlign: TextAlign.center,
+                      ),
+                    )
+                  ],
+                ),
+                centerTitle: true,
+                toolbarOpacity: 0,
+                backgroundColor: kBack1,
+                toolbarHeight: 90,
+              ),
               // bottomNavigationBar:
               //     BottomNavigation(selectedIndex: selectedIndex),
               body: Container(
                 color: kOnSurfaceColor,
                 width: size.width,
-                padding: const EdgeInsets.all(17),
+                padding: const EdgeInsets.all(10),
                 child: Column(
                   // ignore: prefer_const_literals_to_create_immutables
                   children: [
-                    const VerticalSpacerBox(size: SpacerSize.large),
-                    const Padding(
-                      padding: EdgeInsets.all(5.0),
-                      child: TextField(
-                          keyboardType: TextInputType.text,
-                          decoration: InputDecoration(
-                            border: OutlineInputBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(30))),
-                            hintText: 'Faça sua busca',
-                            contentPadding: EdgeInsets.symmetric(
-                                vertical: 15, horizontal: 15),
-                            isDense: true,
-                            prefixIcon: Icon(
-                              Icons.search,
-                              color: kText,
-                              size: 25,
-                            ),
-                          )),
-                    ),
-                    const VerticalSpacerBox(size: SpacerSize.huge),
+                    // const Padding(
+                    //   padding: EdgeInsets.all(5.0),
+                    //   child: TextField(
+                    //       keyboardType: TextInputType.text,
+                    //       decoration: InputDecoration(
+                    //         border: OutlineInputBorder(
+                    //             borderRadius:
+                    //                 BorderRadius.all(Radius.circular(30))),
+                    //         hintText: 'Faça sua busca',
+                    //         contentPadding: EdgeInsets.symmetric(
+                    //             vertical: 15, horizontal: 15),
+                    //         isDense: true,
+                    //         prefixIcon: Icon(
+                    //           Icons.search,
+                    //           color: kText,
+                    //           size: 25,
+                    //         ),
+                    //       )),
+                    // ),
+
                     const VerticalSpacerBox(size: SpacerSize.medium),
                     const Align(
                       alignment: Alignment.bottomLeft,
@@ -60,7 +81,7 @@ class HomeScreen extends StatelessWidget {
                               color: kText2,
                               fontWeight: FontWeight.w500)),
                     ),
-                    const VerticalSpacerBox(size: SpacerSize.large),
+                    const VerticalSpacerBox(size: SpacerSize.medium),
                     InkWell(
                       child: Container(
                         width: 440,
@@ -81,27 +102,28 @@ class HomeScreen extends StatelessWidget {
                         ),
                         child: Center(
                           child: Wrap(
+                            // ignore: prefer_const_literals_to_create_immutables
                             children: [
-                              Image.asset(
-                                Assets.exemplo,
-                                scale: 0.5,
-                                fit: BoxFit.cover,
-                                height: 245,
-                              ),
-                              Container(
-                                alignment: Alignment.center,
-                                child: const Text(
-                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper orci cras.',
-                                  style: kTitle4,
-                                ),
-                              ),
+                              // Image.asset(
+                              //   Assets.exemplo,
+                              //   scale: 0.5,
+                              //   fit: BoxFit.cover,
+                              //   height: 245,
+                              // ),
+                              // Container(
+                              //   alignment: Alignment.center,
+                              //   child: const Text(
+                              //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper orci cras.',
+                              //     style: kTitle4,
+                              //   ),
+                              // ),
                             ],
                           ),
                         ),
                       ),
                       onTap: () {},
                     ),
-                    const VerticalSpacerBox(size: SpacerSize.large),
+                    const VerticalSpacerBox(size: SpacerSize.medium),
                     const Align(
                       alignment: Alignment.bottomRight,
                       child: Text('Ver mais notícias',
@@ -110,8 +132,7 @@ class HomeScreen extends StatelessWidget {
                               color: kBack1,
                               fontWeight: FontWeight.w500)),
                     ),
-                    const VerticalSpacerBox(size: SpacerSize.huge),
-                    const VerticalSpacerBox(size: SpacerSize.huge),
+                    const VerticalSpacerBox(size: SpacerSize.medium),
                     Center(
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
