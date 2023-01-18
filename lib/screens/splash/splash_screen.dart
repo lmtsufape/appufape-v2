@@ -1,16 +1,10 @@
-import 'package:appufape/assets/index.dart';
-import 'package:appufape/shared/constants/style_constants.dart';
+import 'package:thunderapp/assets/index.dart';
+import 'package:thunderapp/shared/constants/style_constants.dart';
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
-import 'package:appufape/screens/splash/splash_screen_controller.dart';
-import '../../assets/index.dart';
+import 'package:thunderapp/screens/splash/splash_screen_controller.dart';
 import '../../components/utils/vertical_spacer_box.dart';
 import '../../shared/constants/app_enums.dart';
 import '../../shared/constants/app_number_constants.dart';
-=======
-
-import 'package:thunderapp/screens/splash/splash_screen_controller.dart';
->>>>>>> parent of 2262310 (Refatorando código)
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);

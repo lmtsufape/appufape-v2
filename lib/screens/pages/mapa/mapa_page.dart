@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:appufape/assets/index.dart';
-import 'package:appufape/components/utils/vertical_spacer_box.dart';
-import 'package:appufape/screens/home/home_screen_controller.dart';
-import 'package:appufape/shared/constants/app_enums.dart';
-import 'package:appufape/shared/constants/style_constants.dart';
+import 'package:thunderapp/assets/index.dart';
+import 'package:thunderapp/components/utils/vertical_spacer_box.dart';
+import 'package:thunderapp/screens/home/home_screen_controller.dart';
+import 'package:thunderapp/shared/constants/app_enums.dart';
+import 'package:thunderapp/shared/constants/style_constants.dart';
 import 'package:provider/provider.dart';
 
 class MapaPage extends StatefulWidget {

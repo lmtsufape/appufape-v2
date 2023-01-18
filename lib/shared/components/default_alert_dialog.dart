@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:appufape/components/buttons/custom_text_button.dart';
-import 'package:appufape/components/buttons/primary_button.dart';
-import 'package:appufape/shared/constants/style_constants.dart';
+import 'package:thunderapp/components/buttons/custom_text_button.dart';
+import 'package:thunderapp/components/buttons/primary_button.dart';
+import 'package:thunderapp/shared/constants/style_constants.dart';
 
 class DefaultAlertDialog extends StatelessWidget {
   const DefaultAlertDialog(

@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-import 'package:appufape/shared/constants/style_constants.dart';
-import 'package:flutter/material.dart';
-=======
-import 'package:flutter/material.dart';
 import 'package:thunderapp/shared/constants/style_constants.dart';
->>>>>>> parent of 2262310 (Refatorando código)
+import 'package:flutter/material.dart';
 
 class PrimaryButton extends StatelessWidget {
   const PrimaryButton({
