@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
-=======
-import 'package:thunderapp/shared/constants/app_number_constants.dart';
->>>>>>> parent of 2262310 (Refatorando código)
 
 class CustomTextFormField extends StatefulWidget {
   const CustomTextFormField(

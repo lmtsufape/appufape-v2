@@ -1,11 +1,7 @@
-import 'package:appufape/screens/screens_index.dart';
+import 'package:thunderapp/screens/screens_index.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 import 'package:logging/logging.dart';
-<<<<<<< HEAD
-=======
-import 'package:thunderapp/screens/screens_index.dart';
->>>>>>> parent of 2262310 (Refatorando código)
 
 class SplashScreenController {
   final BuildContext context;

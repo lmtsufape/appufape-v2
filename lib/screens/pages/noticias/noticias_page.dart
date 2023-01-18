@@ -1,4 +1,4 @@
-import 'package:appufape/shared/constants/style_constants.dart';
+import 'package:thunderapp/shared/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class NoticiasPage extends StatefulWidget {
