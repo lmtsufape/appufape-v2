@@ -1,7 +1,14 @@
 import 'package:thunderapp/screens/menu/menu.dart';
 import 'package:thunderapp/screens/pages/calendario/calendario_page.dart';
 import 'package:thunderapp/screens/pages/contatos/contatos_page.dart';
+import 'package:thunderapp/screens/pages/contatos/docentes/docentes_page.dart';
+import 'package:thunderapp/screens/pages/contatos/estrutura/estrutura_ad_page.dart';
+import 'package:thunderapp/screens/pages/contatos/tecnicos/tecnicos_page.dart';
 import 'package:thunderapp/screens/pages/cursos/cursos_page.dart';
+import 'package:thunderapp/screens/pages/cursos/doutorado/doutorado_page.dart';
+import 'package:thunderapp/screens/pages/cursos/especializacao/especializacao_page.dart';
+import 'package:thunderapp/screens/pages/cursos/graduacao/graduacao_page.dart';
+import 'package:thunderapp/screens/pages/cursos/mestrado/mestrado_page.dart';
 import 'package:thunderapp/screens/pages/editais/editais_screen.dart';
 import 'package:thunderapp/screens/pages/mapa/mapa_page.dart';
 import 'package:thunderapp/screens/pages/qrcode/qrcode_page.dart';
@@ -50,7 +57,15 @@ class App extends StatelessWidget {
         Screens.start: (BuildContext context) => const StartScreen(),
         Screens.calendario: (BuildContext context) => const CalendarioPage(),
         Screens.contatos: (BuildContext context) => const ContatosPage(),
+        Screens.docentes: (BuildContext context) => const DocentesPage(),
+        Screens.estrutura: (BuildContext context) => const EstruturaAdPage(),
+        Screens.tecnicos: (BuildContext context) => const TecnicosPage(),
+        Screens.especializacao: (BuildContext context) =>
+            const EspecializacaoPage(),
         Screens.cursos: (BuildContext context) => const CursosPage(),
+        Screens.doutorado: (BuildContext context) => const DoutoradoPage(),
+        Screens.mestrado: (BuildContext context) => const MestradoPage(),
+        Screens.graduacao: (BuildContext context) => const GraduacaoPage(),
         Screens.editais: (BuildContext context) => const EditaisScreen(),
         Screens.mapa: (BuildContext context) => const MapaPage(),
         Screens.qrcode: (BuildContext context) => const QrCodePage(),

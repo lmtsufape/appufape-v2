@@ -2,19 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:thunderapp/components/utils/horizontal_spacer_box.dart';
 import 'package:thunderapp/components/utils/vertical_spacer_box.dart';
 import 'package:thunderapp/screens/home/home_screen_controller.dart';
-import 'package:thunderapp/screens/screens_index.dart';
 import 'package:thunderapp/shared/constants/app_enums.dart';
 import 'package:thunderapp/shared/constants/style_constants.dart';
 import 'package:provider/provider.dart';
 
-class ContatosPage extends StatefulWidget {
-  const ContatosPage({Key? key}) : super(key: key);
+class EspecializacaoPage extends StatefulWidget {
+  const EspecializacaoPage({Key? key}) : super(key: key);
 
   @override
-  State<ContatosPage> createState() => _ContatosPageState();
+  State<EspecializacaoPage> createState() => _EspecializacaoPageState();
 }
 
-class _ContatosPageState extends State<ContatosPage> {
+class _EspecializacaoPageState extends State<EspecializacaoPage> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -23,7 +22,7 @@ class _ContatosPageState extends State<ContatosPage> {
       builder: (context, child) => Consumer<HomeScreenController>(
         builder: ((context, controller, child) => Scaffold(
               appBar: AppBar(
-                title: const Text('Contato', style: kTitle2),
+                title: const Text('Especialização', style: kTitle2),
                 centerTitle: true,
                 toolbarOpacity: 0,
                 backgroundColor: kOnSurfaceColor,
@@ -61,57 +60,9 @@ class _ContatosPageState extends State<ContatosPage> {
                             child: Row(
                               children: const [
                                 HorizontalSpacerBox(size: SpacerSize.huge),
-                                HorizontalSpacerBox(size: SpacerSize.huge),
-                                HorizontalSpacerBox(size: SpacerSize.huge),
-                                HorizontalSpacerBox(size: SpacerSize.huge),
-                                HorizontalSpacerBox(size: SpacerSize.huge),
-                                Text(
-                                  'Docentes',
-                                  style: TextStyle(
-                                      color: kBack1,
-                                      fontSize: 23,
-                                      fontWeight: FontWeight.w700),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                      onTap: () {
-                        Navigator.popAndPushNamed(context, Screens.docentes);
-                      },
-                    ),
-                    const VerticalSpacerBox(size: SpacerSize.medium),
-                    InkWell(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Container(
-                            width: 440,
-                            height: 95,
-                            decoration: BoxDecoration(
-                              color: kBack3,
-                              borderRadius:
-                                  const BorderRadius.all(Radius.circular(20)),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: kText2.withOpacity(0.5),
-                                  spreadRadius: 0,
-                                  blurRadius: 3,
-                                  offset: const Offset(
-                                      0, 0), // changes position of shadow
-                                ),
-                              ],
-                            ),
-                            child: Row(
-                              children: const [
-                                HorizontalSpacerBox(size: SpacerSize.huge),
-                                HorizontalSpacerBox(size: SpacerSize.huge),
-                                HorizontalSpacerBox(size: SpacerSize.huge),
                                 HorizontalSpacerBox(size: SpacerSize.small),
                                 Text(
-                                  'Estrutura Administrativa',
+                                  'Especialização em Questão Agrária',
                                   style: TextStyle(
                                       color: kBack1,
                                       fontSize: 23,
@@ -123,9 +74,7 @@ class _ContatosPageState extends State<ContatosPage> {
                           ),
                         ],
                       ),
-                      onTap: () {
-                        Navigator.popAndPushNamed(context, Screens.estrutura);
-                      },
+                      onTap: () {},
                     ),
                     const VerticalSpacerBox(size: SpacerSize.medium),
                     InkWell(
@@ -151,11 +100,9 @@ class _ContatosPageState extends State<ContatosPage> {
                             ),
                             child: Row(
                               children: const [
-                                HorizontalSpacerBox(size: SpacerSize.huge),
-                                HorizontalSpacerBox(size: SpacerSize.huge),
-                                HorizontalSpacerBox(size: SpacerSize.huge),
+                                HorizontalSpacerBox(size: SpacerSize.large),
                                 Text(
-                                  'Técnicos Administrativos',
+                                  'Especialização em Ensino de Botânica ',
                                   style: TextStyle(
                                       color: kBack1,
                                       fontSize: 23,
@@ -167,11 +114,8 @@ class _ContatosPageState extends State<ContatosPage> {
                           ),
                         ],
                       ),
-                      onTap: () {
-                        Navigator.popAndPushNamed(context, Screens.tecnicos);
-                      },
+                      onTap: () {},
                     ),
-                    const VerticalSpacerBox(size: SpacerSize.medium),
                     const VerticalSpacerBox(size: SpacerSize.huge),
                     const VerticalSpacerBox(size: SpacerSize.huge),
                     const VerticalSpacerBox(size: SpacerSize.huge),
