@@ -13,6 +13,7 @@ class EditalPage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: const Text('Edital'),
+          centerTitle: true,
           toolbarOpacity: 0,
         ),
         body: Padding(

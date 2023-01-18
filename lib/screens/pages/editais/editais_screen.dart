@@ -24,8 +24,10 @@ class _EditaisScreenState extends State<EditaisScreen> {
         builder: ((context, controller, child) => Scaffold(
               appBar: AppBar(
                 title: const Text('Editais', style: kTitle2),
+                centerTitle: true,
                 toolbarOpacity: 0,
-                backgroundColor:kOnSurfaceColor ,
+                backgroundColor: kOnSurfaceColor,
+                automaticallyImplyLeading: true,
               ),
               body: Container(
                 color: kOnSurfaceColor,
@@ -36,22 +38,26 @@ class _EditaisScreenState extends State<EditaisScreen> {
                     // ignore: prefer_const_literals_to_create_immutables
                     children: [
                       const VerticalSpacerBox(size: SpacerSize.large),
-                      const VerticalSpacerBox(size: SpacerSize.large),
-                      const Align(
-                        alignment: Alignment.bottomLeft,
-                        child: Text('PIBAE',
-                            style: TextStyle(
-                                fontSize: 21,
-                                color: kText2,
-                                fontWeight: FontWeight.w500)),
-                      ),
-                      InkWell(
-                        child: Align(
+                      Row(
+                        children: [
+                          const Align(
                             alignment: Alignment.bottomLeft,
-                            child: Image.asset(
-                              Assets.seta,
-                            )),
-                        onTap: () {},
+                            child: Text('PIBAE',
+                                style: TextStyle(
+                                    fontSize: 21,
+                                    color: kText2,
+                                    fontWeight: FontWeight.w500)),
+                          ),
+                          const HorizontalSpacerBox(size: SpacerSize.medium),
+                          InkWell(
+                            child: Align(
+                                alignment: Alignment.bottomLeft,
+                                child: Image.asset(
+                                  Assets.seta,
+                                )),
+                            onTap: () {},
+                          ),
+                        ],
                       ),
                       const VerticalSpacerBox(size: SpacerSize.large),
                       InkWell(
@@ -60,7 +66,7 @@ class _EditaisScreenState extends State<EditaisScreen> {
                           children: [
                             Container(
                               width: 440,
-                              height: 75,
+                              height: 65,
                               decoration: BoxDecoration(
                                 color: kBack3,
                                 borderRadius:
@@ -118,7 +124,7 @@ class _EditaisScreenState extends State<EditaisScreen> {
                           children: [
                             Container(
                               width: 440,
-                              height: 75,
+                              height: 65,
                               decoration: BoxDecoration(
                                 color: kBack3,
                                 borderRadius:
@@ -170,31 +176,35 @@ class _EditaisScreenState extends State<EditaisScreen> {
                         onTap: () {},
                       ),
                       const VerticalSpacerBox(size: SpacerSize.large),
-                      const Align(
-                        alignment: Alignment.bottomLeft,
-                        child: Text('PIBEX',
-                            style: TextStyle(
-                                fontSize: 21,
-                                color: kText2,
-                                fontWeight: FontWeight.w500)),
-                      ),
-                      InkWell(
-                        child: Align(
+                      Row(
+                        children: [
+                          const Align(
                             alignment: Alignment.bottomLeft,
-                            child: Image.asset(
-                              Assets.seta,
-                            )),
-                        onTap: () {},
+                            child: Text('PIBEX',
+                                style: TextStyle(
+                                    fontSize: 21,
+                                    color: kText2,
+                                    fontWeight: FontWeight.w500)),
+                          ),
+                          const HorizontalSpacerBox(size: SpacerSize.medium),
+                          InkWell(
+                            child: Align(
+                                alignment: Alignment.bottomLeft,
+                                child: Image.asset(
+                                  Assets.seta,
+                                )),
+                            onTap: () {},
+                          ),
+                        ],
                       ),
                       const VerticalSpacerBox(size: SpacerSize.large),
-                      const VerticalSpacerBox(size: SpacerSize.medium),
                       InkWell(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Container(
                               width: 440,
-                              height: 75,
+                              height: 65,
                               decoration: BoxDecoration(
                                 color: kBack3,
                                 borderRadius:
