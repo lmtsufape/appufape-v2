@@ -3,9 +3,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:logging/logging.dart';
 import 'package:provider/provider.dart';
-import 'package:appufape/app.dart';
-import 'package:appufape/screens/home/home_screen_controller.dart';
-import 'package:appufape/shared/core/selected_item.dart';
+import 'package:thunderapp/app.dart';
+import 'package:thunderapp/screens/home/home_screen_controller.dart';
+import 'package:thunderapp/shared/core/selected_item.dart';
 
 main() {
   WidgetsFlutterBinding.ensureInitialized();
