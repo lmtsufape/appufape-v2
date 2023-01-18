@@ -5,8 +5,14 @@ import 'package:appufape/screens/home/home_screen_controller.dart';
 import 'package:appufape/screens/screens_index.dart';
 import 'package:appufape/shared/constants/app_enums.dart';
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:appufape/shared/constants/style_constants.dart';
 import 'package:provider/provider.dart';
+=======
+import 'package:thunderapp/screens/home/components/home_drawer.dart';
+import 'package:thunderapp/shared/constants/app_number_constants.dart';
+import 'package:thunderapp/shared/constants/style_constants.dart';
+>>>>>>> parent of 2262310 (Refatorando código)
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
