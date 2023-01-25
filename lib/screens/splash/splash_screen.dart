@@ -15,6 +15,7 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   late final SplashScreenController _controller;
+
   @override
   void initState() {
     super.initState();
@@ -45,7 +46,7 @@ class _SplashScreenState extends State<SplashScreen> {
             const CircularProgressIndicator(color: kBack2),
             const Spacer(),
             Container(
-              padding: const EdgeInsets.all(kDefaultPadding),
+              padding: const EdgeInsets.all(25),
               decoration: const BoxDecoration(color: kBack2),
               width: size.width,
               child: Column(

@@ -38,7 +38,6 @@ const TextStyle kcaption1 =
 const TextStyle kcaption2 = TextStyle(
     color: kOnBackgroundColor, fontSize: 16, fontWeight: FontWeight.bold);
 
-
 const TextStyle kAppBar = TextStyle(
   fontSize: 18,
   fontWeight: FontWeight.w600,
@@ -75,9 +74,9 @@ const TextStyle kTitle5 = TextStyle(
   decoration: TextDecoration.underline,
 );
 const TextStyle kTitle51 = TextStyle(
-  fontSize: 18,
+  fontSize: 20,
   fontWeight: FontWeight.w400,
-  color: kBack1,
+  color: kText3,
   decoration: TextDecoration.underline,
 );
 
@@ -93,9 +92,14 @@ const TextStyle kTitle7 = TextStyle(
 );
 
 const TextStyle kTitle8 = TextStyle(
-  fontSize: 20,
+  fontSize: 22,
   fontWeight: FontWeight.w500,
   color: kText2,
+);
+const TextStyle kTitle81 = TextStyle(
+  fontSize: 22,
+  fontWeight: FontWeight.w500,
+  color: kBack3,
 );
 const TextStyle kTitle9 = TextStyle(
   fontSize: 22,

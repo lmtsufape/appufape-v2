@@ -35,7 +35,8 @@ class DefaultAlertDialog extends StatelessWidget {
         CustomTextButton(
             title: cancelText, onPressed: (() => Navigator.pop(context))),
         SizedBox(
-          width: size.width * 0.3,
+          height: size.height * 0.04,
+          width: size.width * 0.23,
           child: PrimaryButton(
               text: confirmText, onPressed: onConfirm, color: kDetailColor),
         )

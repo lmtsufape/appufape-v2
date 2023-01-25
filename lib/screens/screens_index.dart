@@ -12,6 +12,16 @@ class Screens {
   static const String tecnicos = 'pages/contatos/tecnicos/tecnicos_page.dart';
   static const String cursos = 'pages/cursos/cursos_page.dart';
   static const String graduacao = 'pages/cursos/graducao/graducao_page.dart';
+  static const String agronomia =
+      'pages/cursos/graducao/agronomia/agronomia.dart';
+  static const String bcc = 'pages/cursos/graducao/bcc/bcc.dart';
+  static const String engenharia =
+      'pages/cursos/graducao/engenharia/engenharia.dart';
+  static const String letras = 'pages/cursos/graducao/letras/letras.dart';
+  static const String pedagogia =
+      'pages/cursos/graducao/pedagogia/pedagogia.dart';
+  static const String veterinaria =
+      'pages/cursos/graducao/veterinaria/veterinaria.dart';
   static const String mestrado = 'pages/cursos/mestrado/mestrado_page.dart';
   static const String doutorado = 'pages/cursos/doutorado/doutorado_page.dart';
   static const String especializacao =

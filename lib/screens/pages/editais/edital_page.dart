@@ -1,6 +1,7 @@
 import 'package:thunderapp/assets/index.dart';
 import 'package:thunderapp/components/utils/horizontal_spacer_box.dart';
 import 'package:thunderapp/components/utils/vertical_spacer_box.dart';
+import 'package:thunderapp/shared/components/BottomNavigation.dart';
 import 'package:thunderapp/shared/constants/app_enums.dart';
 import 'package:thunderapp/shared/constants/style_constants.dart';
 import 'package:flutter/material.dart';
@@ -10,22 +11,31 @@ class EditalPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int selectedIndex = 0;
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Edital'),
+          title: const Text('Edital', style: kTitle2),
           centerTitle: true,
           toolbarOpacity: 0,
+          automaticallyImplyLeading: true,
+          backgroundColor: kOnSurfaceColor,
+        ),
+        backgroundColor: kOnSurfaceColor,
+        bottomNavigationBar: BottomNavigation(
+          selectedIndex: selectedIndex,
         ),
         body: Padding(
             padding: const EdgeInsets.all(20),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
+                const VerticalSpacerBox(size: SpacerSize.huge),
                 const Text(
                   'PREC divulga primeiro Edital PIBEX-UFAPE 2022',
                   style: kTitle7,
                 ),
-                const VerticalSpacerBox(size: SpacerSize.small),
+                const VerticalSpacerBox(size: SpacerSize.huge),
+                const VerticalSpacerBox(size: SpacerSize.huge),
                 Wrap(
                   children: const [
                     Text(
@@ -35,13 +45,32 @@ class EditalPage extends StatelessWidget {
                     ),
                   ],
                 ),
+                const VerticalSpacerBox(size: SpacerSize.huge),
+                const VerticalSpacerBox(size: SpacerSize.huge),
                 const Center(
                   child: Text(
                     'Anexos',
                     style: kTitle8,
                   ),
                 ),
-                const VerticalSpacerBox(size: SpacerSize.large),
+                const VerticalSpacerBox(size: SpacerSize.huge),
+                const VerticalSpacerBox(size: SpacerSize.huge),
+                const VerticalSpacerBox(size: SpacerSize.huge),
+                Row(
+                  children: [
+                    Image.asset(Assets.document),
+                    const HorizontalSpacerBox(size: SpacerSize.small),
+                    Wrap(
+                      children: const [
+                        Text(
+                          'Edital 01-2022- PIBEX-PREC-UFAPE_0.pdf',
+                          style: kTitle51,
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                const VerticalSpacerBox(size: SpacerSize.small),
                 Row(
                   children: [
                     Image.asset(Assets.document),
@@ -52,32 +81,24 @@ class EditalPage extends StatelessWidget {
                     ),
                   ],
                 ),
+                const VerticalSpacerBox(size: SpacerSize.small),
                 Row(
                   children: [
                     Image.asset(Assets.document),
                     const HorizontalSpacerBox(size: SpacerSize.small),
                     const Text(
-                      'Modelo_Norteador_de_Elaboração_Projeto_de_Extensão_da_UFAPE_AnexoEdital.docx',
+                      'Edital 01-2022- PIBEX-PREC-UFAPE_0.pdf',
                       style: kTitle51,
                     ),
                   ],
                 ),
+                const VerticalSpacerBox(size: SpacerSize.small),
                 Row(
                   children: [
                     Image.asset(Assets.document),
                     const HorizontalSpacerBox(size: SpacerSize.small),
                     const Text(
-                      'Modelo_Norteador_Plano_Trabalho_do_Bolsista_Anexo2_Edital_PIBEX_0.docx',
-                      style: kTitle51,
-                    ),
-                  ],
-                ),
-                Row(
-                  children: [
-                    Image.asset(Assets.document),
-                    const HorizontalSpacerBox(size: SpacerSize.small),
-                    const Text(
-                      'Termo de Compromisso_bolsista_PIBEX_UFAPE.docx',
+                      'Edital 01-2022- PIBEX-PREC-UFAPE_0.pdf',
                       style: kTitle51,
                     ),
                   ],
