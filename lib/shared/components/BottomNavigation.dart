@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import '../../screens/screens_index.dart';
 
 // ignore: must_be_immutable
-class BottomNavigation extends StatelessWidget {
+class BottomNavigation extends StatelessWidget with ChangeNotifier {
   late int selectedIndex;
   BottomNavigation({super.key, required this.selectedIndex});
 
@@ -15,6 +15,7 @@ class BottomNavigation extends StatelessWidget {
         items: const [
           BottomNavigationBarItem(
             backgroundColor: kBack3,
+            label: 'Buscar',
             icon: Icon(
               Icons.search,
               color: kBack2,
@@ -23,6 +24,7 @@ class BottomNavigation extends StatelessWidget {
           ),
           BottomNavigationBarItem(
             backgroundColor: kBack3,
+            label: 'Inicio',
             icon: Icon(
               Icons.home,
               color: kBack2,
@@ -30,6 +32,7 @@ class BottomNavigation extends StatelessWidget {
             ),
           ),
           BottomNavigationBarItem(
+            label: 'Onde estou',
             backgroundColor: kBack3,
             icon: Icon(
               Icons.qr_code_scanner_outlined,
@@ -44,12 +47,14 @@ class BottomNavigation extends StatelessWidget {
         backgroundColor: kBack1,
         onTap: (index) {
           selectedIndex = index;
-          if (selectedIndex == 0) {
-          } else if (selectedIndex == 1) {
+          if (selectedIndex == 1) {
             Navigator.pushNamed(context, Screens.home);
           } else if (selectedIndex == 2) {
             Navigator.pushNamed(context, Screens.qrcode);
-          }
+          } else if (selectedIndex == 3) {}
         });
   }
+
+  @override
+  notifyListeners();
 }
