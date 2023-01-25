@@ -10,6 +10,7 @@ import 'package:thunderapp/screens/pages/cursos/especializacao/especializacao_pa
 import 'package:thunderapp/screens/pages/cursos/graduacao/graduacao_page.dart';
 import 'package:thunderapp/screens/pages/cursos/mestrado/mestrado_page.dart';
 import 'package:thunderapp/screens/pages/editais/editais_screen.dart';
+import 'package:thunderapp/screens/pages/editais/edital_page.dart';
 import 'package:thunderapp/screens/pages/mapa/mapa_page.dart';
 import 'package:thunderapp/screens/pages/qrcode/qrcode_page.dart';
 import 'package:thunderapp/screens/start/start_screen.dart';
@@ -19,7 +20,6 @@ import 'package:responsive_framework/responsive_wrapper.dart';
 import 'package:thunderapp/screens/carousel/carousel_screen.dart';
 import 'package:thunderapp/screens/screens_index.dart';
 import 'package:thunderapp/shared/constants/app_theme.dart';
-
 import 'screens/home/home_screen.dart';
 import 'screens/pages/noticias/noticias_page.dart';
 import 'screens/signin/sign_in_screen.dart';
@@ -31,6 +31,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'App UFAPE',
       useInheritedMediaQuery: true,
       locale: DevicePreview.locale(context),
       builder: (context, child) {
@@ -47,7 +48,8 @@ class App extends StatelessWidget {
                 ]));
       },
       debugShowCheckedModeBanner: false,
-      home: const SplashScreen(),
+      initialRoute: Screens.splash,
+      home: const HomeScreen(),
       theme: AppTheme.getLightTheme(),
       routes: {
         Screens.splash: (BuildContext context) => const SplashScreen(),
@@ -67,6 +69,7 @@ class App extends StatelessWidget {
         Screens.mestrado: (BuildContext context) => const MestradoPage(),
         Screens.graduacao: (BuildContext context) => const GraduacaoPage(),
         Screens.editais: (BuildContext context) => const EditaisScreen(),
+        Screens.editalPage: (BuildContext context) => const EditalPage(),
         Screens.mapa: (BuildContext context) => const MapaPage(),
         Screens.qrcode: (BuildContext context) => const QrCodePage(),
         Screens.menu: (BuildContext context) => const Menu(),
