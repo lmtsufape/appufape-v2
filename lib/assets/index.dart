@@ -19,5 +19,12 @@ class Assets {
   static const String seta = 'lib/assets/images/seta.png';
   static const String exemplo = 'lib/assets/images/exemplo.png';
   static const String document = 'lib/assets/images/document.png';
-  static const String LogoAppBar = 'lib/assets/images/logo_app_bar.png';
+  static const String logoAppBar = 'lib/assets/images/logo_app_bar.png';
+  static const String textoUfape = 'lib/assets/images/texto_ufape.png';
+  static const String agronomia = 'lib/assets/images/agronomia.png';
+  static const String alimentos = 'lib/assets/images/alimentos.png';
+  static const String bcc = 'lib/assets/images/bcc.png';
+  static const String letras = 'lib/assets/images/letras.png';
+  static const String pedagogia = 'lib/assets/images/pedagogia.png';
+  static const String veterinaria = 'lib/assets/images/veterinaria.png';
 }
