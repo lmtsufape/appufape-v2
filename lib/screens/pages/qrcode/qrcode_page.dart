@@ -30,26 +30,27 @@ class _QrCodePageState extends State<QrCodePage> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        toolbarOpacity: 0,
-        backgroundColor:kBack1 ,
-      ),
+          toolbarOpacity: 0,
+          automaticallyImplyLeading: true,
+          backgroundColor: kBack1,
+          centerTitle: true,
+          title: const Text(
+            'Onde estou',
+            style: kTitle3,
+          )),
       body: Container(
         color: kBack1,
         width: size.width,
         padding: const EdgeInsets.all(17),
         child: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               // ignore: sized_box_for_whitespace
+              const Text('Aponte a câmera para o QR code', style: kTitle81),
               const VerticalSpacerBox(size: SpacerSize.huge),
               const VerticalSpacerBox(size: SpacerSize.huge),
-              const VerticalSpacerBox(size: SpacerSize.huge),
-              const VerticalSpacerBox(size: SpacerSize.huge),
-              const VerticalSpacerBox(size: SpacerSize.huge),
-              const VerticalSpacerBox(size: SpacerSize.huge),
-
               SizedBox(
                 height: 240,
                 width: 280,
@@ -58,12 +59,17 @@ class _QrCodePageState extends State<QrCodePage> {
 
               const VerticalSpacerBox(size: SpacerSize.huge),
               const VerticalSpacerBox(size: SpacerSize.huge),
-              const VerticalSpacerBox(size: SpacerSize.huge),
-              Center(
-                child: (result != null)
-                    ? Text('${result!.code}')
-                    : DefaultAlertDialog(title: 'Código não identificado ', body: 'Não foi possível identificar um código para leitura.', cancelText: 'Tentar Novamente', onConfirm: (){}, confirmText: 'Fechar'),
-              )
+              // Center(
+              //   child: (result != null)
+              //       ? Text('${result!.code}')
+              //       : DefaultAlertDialog(
+              //           title: 'Código não identificado ',
+              //           body:
+              //               'Não foi possível identificar um código para leitura.',
+              //           cancelText: 'Tentar Novamente',
+              //           onConfirm: () {},
+              //           confirmText: 'Fechar'),
+              // )
             ],
           ),
         ),
