@@ -7,32 +7,21 @@ class CalendarioPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     int selectedIndex = 0;
+    int selectedIndex = 0;
     return Scaffold(
       appBar: AppBar(
         title: const Text(
           'Calendário',
-          style: kTitle2,
+          style: kTitle22,
         ),
         centerTitle: true,
         toolbarOpacity: 0,
-        actions: [
-          IconButton(
-            icon: const Icon(
-              Icons.arrow_back,
-              color: Colors.black,
-            ),
-            onPressed: () {
-              Navigator.pop(context);
-            },
-          ),
-        ],
-        backgroundColor: kOnSurfaceColor,
+        backgroundColor: kBack1,
       ),
       backgroundColor: kOnSurfaceColor,
       bottomNavigationBar: BottomNavigation(
-                    selectedIndex: selectedIndex,
-                  ),
+        selectedIndex: selectedIndex,
+      ),
       body: const Center(
         child: Text('Calendário'),
       ),
