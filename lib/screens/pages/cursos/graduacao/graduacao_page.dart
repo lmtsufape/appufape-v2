@@ -15,11 +15,10 @@ class GraduacaoPage extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Graduação', style: kTitle2),
+        title: const Text('Graduação', style: kTitle22),
         centerTitle: true,
         toolbarOpacity: 0,
-        backgroundColor: kOnSurfaceColor,
-        automaticallyImplyLeading: true,
+        backgroundColor: kBack1,
       ),
       bottomNavigationBar: BottomNavigation(
         selectedIndex: selectedIndex,
@@ -242,7 +241,7 @@ class GraduacaoPage extends StatelessWidget {
                         children: [
                           const HorizontalSpacerBox(size: SpacerSize.large),
                           Image.asset(
-                            Assets.veterinaria,
+                            Assets.zootecnia,
                             scale: 0.7,
                           ),
                           const HorizontalSpacerBox(size: SpacerSize.huge),
