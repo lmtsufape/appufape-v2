@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:thunderapp/shared/components/BottomNavigation.dart';
+import 'package:thunderapp/shared/constants/app_number_constants.dart';
 import 'package:thunderapp/shared/constants/style_constants.dart';
 
 class DocentesPage extends StatelessWidget {
@@ -12,29 +13,25 @@ class DocentesPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text(
           'Docentes',
-          style: kTitle2,
+          style: kTitle22,
         ),
         centerTitle: true,
         toolbarOpacity: 0,
-        actions: [
-          IconButton(
-            icon: const Icon(
-              Icons.arrow_back,
-              color: Colors.black,
-            ),
-            onPressed: () {
-              Navigator.pop(context);
-            },
-          ),
-        ],
-        backgroundColor: kOnSurfaceColor,
+        backgroundColor: kBack1,
       ),
       bottomNavigationBar: BottomNavigation(
-                    selectedIndex: selectedIndex,
-                  ),
+        selectedIndex: selectedIndex,
+      ),
       backgroundColor: kOnSurfaceColor,
-      body: const Center(
-        child: Text('Docentes'),
+      body: const Padding(
+        padding: EdgeInsets.all(kDefaultPadding),
+        child: Align(
+            alignment: Alignment.topCenter,
+            child: Text(
+              'Lista de nomes e e-mails de docentes da UFAPE',
+              style: kTitle55,
+              textAlign: TextAlign.center,
+            )),
       ),
     );
   }
