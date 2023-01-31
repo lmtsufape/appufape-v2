@@ -26,5 +26,11 @@ class Assets {
   static const String bcc = 'lib/assets/images/bcc.png';
   static const String letras = 'lib/assets/images/letras.png';
   static const String pedagogia = 'lib/assets/images/pedagogia.png';
+  static const String zootecnia = 'lib/assets/images/zootecnia.png';
   static const String veterinaria = 'lib/assets/images/veterinaria.png';
+  static const String turno = 'lib/assets/images/turno.png';
+  static const String vagas = 'lib/assets/images/vagas.png';
+  static const String ingresso = 'lib/assets/images/ingresso.png';
+  static const String grau = 'lib/assets/images/grau.png';
+  static const String duracao = 'lib/assets/images/duracao.png';
 }
