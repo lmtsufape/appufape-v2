@@ -10,17 +10,16 @@ class EspecializacaoPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     int selectedIndex = 0;
+    int selectedIndex = 0;
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Especialização', style: kTitle2),
+        title: const Text('Especialização', style: kTitle22),
         centerTitle: true,
         toolbarOpacity: 0,
-        backgroundColor: kOnSurfaceColor,
-        automaticallyImplyLeading: true,
+        backgroundColor: kBack1,
       ),
-       bottomNavigationBar: BottomNavigation(
+      bottomNavigationBar: BottomNavigation(
         selectedIndex: selectedIndex,
       ),
       body: Container(
