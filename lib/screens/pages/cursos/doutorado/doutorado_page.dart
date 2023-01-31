@@ -10,17 +10,16 @@ class DoutoradoPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     int selectedIndex = 0;
+    int selectedIndex = 0;
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Doutorado', style: kTitle2),
+        title: const Text('Doutorado', style: kTitle22),
         centerTitle: true,
         toolbarOpacity: 0,
-        backgroundColor: kOnSurfaceColor,
-        automaticallyImplyLeading: true,
+        backgroundColor: kBack1,
       ),
-       bottomNavigationBar: BottomNavigation(
+      bottomNavigationBar: BottomNavigation(
         selectedIndex: selectedIndex,
       ),
       body: Container(
@@ -54,10 +53,7 @@ class DoutoradoPage extends StatelessWidget {
                     child: Row(
                       children: const [
                         HorizontalSpacerBox(size: SpacerSize.huge),
-                        HorizontalSpacerBox(size: SpacerSize.huge),
-                        HorizontalSpacerBox(size: SpacerSize.huge),
-                        HorizontalSpacerBox(size: SpacerSize.huge),
-                        HorizontalSpacerBox(size: SpacerSize.large),
+                        HorizontalSpacerBox(size: SpacerSize.tiny),
                         Text(
                           'Especialização em Questão Agrária',
                           style: TextStyle(
@@ -96,10 +92,7 @@ class DoutoradoPage extends StatelessWidget {
                     ),
                     child: Row(
                       children: const [
-                        HorizontalSpacerBox(size: SpacerSize.huge),
-                        HorizontalSpacerBox(size: SpacerSize.huge),
-                        HorizontalSpacerBox(size: SpacerSize.huge),
-                        HorizontalSpacerBox(size: SpacerSize.small),
+                        HorizontalSpacerBox(size: SpacerSize.large),
                         Text(
                           'Especialização em Ensino de Botânica ',
                           style: TextStyle(

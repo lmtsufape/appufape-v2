@@ -14,11 +14,10 @@ class MestradoPage extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Mestrado', style: kTitle2),
+        title: const Text('Mestrado', style: kTitle22),
         centerTitle: true,
         toolbarOpacity: 0,
-        backgroundColor: kOnSurfaceColor,
-        automaticallyImplyLeading: true,
+        backgroundColor: kBack1,
       ),
       bottomNavigationBar: BottomNavigation(
         selectedIndex: selectedIndex,
@@ -54,10 +53,7 @@ class MestradoPage extends StatelessWidget {
                     child: Row(
                       children: const [
                         HorizontalSpacerBox(size: SpacerSize.huge),
-                        HorizontalSpacerBox(size: SpacerSize.huge),
-                        HorizontalSpacerBox(size: SpacerSize.huge),
-                        HorizontalSpacerBox(size: SpacerSize.huge),
-                        HorizontalSpacerBox(size: SpacerSize.large),
+                        HorizontalSpacerBox(size: SpacerSize.small),
                         Text(
                           'Especialização em Questão Agrária',
                           style: TextStyle(
@@ -96,10 +92,7 @@ class MestradoPage extends StatelessWidget {
                     ),
                     child: Row(
                       children: const [
-                        HorizontalSpacerBox(size: SpacerSize.huge),
-                        HorizontalSpacerBox(size: SpacerSize.huge),
-                        HorizontalSpacerBox(size: SpacerSize.huge),
-                        HorizontalSpacerBox(size: SpacerSize.small),
+                        HorizontalSpacerBox(size: SpacerSize.large),
                         Text(
                           'Especialização em Ensino de Botânica ',
                           style: TextStyle(

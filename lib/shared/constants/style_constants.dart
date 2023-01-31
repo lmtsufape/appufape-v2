@@ -50,6 +50,12 @@ const TextStyle kTitle = TextStyle(
   color: kText2,
 );
 
+const TextStyle kTitle22 = TextStyle(
+  fontSize: 24,
+  fontWeight: FontWeight.w500,
+  color: kBack3,
+);
+
 const TextStyle kTitle2 = TextStyle(
   fontSize: 24,
   fontWeight: FontWeight.w500,
@@ -72,6 +78,11 @@ const TextStyle kTitle5 = TextStyle(
   fontWeight: FontWeight.w700,
   color: kBack1,
   decoration: TextDecoration.underline,
+);
+const TextStyle kTitle55 = TextStyle(
+  fontSize: 19,
+  fontWeight: FontWeight.bold,
+  color: kText2,
 );
 const TextStyle kTitle51 = TextStyle(
   fontSize: 20,

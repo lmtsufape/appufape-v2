@@ -16,11 +16,10 @@ class ContatosPage extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Contato', style: kTitle2),
+        title: const Text('Contato', style: kTitle22),
         centerTitle: true,
         toolbarOpacity: 0,
-        backgroundColor: kOnSurfaceColor,
-        automaticallyImplyLeading: true,
+        backgroundColor: kBack1,
       ),
       bottomNavigationBar: BottomNavigation(
         selectedIndex: selectedIndex,
@@ -74,7 +73,7 @@ class ContatosPage extends StatelessWidget {
                 ],
               ),
               onTap: () {
-                Navigator.popAndPushNamed(context, Screens.docentes);
+                Navigator.pushNamed(context, Screens.docentes);
               },
             ),
             const VerticalSpacerBox(size: SpacerSize.medium),
@@ -103,7 +102,6 @@ class ContatosPage extends StatelessWidget {
                         HorizontalSpacerBox(size: SpacerSize.huge),
                         HorizontalSpacerBox(size: SpacerSize.huge),
                         HorizontalSpacerBox(size: SpacerSize.huge),
-                        HorizontalSpacerBox(size: SpacerSize.small),
                         Text(
                           'Estrutura Administrativa',
                           style: TextStyle(
@@ -118,7 +116,7 @@ class ContatosPage extends StatelessWidget {
                 ],
               ),
               onTap: () {
-                Navigator.popAndPushNamed(context, Screens.estrutura);
+                Navigator.pushNamed(context, Screens.estrutura);
               },
             ),
             const VerticalSpacerBox(size: SpacerSize.medium),
@@ -161,10 +159,10 @@ class ContatosPage extends StatelessWidget {
                 ],
               ),
               onTap: () {
-                Navigator.popAndPushNamed(context, Screens.tecnicos);
+                Navigator.pushNamed(context, Screens.tecnicos);
               },
             ),
-            const VerticalSpacerBox(size: SpacerSize.medium),
+            const VerticalSpacerBox(size: SpacerSize.small),
             const VerticalSpacerBox(size: SpacerSize.huge),
             const VerticalSpacerBox(size: SpacerSize.huge),
             const VerticalSpacerBox(size: SpacerSize.huge),

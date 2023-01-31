@@ -16,15 +16,14 @@ class EditaisScreen extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Editais', style: kTitle2),
+        title: const Text('Editais', style: kTitle22),
         centerTitle: true,
         toolbarOpacity: 0,
-        automaticallyImplyLeading: true,
-        backgroundColor: kOnSurfaceColor,
+        backgroundColor: kBack1,
       ),
-       bottomNavigationBar: BottomNavigation(
-                    selectedIndex: selectedIndex,
-                  ),
+      bottomNavigationBar: BottomNavigation(
+        selectedIndex: selectedIndex,
+      ),
       body: Container(
         color: kOnSurfaceColor,
         width: size.width,
@@ -111,7 +110,7 @@ class EditaisScreen extends StatelessWidget {
                   ],
                 ),
                 onTap: () {
-                  Navigator.popAndPushNamed(context, Screens.editalPage);
+                  Navigator.pushNamed(context, Screens.editalPage);
                 },
               ),
               const VerticalSpacerBox(size: SpacerSize.medium),
@@ -170,7 +169,7 @@ class EditaisScreen extends StatelessWidget {
                   ],
                 ),
                 onTap: () {
-                  Navigator.popAndPushNamed(context, Screens.editalPage);
+                  Navigator.pushNamed(context, Screens.editalPage);
                 },
               ),
               const VerticalSpacerBox(size: SpacerSize.large),
@@ -251,7 +250,7 @@ class EditaisScreen extends StatelessWidget {
                   ],
                 ),
                 onTap: () {
-                  Navigator.popAndPushNamed(context, Screens.editalPage);
+                  Navigator.pushNamed(context, Screens.editalPage);
                 },
               ),
               const VerticalSpacerBox(size: SpacerSize.huge),

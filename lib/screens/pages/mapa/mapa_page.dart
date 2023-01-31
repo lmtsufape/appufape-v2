@@ -14,11 +14,10 @@ class MapaPage extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Mapa', style: kTitle2),
+        title: const Text('Mapa', style: kTitle22),
         toolbarOpacity: 0,
         centerTitle: true,
-        automaticallyImplyLeading: true,
-        backgroundColor: kOnSurfaceColor,
+        backgroundColor: kBack1,
       ),
       body: Container(
         color: kOnSurfaceColor,

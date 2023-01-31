@@ -15,13 +15,12 @@ class CursosPage extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Cursos', style: kTitle2),
+        title: const Text('Cursos', style: kTitle22),
         centerTitle: true,
         toolbarOpacity: 0,
-        backgroundColor: kOnSurfaceColor,
-        automaticallyImplyLeading: true,
+        backgroundColor: kBack1,
       ),
-       bottomNavigationBar: BottomNavigation(
+      bottomNavigationBar: BottomNavigation(
         selectedIndex: selectedIndex,
       ),
       body: Container(
@@ -73,7 +72,7 @@ class CursosPage extends StatelessWidget {
                 ],
               ),
               onTap: () {
-                Navigator.popAndPushNamed(context, Screens.graduacao);
+                Navigator.pushNamed(context, Screens.graduacao);
               },
             ),
             const VerticalSpacerBox(size: SpacerSize.medium),
@@ -118,7 +117,7 @@ class CursosPage extends StatelessWidget {
                 ],
               ),
               onTap: () {
-                Navigator.popAndPushNamed(context, Screens.especializacao);
+                Navigator.pushNamed(context, Screens.especializacao);
               },
             ),
             const VerticalSpacerBox(size: SpacerSize.medium),
@@ -163,7 +162,7 @@ class CursosPage extends StatelessWidget {
                 ],
               ),
               onTap: () {
-                Navigator.popAndPushNamed(context, Screens.mestrado);
+                Navigator.pushNamed(context, Screens.mestrado);
               },
             ),
             const VerticalSpacerBox(size: SpacerSize.medium),
@@ -208,7 +207,7 @@ class CursosPage extends StatelessWidget {
                 ],
               ),
               onTap: () {
-                Navigator.popAndPushNamed(context, Screens.doutorado);
+                Navigator.pushNamed(context, Screens.doutorado);
               },
             ),
             const VerticalSpacerBox(size: SpacerSize.huge),

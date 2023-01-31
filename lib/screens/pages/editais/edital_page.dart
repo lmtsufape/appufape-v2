@@ -14,11 +14,10 @@ class EditalPage extends StatelessWidget {
     int selectedIndex = 0;
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Edital', style: kTitle2),
+          title: const Text('Edital', style: kTitle22),
           centerTitle: true,
           toolbarOpacity: 0,
-          automaticallyImplyLeading: true,
-          backgroundColor: kOnSurfaceColor,
+          backgroundColor: kBack1,
         ),
         backgroundColor: kOnSurfaceColor,
         bottomNavigationBar: BottomNavigation(
