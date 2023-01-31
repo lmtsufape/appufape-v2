@@ -125,8 +125,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ),
                           onTap: () {
-                            Navigator.popAndPushNamed(
-                                context, Screens.noticias);
+                            Navigator.pushNamed(context, Screens.noticias);
                           },
                         ),
                         const VerticalSpacerBox(size: SpacerSize.medium),
@@ -145,7 +144,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             children: [
                               InkWell(
                                   onTap: () {
-                                    Navigator.popAndPushNamed(
+                                    Navigator.pushNamed(
                                         context, Screens.editais);
                                   },
                                   child: Row(
@@ -199,7 +198,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               const HorizontalSpacerBox(size: SpacerSize.large),
                               InkWell(
                                   onTap: () {
-                                    Navigator.popAndPushNamed(
+                                    Navigator.pushNamed(
                                         context, Screens.calendario);
                                   },
                                   child: Row(
@@ -247,7 +246,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               const HorizontalSpacerBox(size: SpacerSize.large),
                               InkWell(
                                   onTap: () {
-                                    Navigator.popAndPushNamed(
+                                    Navigator.pushNamed(
                                         context, Screens.cursos);
                                   },
                                   child: Row(
@@ -301,7 +300,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               children: [
                                 InkWell(
                                     onTap: () {
-                                      Navigator.popAndPushNamed(
+                                      Navigator.pushNamed(
                                           context, Screens.contatos);
                                     },
                                     child: Row(
@@ -351,7 +350,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     size: SpacerSize.large),
                                 InkWell(
                                     onTap: () {
-                                      Navigator.popAndPushNamed(
+                                      Navigator.pushNamed(
                                           context, Screens.mapa);
                                     },
                                     child: Row(
@@ -401,7 +400,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     size: SpacerSize.large),
                                 InkWell(
                                     onTap: () {
-                                      Navigator.popAndPushNamed(
+                                      Navigator.pushNamed(
                                           context, Screens.qrcode);
                                     },
                                     child: Row(
@@ -503,7 +502,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     size: SpacerSize.large),
                                 InkWell(
                                     onTap: () {
-                                      Navigator.popAndPushNamed(
+                                      Navigator.pushNamed(
                                           context, Screens.noticias);
                                     },
                                     child: Row(
