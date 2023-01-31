@@ -10,22 +10,17 @@ class NoticiasPage extends StatelessWidget {
     int selectedIndex = 0;
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Noticías', style: kTitle2),
+          title: const Text('Noticías', style: kTitle22),
           toolbarOpacity: 0,
           centerTitle: true,
-          backgroundColor: kOnSurfaceColor,
-          automaticallyImplyLeading: true,
+          backgroundColor: kBack1,
         ),
         bottomNavigationBar: BottomNavigation(
           selectedIndex: selectedIndex,
         ),
         backgroundColor: kOnSurfaceColor,
-        body: Padding(
-            padding: const EdgeInsets.all(20),
-            child: TextButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                child: const Text('Voltar'))));
+        body: const Center(
+          child: Padding(padding: EdgeInsets.all(20), child: Text('Noticias')),
+        ));
   }
 }
