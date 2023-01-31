@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:thunderapp/shared/components/BottomNavigation.dart';
+import '../../../../shared/constants/app_number_constants.dart';
 import '../../../../shared/constants/style_constants.dart';
 
 class TecnicosPage extends StatelessWidget {
@@ -12,29 +13,25 @@ class TecnicosPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text(
           'Técnico administrativos',
-          style: kTitle2,
+          style: kTitle22,
         ),
         centerTitle: true,
         toolbarOpacity: 0,
-        actions: [
-          IconButton(
-            icon: const Icon(
-              Icons.arrow_back,
-              color: Colors.black,
-            ),
-            onPressed: () {
-              Navigator.pop(context);
-            },
-          ),
-        ],
-        backgroundColor: kOnSurfaceColor,
+        backgroundColor: kBack1,
       ),
       bottomNavigationBar: BottomNavigation(
         selectedIndex: selectedIndex,
       ),
       backgroundColor: kOnSurfaceColor,
-      body: const Center(
-        child: Text('Técnico administrativos'),
+      body: const Padding(
+        padding: EdgeInsets.all(kDefaultPadding),
+        child: Align(
+            alignment: Alignment.topCenter,
+            child: Text(
+              'Lista de nomes e e-mails de técnicos-administrativos da UFAPE',
+              textAlign: TextAlign.center,
+              style: kTitle55,
+            )),
       ),
     );
   }
