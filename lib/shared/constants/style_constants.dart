@@ -96,9 +96,19 @@ const TextStyle kTitle6 = TextStyle(
   fontWeight: FontWeight.w400,
   color: kText2,
 );
+
+//usado no titulo "GRAU"  na tela de informações de curso (kTitle7)
 const TextStyle kTitle7 = TextStyle(
+  fontFamily: 'Quicksand',
   fontSize: 20,
   fontWeight: FontWeight.w600,
+  color: kText2,
+);
+
+const TextStyle titleGrau = TextStyle(
+  fontFamily: 'Quicksand',
+  fontSize: 20,
+  fontWeight: FontWeight.w400,
   color: kText2,
 );
 

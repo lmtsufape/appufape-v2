@@ -18,7 +18,7 @@ class EditaisScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Editais', style: kTitle22),
         centerTitle: true,
-        toolbarOpacity: 0,
+       
         backgroundColor: kBack1,
       ),
       bottomNavigationBar: BottomNavigation(

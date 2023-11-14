@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:thunderapp/screens/splash/splash_screen_controller.dart';
 import '../../components/utils/vertical_spacer_box.dart';
 import '../../shared/constants/app_enums.dart';
-import '../../shared/constants/app_number_constants.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);

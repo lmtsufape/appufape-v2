@@ -16,7 +16,7 @@ class EditalPage extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Edital', style: kTitle22),
           centerTitle: true,
-          toolbarOpacity: 0,
+         
           backgroundColor: kBack1,
         ),
         backgroundColor: kOnSurfaceColor,
@@ -35,8 +35,8 @@ class EditalPage extends StatelessWidget {
                 ),
                 const VerticalSpacerBox(size: SpacerSize.huge),
                 const VerticalSpacerBox(size: SpacerSize.huge),
-                Wrap(
-                  children: const [
+               const Wrap(
+                  children: [
                     Text(
                       'A Pró-Reitoria de Extensão e Cultura (PREC) lançou o primeiro Edital do Programa Institucional de Bolsa de Extensão – PIBEX - UFAPE 2022. O PIBEX-UFAPE é equivalente ao Programa BEXT da nossa tutora UFRPE.',
                       style: kTitle6,
@@ -59,8 +59,8 @@ class EditalPage extends StatelessWidget {
                   children: [
                     Image.asset(Assets.document),
                     const HorizontalSpacerBox(size: SpacerSize.small),
-                    Wrap(
-                      children: const [
+                    const Wrap(
+                      children:  [
                         Text(
                           'Edital 01-2022- PIBEX-PREC-UFAPE_0.pdf',
                           style: kTitle51,

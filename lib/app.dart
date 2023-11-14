@@ -7,7 +7,16 @@ import 'package:thunderapp/screens/pages/contatos/tecnicos/tecnicos_page.dart';
 import 'package:thunderapp/screens/pages/cursos/cursos_page.dart';
 import 'package:thunderapp/screens/pages/cursos/doutorado/doutorado_page.dart';
 import 'package:thunderapp/screens/pages/cursos/especializacao/especializacao_page.dart';
+import 'package:thunderapp/screens/pages/cursos/graduacao/agronomia/agronomia.dart';
+import 'package:thunderapp/screens/pages/cursos/graduacao/agronomia/saibamais_agronomia.dart';
+import 'package:thunderapp/screens/pages/cursos/graduacao/bcc/bcc.dart';
+import 'package:thunderapp/screens/pages/cursos/graduacao/bcc/saibamais_bcc.dart';
+import 'package:thunderapp/screens/pages/cursos/graduacao/engenharia/engenharia.dart';
 import 'package:thunderapp/screens/pages/cursos/graduacao/graduacao_page.dart';
+import 'package:thunderapp/screens/pages/cursos/graduacao/letras/letras.dart';
+import 'package:thunderapp/screens/pages/cursos/graduacao/pedagogia/pedagogia.dart';
+import 'package:thunderapp/screens/pages/cursos/graduacao/veterinaria/veterinaria.dart';
+import 'package:thunderapp/screens/pages/cursos/graduacao/zootecnia/zootecnia.dart';
 import 'package:thunderapp/screens/pages/cursos/mestrado/mestrado_page.dart';
 import 'package:thunderapp/screens/pages/editais/editais_screen.dart';
 import 'package:thunderapp/screens/pages/editais/edital_page.dart';
@@ -74,6 +83,15 @@ class App extends StatelessWidget {
         Screens.qrcode: (BuildContext context) => const QrCodePage(),
         Screens.menu: (BuildContext context) => const Menu(),
         Screens.noticias: (BuildContext context) => const NoticiasPage(),
+        Screens.agronomiaPage: (BuildContext context) => const AgronomiaPage(),
+        Screens.bccPage: (BuildContext context) => const BccPage(),
+        Screens.engAlimentosPage: (BuildContext context) => const EngAlimentosPage(),
+        Screens.letrasPage: (BuildContext context) => const LetrasPage(),
+        Screens.pedagogiaPage: (BuildContext context) => const PedagogiaPage(),
+        Screens.veterinariaPage: (BuildContext context) => const MedVeterinaria(),
+        Screens.zootecniaPage: (BuildContext context) => const ZootecniaPage(),
+        Screens.saibaMaisAgronomia: (BuildContext context) => const SaibaMaisAgronomia(),
+        Screens.saibaMaisBcc: (BuildContext context) => const SaibaMaisBcc(),
       },
     );
   }

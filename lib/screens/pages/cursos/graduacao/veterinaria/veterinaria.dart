@@ -1,0 +1,20 @@
+import 'package:flutter/material.dart';
+import 'package:thunderapp/screens/pages/components/information_course.dart';
+import 'package:thunderapp/shared/constants/style_constants.dart';
+
+class MedVeterinaria extends StatelessWidget {
+  const MedVeterinaria({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: kOnSurfaceColor,
+      appBar:  AppBar(
+        title: const Text('Medicina Veterinaria', style: kTitle22),
+        centerTitle: true,
+         backgroundColor: kBack1,
+      ),
+      body: const InformationCourse(grau: "Bacharelado", turno: "Manhã e tarde", duracao: "5.5 anos", vagas: "80 vagas (40 por semestre)", ingresso: "SISU", paginaDestino: ""),
+    );
+  }
+}

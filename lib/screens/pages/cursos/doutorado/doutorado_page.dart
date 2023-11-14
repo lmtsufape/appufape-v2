@@ -16,7 +16,6 @@ class DoutoradoPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Doutorado', style: kTitle22),
         centerTitle: true,
-        toolbarOpacity: 0,
         backgroundColor: kBack1,
       ),
       bottomNavigationBar: BottomNavigation(

@@ -30,7 +30,7 @@ class _QrCodePageState extends State<QrCodePage> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-          toolbarOpacity: 0,
+          
           automaticallyImplyLeading: true,
           backgroundColor: kBack1,
           centerTitle: true,

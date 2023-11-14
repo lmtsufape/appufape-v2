@@ -39,9 +39,9 @@ class _CarouselScreenState extends State<CarouselScreen> {
                   ),
                 ),
                 const Spacer(),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const <Widget>[
+                  children:  <Widget>[
                     CircleAvatar(
                       backgroundColor: kPrimaryColor,
                       radius: radius,

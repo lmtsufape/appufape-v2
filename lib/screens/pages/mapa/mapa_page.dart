@@ -15,7 +15,6 @@ class MapaPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Mapa', style: kTitle22),
-        toolbarOpacity: 0,
         centerTitle: true,
         backgroundColor: kBack1,
       ),
