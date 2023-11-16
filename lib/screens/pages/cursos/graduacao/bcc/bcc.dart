@@ -14,6 +14,8 @@ class BccPage extends StatelessWidget {
           centerTitle: true,
           backgroundColor: kBack1,
         ),
-        body: const InformationCourse(grau: 'Bacharelado', turno: "Noite", duracao: "4 anos", vagas: "80 vagas (40 por semestre)", ingresso: "SISU",paginaDestino: "page/cursos/graduacao/bcc/saibamais_bcc.dart",));
+        body: const InformationCourse(grau: 'Bacharelado', turno: "Noite", duracao: "4 anos", vagas: "80 vagas (40 por semestre)", ingresso: "SISU",paginaDestino: "http://www.bcc.ufape.edu.br/",));
   }
 }
+
+

@@ -8,9 +8,7 @@ import 'package:thunderapp/screens/pages/cursos/cursos_page.dart';
 import 'package:thunderapp/screens/pages/cursos/doutorado/doutorado_page.dart';
 import 'package:thunderapp/screens/pages/cursos/especializacao/especializacao_page.dart';
 import 'package:thunderapp/screens/pages/cursos/graduacao/agronomia/agronomia.dart';
-import 'package:thunderapp/screens/pages/cursos/graduacao/agronomia/saibamais_agronomia.dart';
 import 'package:thunderapp/screens/pages/cursos/graduacao/bcc/bcc.dart';
-import 'package:thunderapp/screens/pages/cursos/graduacao/bcc/saibamais_bcc.dart';
 import 'package:thunderapp/screens/pages/cursos/graduacao/engenharia/engenharia.dart';
 import 'package:thunderapp/screens/pages/cursos/graduacao/graduacao_page.dart';
 import 'package:thunderapp/screens/pages/cursos/graduacao/letras/letras.dart';
@@ -90,8 +88,6 @@ class App extends StatelessWidget {
         Screens.pedagogiaPage: (BuildContext context) => const PedagogiaPage(),
         Screens.veterinariaPage: (BuildContext context) => const MedVeterinaria(),
         Screens.zootecniaPage: (BuildContext context) => const ZootecniaPage(),
-        Screens.saibaMaisAgronomia: (BuildContext context) => const SaibaMaisAgronomia(),
-        Screens.saibaMaisBcc: (BuildContext context) => const SaibaMaisBcc(),
       },
     );
   }

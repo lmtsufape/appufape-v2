@@ -40,6 +40,4 @@ class Screens {
   static const String pedagogiaPage = 'page/cursos/graduacao/pedagogia/pedagogia.dart';
   static const String veterinariaPage = 'page/cursos/graduacao/veterinaria/veterinaria.dart';
   static const String zootecniaPage = 'page/cursos/graduacao/zootecnia/zootecnia.dart';
-  static const String saibaMaisAgronomia = 'page/cursos/graduacao/agronomia/saibamais_agronomia.dart';
-  static const String saibaMaisBcc = 'page/cursos/graduacao/bcc/saibamais_bcc.dart';
 }

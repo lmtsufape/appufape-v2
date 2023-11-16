@@ -577,26 +577,26 @@ class _HomeScreenState extends State<HomeScreen> {
                                               ),
                                             ],
                                           ),
-                                          child: Center(
-                                            child: Wrap(
-                                              children: [
-                                                Center(
-                                                    child: Image.asset(
-                                                  Assets.cart,
-                                                  fit: BoxFit.cover,
-                                                  height: 55,
-                                                )),
-                                                Container(
-                                                  alignment:
-                                                      Alignment.bottomCenter,
-                                                  child: const Text(
-                                                    'Lanches',
-                                                    style: kTitle4,
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                          ),
+                                          // child: Center(
+                                          //   child: Wrap(
+                                          //     children: [
+                                          //       Center(
+                                          //           child: Image.asset(
+                                          //         Assets.cart,
+                                          //         fit: BoxFit.cover,
+                                          //         height: 55,
+                                          //       )),
+                                          //       Container(
+                                          //         alignment:
+                                          //             Alignment.bottomCenter,
+                                          //         child: const Text(
+                                          //           'Lanches',
+                                          //           style: kTitle4,
+                                          //         ),
+                                          //       ),
+                                          //     ],
+                                          //   ),
+                                          // ),
                                         ),
                                       ],
                                     )),

@@ -14,7 +14,7 @@ class PedagogiaPage extends StatelessWidget {
         centerTitle: true,
          backgroundColor: kBack1,
       ),
-      body: const InformationCourse(grau: "Licenciatura", turno: "Manhã e tarde", duracao: "4.5 anos", vagas: "80 vagas (40 por semestre)", ingresso: "SISU", paginaDestino: ""),
+      body: const InformationCourse(grau: "Licenciatura", turno: "Manhã e tarde", duracao: "4.5 anos", vagas: "80 vagas (40 por semestre)", ingresso: "SISU", paginaDestino: "http://ufape.edu.br/CCLPE.CAMUS"),
     );
   }
 }

@@ -165,50 +165,52 @@ class CursosPage extends StatelessWidget {
               },
             ),
             const VerticalSpacerBox(size: SpacerSize.medium),
-            InkWell(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    width: 440,
-                    height: 95,
-                    decoration: BoxDecoration(
-                      color: kBack3,
-                      borderRadius: const BorderRadius.all(Radius.circular(20)),
-                      boxShadow: [
-                        BoxShadow(
-                          color: kText2.withOpacity(0.5),
-                          spreadRadius: 0,
-                          blurRadius: 3,
-                          offset:
-                              const Offset(0, 0), // changes position of shadow
-                        ),
-                      ],
-                    ),
-                    child: const Row(
-                      children:  [
-                        HorizontalSpacerBox(size: SpacerSize.huge),
-                        HorizontalSpacerBox(size: SpacerSize.huge),
-                        HorizontalSpacerBox(size: SpacerSize.huge),
-                        HorizontalSpacerBox(size: SpacerSize.huge),
-                        HorizontalSpacerBox(size: SpacerSize.huge),
-                        Text(
-                          'Doutorado',
-                          style: TextStyle(
-                              color: kBack1,
-                              fontSize: 23,
-                              fontWeight: FontWeight.w700),
-                          textAlign: TextAlign.center,
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              onTap: () {
-                Navigator.pushNamed(context, Screens.doutorado);
-              },
-            ),
+
+            //opçao doutorado esta comentado por nao ter ainda na universidade
+            // InkWell(
+            //   child: Row(
+            //     mainAxisAlignment: MainAxisAlignment.center,
+            //     children: [
+            //       Container(
+            //         width: 440,
+            //         height: 95,
+            //         decoration: BoxDecoration(
+            //           color: kBack3,
+            //           borderRadius: const BorderRadius.all(Radius.circular(20)),
+            //           boxShadow: [
+            //             BoxShadow(
+            //               color: kText2.withOpacity(0.5),
+            //               spreadRadius: 0,
+            //               blurRadius: 3,
+            //               offset:
+            //                   const Offset(0, 0), // changes position of shadow
+            //             ),
+            //           ],
+            //         ),
+            //         child: const Row(
+            //           children:  [
+            //             HorizontalSpacerBox(size: SpacerSize.huge),
+            //             HorizontalSpacerBox(size: SpacerSize.huge),
+            //             HorizontalSpacerBox(size: SpacerSize.huge),
+            //             HorizontalSpacerBox(size: SpacerSize.huge),
+            //             HorizontalSpacerBox(size: SpacerSize.huge),
+            //             Text(
+            //               'Doutorado',
+            //               style: TextStyle(
+            //                   color: kBack1,
+            //                   fontSize: 23,
+            //                   fontWeight: FontWeight.w700),
+            //               textAlign: TextAlign.center,
+            //             ),
+            //           ],
+            //         ),
+            //       ),
+            //     ],
+            //   ),
+            //   onTap: () {
+            //     Navigator.pushNamed(context, Screens.doutorado);
+            //   },
+            // ),
             const VerticalSpacerBox(size: SpacerSize.huge),
             const VerticalSpacerBox(size: SpacerSize.huge),
             const VerticalSpacerBox(size: SpacerSize.huge),

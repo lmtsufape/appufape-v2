@@ -49,12 +49,12 @@ class DoutoradoPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Row(
-                      children: const [
+                    child: const Row(
+                      children:  [
                         HorizontalSpacerBox(size: SpacerSize.huge),
                         HorizontalSpacerBox(size: SpacerSize.tiny),
                         Text(
-                          'Especialização em Questão Agrária',
+                          'opção 1 para doutorado',
                           style: TextStyle(
                               color: kBack1,
                               fontSize: 23,
@@ -89,11 +89,11 @@ class DoutoradoPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Row(
-                      children: const [
+                    child: const Row(
+                      children:  [
                         HorizontalSpacerBox(size: SpacerSize.large),
                         Text(
-                          'Especialização em Ensino de Botânica ',
+                          'opção 2 para doutorado',
                           style: TextStyle(
                               color: kBack1,
                               fontSize: 23,
