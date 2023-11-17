@@ -26,29 +26,30 @@ class _HomeScreenState extends State<HomeScreen> {
         create: (_) => HomeScreenController(),
         builder: (context, child) => Consumer<HomeScreenController>(
             builder: ((context, controller, child) => Scaffold(
-                  appBar: AppBar(
-                    title: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Image.asset(Assets.logoAppBar,
-                            alignment: Alignment.center,
-                            fit: BoxFit.cover,
-                            height: 65),
-                        Image.asset(Assets.textoUfape,
-                            alignment: Alignment.center,
-                            fit: BoxFit.cover,
-                            height: 45),
-                      ],
-                    ),
-                    centerTitle: true,
-                    toolbarOpacity: 0,
-                    backgroundColor: kBack1,
-                    toolbarHeight: 80,
+                backgroundColor: kPrimaryColor,
+                appBar: AppBar(
+                  title: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(Assets.logoAppBar,
+                          alignment: Alignment.center,
+                          fit: BoxFit.cover,
+                          height: 65),
+                      Image.asset(Assets.textoUfape,
+                          alignment: Alignment.center,
+                          fit: BoxFit.cover,
+                          height: 45),
+                    ],
                   ),
-                  bottomNavigationBar: BottomNavigation(
-                    selectedIndex: selectedIndex,
-                  ),
-                  body: Container(
+                  centerTitle: true,
+                  backgroundColor: kBack1,
+                  toolbarHeight: 80,
+                ),
+                bottomNavigationBar: BottomNavigation(
+                  selectedIndex: selectedIndex,
+                ),
+                body: SingleChildScrollView(
+                  child: Container(
                     color: kOnSurfaceColor,
                     width: size.width,
                     padding: const EdgeInsets.all(10),
@@ -103,7 +104,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 ),
                               ],
                             ),
-                            child: Center(
+                            child: const Center(
                               child: Wrap(
                                 // ignore: prefer_const_literals_to_create_immutables
                                 children: [
@@ -454,7 +455,10 @@ class _HomeScreenState extends State<HomeScreen> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 InkWell(
-                                    onTap: () {},
+                                    onTap: () {
+                                      Navigator.pushNamed(
+                                          context, Screens.ruPage);
+                                    },
                                     child: Row(
                                       children: [
                                         Container(
@@ -573,26 +577,26 @@ class _HomeScreenState extends State<HomeScreen> {
                                               ),
                                             ],
                                           ),
-                                          child: Center(
-                                            child: Wrap(
-                                              children: [
-                                                Center(
-                                                    child: Image.asset(
-                                                  Assets.cart,
-                                                  fit: BoxFit.cover,
-                                                  height: 55,
-                                                )),
-                                                Container(
-                                                  alignment:
-                                                      Alignment.bottomCenter,
-                                                  child: const Text(
-                                                    'Lanches',
-                                                    style: kTitle4,
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                          ),
+                                          // child: Center(
+                                          //   child: Wrap(
+                                          //     children: [
+                                          //       Center(
+                                          //           child: Image.asset(
+                                          //         Assets.cart,
+                                          //         fit: BoxFit.cover,
+                                          //         height: 55,
+                                          //       )),
+                                          //       Container(
+                                          //         alignment:
+                                          //             Alignment.bottomCenter,
+                                          //         child: const Text(
+                                          //           'Lanches',
+                                          //           style: kTitle4,
+                                          //         ),
+                                          //       ),
+                                          //     ],
+                                          //   ),
+                                          // ),
                                         ),
                                       ],
                                     )),
@@ -601,6 +605,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       ],
                     ),
                   ),
-                ))));
+                )))));
   }
 }

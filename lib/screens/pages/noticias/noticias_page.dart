@@ -11,7 +11,6 @@ class NoticiasPage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: const Text('Noticías', style: kTitle22),
-          toolbarOpacity: 0,
           centerTitle: true,
           backgroundColor: kBack1,
         ),

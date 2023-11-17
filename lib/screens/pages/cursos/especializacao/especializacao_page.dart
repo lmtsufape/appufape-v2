@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:thunderapp/components/utils/horizontal_spacer_box.dart';
 import 'package:thunderapp/components/utils/vertical_spacer_box.dart';
+import 'package:thunderapp/screens/pages/components/launchurl.dart';
 import 'package:thunderapp/shared/components/BottomNavigation.dart';
 import 'package:thunderapp/shared/constants/app_enums.dart';
 import 'package:thunderapp/shared/constants/style_constants.dart';
@@ -16,7 +17,6 @@ class EspecializacaoPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Especialização', style: kTitle22),
         centerTitle: true,
-        toolbarOpacity: 0,
         backgroundColor: kBack1,
       ),
       bottomNavigationBar: BottomNavigation(
@@ -50,8 +50,8 @@ class EspecializacaoPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Row(
-                      children: const [
+                    child: const Row(
+                      children:  [
                         HorizontalSpacerBox(size: SpacerSize.huge),
                         HorizontalSpacerBox(size: SpacerSize.small),
                         Text(
@@ -67,7 +67,9 @@ class EspecializacaoPage extends StatelessWidget {
                   ),
                 ],
               ),
-              onTap: () {},
+              onTap: () {
+
+              },
             ),
             const VerticalSpacerBox(size: SpacerSize.medium),
             InkWell(
@@ -90,8 +92,8 @@ class EspecializacaoPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Row(
-                      children: const [
+                    child: const Row(
+                      children: [
                         HorizontalSpacerBox(size: SpacerSize.large),
                         Text(
                           'Especialização em Ensino de Botânica ',
@@ -106,7 +108,9 @@ class EspecializacaoPage extends StatelessWidget {
                   ),
                 ],
               ),
-              onTap: () {},
+              onTap: () {
+                const LinkExterno(link: "http://ufape.edu.br/curso-especializa%C3%A7%C3%A3o-em-ensino-bot%C3%A2nica",);
+              },
             ),
             const VerticalSpacerBox(size: SpacerSize.huge),
             const VerticalSpacerBox(size: SpacerSize.huge),
@@ -116,4 +120,5 @@ class EspecializacaoPage extends StatelessWidget {
       ),
     );
   }
+
 }

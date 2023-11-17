@@ -32,4 +32,12 @@ class Screens {
   static const String qrcode = 'pages/qrcode/qrcode_page.dart';
   static const String menu = 'home/menu/menu.dart';
   static const String noticias = 'pages/noticias/noticias_page.dart';
+  static const String ruPage = 'pages/ru/ru_page.dart';
+  static const String agronomiaPage = 'pages/cursos/graduacao/agronomia/agronomia.dart';
+  static const String bccPage = 'page/cursos/graduacao/bcc/bcc.dart';
+  static const String engAlimentosPage = 'page/cursos/graduacao/alimentos/alimentos.dart';
+  static const String letrasPage = 'page/cursos/graduacao/letras/letras.dart/';
+  static const String pedagogiaPage = 'page/cursos/graduacao/pedagogia/pedagogia.dart';
+  static const String veterinariaPage = 'page/cursos/graduacao/veterinaria/veterinaria.dart';
+  static const String zootecniaPage = 'page/cursos/graduacao/zootecnia/zootecnia.dart';
 }

@@ -16,7 +16,6 @@ class MestradoPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Mestrado', style: kTitle22),
         centerTitle: true,
-        toolbarOpacity: 0,
         backgroundColor: kBack1,
       ),
       bottomNavigationBar: BottomNavigation(

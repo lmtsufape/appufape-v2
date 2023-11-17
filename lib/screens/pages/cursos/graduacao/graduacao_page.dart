@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:thunderapp/assets/index.dart';
 import 'package:thunderapp/components/utils/horizontal_spacer_box.dart';
 import 'package:thunderapp/components/utils/vertical_spacer_box.dart';
+import 'package:thunderapp/screens/screens_index.dart';
 import 'package:thunderapp/shared/components/BottomNavigation.dart';
 import 'package:thunderapp/shared/constants/app_enums.dart';
 import 'package:thunderapp/shared/constants/style_constants.dart';
@@ -17,7 +18,6 @@ class GraduacaoPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Graduação', style: kTitle22),
         centerTitle: true,
-        toolbarOpacity: 0,
         backgroundColor: kBack1,
       ),
       bottomNavigationBar: BottomNavigation(
@@ -76,7 +76,9 @@ class GraduacaoPage extends StatelessWidget {
                     ),
                   ],
                 ),
-                onTap: () {},
+                onTap: () {
+                   Navigator.pushNamed(context, Screens.agronomiaPage);
+                },
               ),
               const VerticalSpacerBox(size: SpacerSize.medium),
               InkWell(
@@ -122,7 +124,9 @@ class GraduacaoPage extends StatelessWidget {
                     ),
                   ],
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, Screens.bccPage);
+                },
               ),
               const VerticalSpacerBox(size: SpacerSize.medium),
               InkWell(
@@ -167,7 +171,9 @@ class GraduacaoPage extends StatelessWidget {
                     ),
                   ],
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, Screens.engAlimentosPage);
+                },
               ),
               const VerticalSpacerBox(size: SpacerSize.medium),
               InkWell(
@@ -213,7 +219,9 @@ class GraduacaoPage extends StatelessWidget {
                     ),
                   ],
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, Screens.veterinariaPage);
+                },
               ),
               const VerticalSpacerBox(size: SpacerSize.medium),
               InkWell(
@@ -260,7 +268,9 @@ class GraduacaoPage extends StatelessWidget {
                     ),
                   ],
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, Screens.zootecniaPage);
+                },
               ),
               const VerticalSpacerBox(size: SpacerSize.medium),
               InkWell(
@@ -308,7 +318,9 @@ class GraduacaoPage extends StatelessWidget {
                     ),
                   ],
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, Screens.letrasPage);
+                },
               ),
               const VerticalSpacerBox(size: SpacerSize.medium),
               InkWell(
@@ -356,7 +368,9 @@ class GraduacaoPage extends StatelessWidget {
                     ),
                   ],
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, Screens.pedagogiaPage);
+                },
               ),
               const VerticalSpacerBox(size: SpacerSize.huge),
               const VerticalSpacerBox(size: SpacerSize.huge),
@@ -366,6 +380,5 @@ class GraduacaoPage extends StatelessWidget {
         ),
       ),
     );
-    ;
   }
 }

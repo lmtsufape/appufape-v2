@@ -15,7 +15,7 @@ class CalendarioPage extends StatelessWidget {
           style: kTitle22,
         ),
         centerTitle: true,
-        toolbarOpacity: 0,
+       
         backgroundColor: kBack1,
       ),
       backgroundColor: kOnSurfaceColor,

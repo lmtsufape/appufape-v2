@@ -18,7 +18,6 @@ class ContatosPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Contato', style: kTitle22),
         centerTitle: true,
-        toolbarOpacity: 0,
         backgroundColor: kBack1,
       ),
       bottomNavigationBar: BottomNavigation(
@@ -52,8 +51,8 @@ class ContatosPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Row(
-                      children: const [
+                    child: const Row(
+                      children:  [
                         HorizontalSpacerBox(size: SpacerSize.huge),
                         HorizontalSpacerBox(size: SpacerSize.huge),
                         HorizontalSpacerBox(size: SpacerSize.huge),
@@ -97,8 +96,8 @@ class ContatosPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Row(
-                      children: const [
+                    child: const Row(
+                      children:  [
                         HorizontalSpacerBox(size: SpacerSize.huge),
                         HorizontalSpacerBox(size: SpacerSize.huge),
                         HorizontalSpacerBox(size: SpacerSize.huge),
@@ -140,8 +139,8 @@ class ContatosPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Row(
-                      children: const [
+                    child: const Row(
+                      children:  [
                         HorizontalSpacerBox(size: SpacerSize.huge),
                         HorizontalSpacerBox(size: SpacerSize.huge),
                         HorizontalSpacerBox(size: SpacerSize.huge),
