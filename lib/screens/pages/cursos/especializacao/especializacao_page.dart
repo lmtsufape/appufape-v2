@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:thunderapp/components/utils/horizontal_spacer_box.dart';
 import 'package:thunderapp/components/utils/vertical_spacer_box.dart';
-import 'package:thunderapp/screens/pages/components/launchurl.dart';
+import 'package:thunderapp/screens/pages/components/launch_url.dart';
 import 'package:thunderapp/shared/components/BottomNavigation.dart';
 import 'package:thunderapp/shared/constants/app_enums.dart';
 import 'package:thunderapp/shared/constants/style_constants.dart';
@@ -68,7 +68,7 @@ class EspecializacaoPage extends StatelessWidget {
                 ],
               ),
               onTap: () {
-
+               LinkExterno.launchURL("http://ufape.edu.br/curso-especializa%C3%A7%C3%A3o-em-quest%C3%A3o-agr%C3%A1ria");
               },
             ),
             const VerticalSpacerBox(size: SpacerSize.medium),
@@ -109,7 +109,7 @@ class EspecializacaoPage extends StatelessWidget {
                 ],
               ),
               onTap: () {
-                const LinkExterno(link: "http://ufape.edu.br/curso-especializa%C3%A7%C3%A3o-em-ensino-bot%C3%A2nica",);
+               LinkExterno.launchURL("http://ufape.edu.br/curso-especializa%C3%A7%C3%A3o-em-ensino-bot%C3%A2nica");
               },
             ),
             const VerticalSpacerBox(size: SpacerSize.huge),

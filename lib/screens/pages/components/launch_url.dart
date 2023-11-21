@@ -3,12 +3,9 @@ import 'package:url_launcher/url_launcher.dart';
 
 
 class LinkExterno extends StatelessWidget{
+  const LinkExterno({super.key});
 
-
-  const LinkExterno({super.key, required this.link});
-final String link;
-
-launchURL() async {
+static launchURL(link) async {
     final url = link;
     // ignore: deprecated_member_use
     if (await canLaunch(url)) {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:thunderapp/assets/index.dart';
+import 'package:thunderapp/screens/pages/components/launch_url.dart';
 import 'package:thunderapp/shared/constants/app_number_constants.dart';
 import 'package:thunderapp/shared/constants/style_constants.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class InformationCourse extends StatelessWidget {
   const InformationCourse({super.key, required this.grau, required this.turno, required this.duracao, required this.vagas, required this.ingresso, required this.paginaDestino});
@@ -16,7 +16,8 @@ final String paginaDestino;
   Widget build(BuildContext context) {
     return  Scaffold(
         backgroundColor: kOnSurfaceColor,
-        body: SafeArea(
+        body: SingleChildScrollView(
+          child: SafeArea(
             child: Center(
               child: Column(
                 children: [
@@ -28,7 +29,7 @@ final String paginaDestino;
                       color: Colors.white,
                       boxShadow: const [
                       BoxShadow(
-                        color: Color.fromARGB(59, 0, 0, 0),
+                        color: boxShadowButtom,
                         offset: Offset(0, 3),
                         blurRadius: 6.0,
                         spreadRadius: 0.0,
@@ -69,7 +70,7 @@ final String paginaDestino;
                         
                         children: [
                           Container(
-                             width: widthContainer,
+                            width: widthContainer,
                             height: heightContainer,
                             margin: const EdgeInsets.only(right: marginIconeRight, bottom: marginIconeBottom),
                             decoration: BoxDecoration(
@@ -230,7 +231,7 @@ final String paginaDestino;
                     ),
                 ),
                 onPressed: () {
-                  launchURL();
+                  LinkExterno.launchURL(paginaDestino);
                 }, 
                   
               )
@@ -238,21 +239,10 @@ final String paginaDestino;
 
             
           ),
-        ))
+        )
+        )
+        )
     );
   }
-
-// ignore: unused_element
-launchURL() async {
-    final url = paginaDestino;
-    // ignore: deprecated_member_use
-    if (await canLaunch(url)) {
-      // ignore: deprecated_member_use
-      await launch(url);
-    } else {
-      throw 'Não foi possível abrir o site: $url';
-    }
-  }
-
 }
 

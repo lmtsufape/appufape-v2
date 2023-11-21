@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:thunderapp/components/utils/horizontal_spacer_box.dart';
 import 'package:thunderapp/components/utils/vertical_spacer_box.dart';
+import 'package:thunderapp/screens/pages/components/launch_url.dart';
 import 'package:thunderapp/shared/components/BottomNavigation.dart';
 import 'package:thunderapp/shared/constants/app_enums.dart';
 import 'package:thunderapp/shared/constants/style_constants.dart';
@@ -49,12 +50,12 @@ class MestradoPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Row(
-                      children: const [
+                    child: const Row(
+                      children:  [
                         HorizontalSpacerBox(size: SpacerSize.huge),
                         HorizontalSpacerBox(size: SpacerSize.small),
                         Text(
-                          'Especialização em Questão Agrária',
+                          'Ciências Ambientais',
                           style: TextStyle(
                               color: kBack1,
                               fontSize: 23,
@@ -66,8 +67,15 @@ class MestradoPage extends StatelessWidget {
                   ),
                 ],
               ),
-              onTap: () {},
+              onTap: () {
+                LinkExterno.launchURL("http://www.ppciam.ufrpe.br/");
+              },
             ),
+
+            //=====================================================
+            //      mestrado em ciência animal e pastagens
+            //=====================================================
+
             const VerticalSpacerBox(size: SpacerSize.medium),
             InkWell(
               child: Row(
@@ -89,11 +97,11 @@ class MestradoPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Row(
-                      children: const [
+                    child: const Row(
+                      children:  [
                         HorizontalSpacerBox(size: SpacerSize.large),
                         Text(
-                          'Especialização em Ensino de Botânica ',
+                          'Ciência Animal e Pastagens',
                           style: TextStyle(
                               color: kBack1,
                               fontSize: 23,
@@ -105,8 +113,104 @@ class MestradoPage extends StatelessWidget {
                   ),
                 ],
               ),
-              onTap: () {},
+              onTap: () {
+                LinkExterno.launchURL("http://www.pgcap.ufrpe.br/");
+              },
             ),
+
+            //=====================================================
+            //          mestrado em produção agrícola
+            //=====================================================
+
+             const VerticalSpacerBox(size: SpacerSize.medium),
+            InkWell(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 440,
+                    height: 95,
+                    decoration: BoxDecoration(
+                      color: kBack3,
+                      borderRadius: const BorderRadius.all(Radius.circular(20)),
+                      boxShadow: [
+                        BoxShadow(
+                          color: kText2.withOpacity(0.5),
+                          spreadRadius: 0,
+                          blurRadius: 3,
+                          offset:
+                              const Offset(0, 0), // changes position of shadow
+                        ),
+                      ],
+                    ),
+                    child: const Row(
+                      children:  [
+                        HorizontalSpacerBox(size: SpacerSize.large),
+                        Text(
+                          'Produção Agrícola',
+                          style: TextStyle(
+                              color: kBack1,
+                              fontSize: 23,
+                              fontWeight: FontWeight.w700),
+                          textAlign: TextAlign.center,
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              onTap: () {
+                LinkExterno.launchURL("https://www.ppgpa.ufrpe.br/");
+              },
+            ),
+
+            //=====================================================
+            //      mestrado em Profissional em Letras
+            //=====================================================
+
+             const VerticalSpacerBox(size: SpacerSize.medium),
+            InkWell(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 440,
+                    height: 95,
+                    decoration: BoxDecoration(
+                      color: kBack3,
+                      borderRadius: const BorderRadius.all(Radius.circular(20)),
+                      boxShadow: [
+                        BoxShadow(
+                          color: kText2.withOpacity(0.5),
+                          spreadRadius: 0,
+                          blurRadius: 3,
+                          offset:
+                              const Offset(0, 0), // changes position of shadow
+                        ),
+                      ],
+                    ),
+                    child: const Row(
+                      children:  [
+                        HorizontalSpacerBox(size: SpacerSize.large),
+                        Text(
+                          'Profissional em Letras',
+                          style: TextStyle(
+                              color: kBack1,
+                              fontSize: 23,
+                              fontWeight: FontWeight.w700),
+                          textAlign: TextAlign.center,
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              onTap: () {
+                LinkExterno.launchURL("http://profletras.ufrpe.br/");
+              },
+            ),
+
+
             const VerticalSpacerBox(size: SpacerSize.huge),
             const VerticalSpacerBox(size: SpacerSize.huge),
             const VerticalSpacerBox(size: SpacerSize.huge),

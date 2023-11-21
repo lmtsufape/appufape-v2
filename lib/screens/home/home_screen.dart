@@ -449,15 +449,23 @@ class _HomeScreenState extends State<HomeScreen> {
                                     ))
                               ]),
                         ),
+
+
+                        
                         const VerticalSpacerBox(size: SpacerSize.medium),
                         Center(
+
+                          //===========================================
+                          //                  Botão RU
+                          //===========================================
+
                           child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 InkWell(
                                     onTap: () {
-                                      Navigator.pushNamed(
-                                          context, Screens.ruPage);
+                                      // Navigator.pushNamed(
+                                      //     context, Screens.ruPage);
                                     },
                                     child: Row(
                                       children: [
@@ -467,8 +475,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                           decoration: BoxDecoration(
                                             color: kBack3,
                                             borderRadius:
-                                                const BorderRadius.all(
-                                                    Radius.circular(20)),
+                                                const BorderRadius.all(Radius.circular(20)),
                                             boxShadow: [
                                               BoxShadow(
                                                 color: kText2.withOpacity(0.5),
@@ -482,6 +489,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                           child: Center(
                                             child: Wrap(
                                               children: [
+                                                 Container(
+                                                  alignment: Alignment.topRight,
+                                                  child: Transform.rotate(angle: (45 * 3.1415927)/180, child: Container(
+                                                    child: const Text("Em breve", style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),),)),
+                                               ),
                                                 Center(
                                                     child: Image.asset(
                                                   Assets.ru,
@@ -502,8 +514,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                         ),
                                       ],
                                     )),
-                                const HorizontalSpacerBox(
-                                    size: SpacerSize.large),
+
+                                const HorizontalSpacerBox(size: SpacerSize.large),
+
+                          //===========================================
+                          //                  Botão Notícias
+                          //===========================================
+
                                 InkWell(
                                     onTap: () {
                                       Navigator.pushNamed(
@@ -552,59 +569,68 @@ class _HomeScreenState extends State<HomeScreen> {
                                           ),
                                         ),
                                       ],
-                                    )),
-                                const HorizontalSpacerBox(
-                                    size: SpacerSize.large),
-                                InkWell(
-                                    onTap: () {},
-                                    child: Row(
-                                      children: [
-                                        Container(
-                                          width: 120,
-                                          height: 120,
-                                          decoration: BoxDecoration(
-                                            color: kBack3,
-                                            borderRadius:
-                                                const BorderRadius.all(
-                                                    Radius.circular(20)),
-                                            boxShadow: [
-                                              BoxShadow(
-                                                color: kText2.withOpacity(0.5),
-                                                spreadRadius: 0,
-                                                blurRadius: 3,
-                                                offset: const Offset(0,
-                                                    0), // changes position of shadow
-                                              ),
-                                            ],
-                                          ),
-                                          // child: Center(
-                                          //   child: Wrap(
-                                          //     children: [
-                                          //       Center(
-                                          //           child: Image.asset(
-                                          //         Assets.cart,
-                                          //         fit: BoxFit.cover,
-                                          //         height: 55,
-                                          //       )),
-                                          //       Container(
-                                          //         alignment:
-                                          //             Alignment.bottomCenter,
-                                          //         child: const Text(
-                                          //           'Lanches',
-                                          //           style: kTitle4,
-                                          //         ),
-                                          //       ),
-                                          //     ],
-                                          //   ),
-                                          // ),
-                                        ),
-                                      ],
-                                    )),
-                              ]),
+                                    )
+                                    ),
+                                    
+                                const HorizontalSpacerBox(size: SpacerSize.large),
+                                
+                          //===========================================
+                          //                  Botão Lanches
+                          //===========================================
+
+                                Row(
+                                  children: [
+                                    Container(
+                                      width: 120,
+                                      height: 120,
+                                      // decoration: BoxDecoration(
+                                      //   color: kBack3,
+                                      //   borderRadius:
+                                      //       const BorderRadius.all(
+                                      //           Radius.circular(20)),
+                                      //   boxShadow: [
+                                      //     BoxShadow(
+                                      //       color: kText2.withOpacity(0.5),
+                                      //       spreadRadius: 0,
+                                      //       blurRadius: 3,
+                                      //       offset: const Offset(0,
+                                      //           0), // changes position of shadow
+                                      //     ),
+                                      //   ],
+                                      // ),
+                                      // child: Center(
+                                      //   child: Wrap(
+                                      //     children: [
+                                      //       Center(
+                                      //           child: Image.asset(
+                                      //         Assets.help,
+                                      //         fit: BoxFit.cover,
+                                      //         height: 55,
+                                      //       )),
+                                      //      const  Row(
+                                      //       mainAxisAlignment: MainAxisAlignment.center,
+                                      //         children: [
+                                      //           Text("Achados e perdidos", style: kTitle4, )
+                                      //         ],
+                                      //     ),
+                                      //     ],
+                                      //   ),
+                                      // ),
+                                    ),
+                                    
+                                  ],
+                                ),
+                              ]
+                              ),
                         ),
+                        
                       ],
                     ),
                   ),
-                )))));
+                )
+                )
+                )
+                )
+                );
   }
 }

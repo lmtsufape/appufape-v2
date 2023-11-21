@@ -33,4 +33,5 @@ class Assets {
   static const String ingresso = 'lib/assets/images/ingresso.png';
   static const String grau = 'lib/assets/images/grau.png';
   static const String duracao = 'lib/assets/images/duracao.png';
+  static const String phone = 'lib/assets/images/phone.png';
 }

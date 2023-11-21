@@ -1,7 +1,7 @@
 const double kDefaultPadding = 32.0;
 
 
-const double kDefaultBorderRadius = 8.0;
+const double kDefaultBorderRadius = 20;
 
 const double kTinySize = 8;
 const double kSmallSize = 12;

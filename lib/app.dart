@@ -20,6 +20,7 @@ import 'package:thunderapp/screens/pages/editais/editais_screen.dart';
 import 'package:thunderapp/screens/pages/editais/edital_page.dart';
 import 'package:thunderapp/screens/pages/mapa/mapa_page.dart';
 import 'package:thunderapp/screens/pages/qrcode/qrcode_page.dart';
+import 'package:thunderapp/screens/pages/ru/ru_page.dart';
 import 'package:thunderapp/screens/start/start_screen.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
@@ -69,8 +70,7 @@ class App extends StatelessWidget {
         Screens.docentes: (BuildContext context) => const DocentesPage(),
         Screens.estrutura: (BuildContext context) => const EstruturaAdPage(),
         Screens.tecnicos: (BuildContext context) => const TecnicosPage(),
-        Screens.especializacao: (BuildContext context) =>
-            const EspecializacaoPage(),
+        Screens.especializacao: (BuildContext context) => const EspecializacaoPage(),
         Screens.cursos: (BuildContext context) => const CursosPage(),
         Screens.doutorado: (BuildContext context) => const DoutoradoPage(),
         Screens.mestrado: (BuildContext context) => const MestradoPage(),
@@ -79,6 +79,7 @@ class App extends StatelessWidget {
         Screens.editalPage: (BuildContext context) => const EditalPage(),
         Screens.mapa: (BuildContext context) => const MapaPage(),
         Screens.qrcode: (BuildContext context) => const QrCodePage(),
+        Screens.ruPage: (BuildContext context) => const RuPage(),
         Screens.menu: (BuildContext context) => const Menu(),
         Screens.noticias: (BuildContext context) => const NoticiasPage(),
         Screens.agronomiaPage: (BuildContext context) => const AgronomiaPage(),

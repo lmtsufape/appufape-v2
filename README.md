@@ -16,7 +16,7 @@
 
 - "C:\projects\lmts\APP_UFAPE\atual\appufape-v2\android\app\build.gradle " alterei o sdk version para rodar no emulador (antigo- 32)
 
-# Arquivos úteis para fazer alteraçoes no app
+# Arquivos úteis para fazer alterações no app
 
 - "shared/constants/style_constants.dart" use esse arquivo para mudar varios estilos do app
 - Também tem outros arquivos com informações que podem ser usadas em todo o app
