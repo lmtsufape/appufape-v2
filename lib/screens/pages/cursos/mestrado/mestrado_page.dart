@@ -7,13 +7,14 @@ import 'package:thunderapp/shared/constants/app_enums.dart';
 import 'package:thunderapp/shared/constants/style_constants.dart';
 
 class MestradoPage extends StatelessWidget {
-  const MestradoPage({Key? key}) : super(key: key);
+  const MestradoPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     int selectedIndex = 0;
     Size size = MediaQuery.of(context).size;
     return Scaffold(
+      backgroundColor: kPrimaryColor,
       appBar: AppBar(
         title: const Text('Mestrado', style: kTitle22),
         centerTitle: true,
@@ -51,6 +52,7 @@ class MestradoPage extends StatelessWidget {
                       ],
                     ),
                     child: const Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children:  [
                         HorizontalSpacerBox(size: SpacerSize.huge),
                         HorizontalSpacerBox(size: SpacerSize.small),
@@ -98,6 +100,7 @@ class MestradoPage extends StatelessWidget {
                       ],
                     ),
                     child: const Row(
+                       mainAxisAlignment: MainAxisAlignment.center,
                       children:  [
                         HorizontalSpacerBox(size: SpacerSize.large),
                         Text(
@@ -144,6 +147,7 @@ class MestradoPage extends StatelessWidget {
                       ],
                     ),
                     child: const Row(
+                       mainAxisAlignment: MainAxisAlignment.center,
                       children:  [
                         HorizontalSpacerBox(size: SpacerSize.large),
                         Text(
@@ -190,6 +194,7 @@ class MestradoPage extends StatelessWidget {
                       ],
                     ),
                     child: const Row(
+                       mainAxisAlignment: MainAxisAlignment.center,
                       children:  [
                         HorizontalSpacerBox(size: SpacerSize.large),
                         Text(
