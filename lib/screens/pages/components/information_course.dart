@@ -12,6 +12,7 @@ final String duracao;
 final String vagas;
 final String ingresso;
 final String paginaDestino;
+
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -23,7 +24,7 @@ final String paginaDestino;
                 children: [
                   Container(
                     width: 450,
-                    height: 600,
+                    height: 550,
                     margin: const EdgeInsets.all(23),
                     decoration: BoxDecoration(
                       color: Colors.white,
@@ -67,21 +68,18 @@ final String paginaDestino;
                       //===========================
 
                       Row(
-                        
                         children: [
                           Container(
                             width: widthContainer,
                             height: heightContainer,
-                            margin: const EdgeInsets.only(right: marginIconeRight, bottom: marginIconeBottom),
                             decoration: BoxDecoration(
-                              
-                              color: Colors.black12,
+                              color: backgroundIconInformation,
                               borderRadius: BorderRadius.circular(50),
-                ),
+                            ),
                             child: Image.asset(Assets.grau)
                             ),
+                        const SizedBox(width: marginRight,),
                             Column(
-                            
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const Text('GRAU', style: kTitle7 ),
@@ -92,6 +90,7 @@ final String paginaDestino;
                            )
                         ],
                       ),
+                      const SizedBox(height: marginBottom,),
 
                       //===========================
                       //           turno 
@@ -102,14 +101,14 @@ final String paginaDestino;
                           Container(
                             width: widthContainer,
                             height: heightContainer,
-                            margin: const EdgeInsets.only(right: marginIconeRight, bottom: marginIconeBottom),
                             decoration: BoxDecoration(
-                              
-                              color: Colors.black12,
+                              color: backgroundIconInformation,
                               borderRadius: BorderRadius.circular(50),
-                ),
+                            ),
                             child: Image.asset(Assets.turno)
                             ),
+                        const SizedBox(width: marginRight,),
+
                             Column(
                             
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -122,7 +121,7 @@ final String paginaDestino;
                            )
                         ],
                       ),
-
+                      const SizedBox(height: marginBottom,),
                       //===========================
                       //           DURAÇÃO 
                       //===========================
@@ -132,16 +131,14 @@ final String paginaDestino;
                           Container(
                            width: widthContainer,
                             height: heightContainer,
-                            margin: const EdgeInsets.only(right: marginIconeRight, bottom: marginIconeBottom),
                             decoration: BoxDecoration(
-                              
-                              color: Colors.black12,
+                              color: backgroundIconInformation,
                               borderRadius: BorderRadius.circular(50),
                 ),
                             child: Image.asset(Assets.duracao)
                             ),
+                      const SizedBox(width: marginRight,),
                             Column(
-                            
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const Text('DURAÇÃO', style: kTitle7 ),
@@ -152,6 +149,7 @@ final String paginaDestino;
                            )
                         ],
                       ),
+                      const SizedBox(height: marginBottom,),
 
                       //===========================
                       //           VAGAS
@@ -162,16 +160,14 @@ final String paginaDestino;
                           Container(
                             width: widthContainer,
                             height: heightContainer,
-                            margin: const EdgeInsets.only(right: marginIconeRight, bottom: marginIconeBottom),
                             decoration: BoxDecoration(
-                              
-                              color: Colors.black12,
+                              color: backgroundIconInformation,
                               borderRadius: BorderRadius.circular(50),
                 ),
                             child: Image.asset(Assets.vagas)
                             ),
+                         const SizedBox(width: marginRight,),
                             Column(
-                            
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const Text('VAGAS', style: kTitle7 ),
@@ -182,6 +178,7 @@ final String paginaDestino;
                            )
                         ],
                       ),
+                      const SizedBox(height: marginBottom,),
 
                       //===========================
                       //          INGRESSO
@@ -192,16 +189,14 @@ final String paginaDestino;
                           Container(
                             width: widthContainer,
                             height: heightContainer,
-                            margin: const EdgeInsets.only(right: marginIconeRight, bottom: marginIconeBottom),
                             decoration: BoxDecoration(
-                              
-                              color: Colors.black12,
+                              color: backgroundIconInformation,
                               borderRadius: BorderRadius.circular(50),
                 ),
                             child: Image.asset(Assets.ingresso)
                             ),
+                        const SizedBox(width: marginRight,),
                             Column(
-                            
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const Text('INGRESSO', style: kTitle7 ),
@@ -212,10 +207,18 @@ final String paginaDestino;
                            )
                         ],
                       ),
+                      const SizedBox(height: marginBottom,),
+
+                     
                     ],
                   ),
                 ),
               ),
+
+                      //===========================
+                      //   buttom mais informação
+                      //===========================
+
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   backgroundColor:kBack1,
@@ -245,4 +248,3 @@ final String paginaDestino;
     );
   }
 }
-
