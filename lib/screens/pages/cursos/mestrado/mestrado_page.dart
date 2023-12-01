@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:thunderapp/components/utils/horizontal_spacer_box.dart';
 import 'package:thunderapp/components/utils/vertical_spacer_box.dart';
-import 'package:thunderapp/screens/pages/components/launch_url.dart';
 import 'package:thunderapp/shared/components/BottomNavigation.dart';
 import 'package:thunderapp/shared/constants/app_enums.dart';
 import 'package:thunderapp/shared/constants/style_constants.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MestradoPage extends StatelessWidget {
   const MestradoPage({super.key});
@@ -31,6 +31,11 @@ class MestradoPage extends StatelessWidget {
           // ignore: prefer_const_literals_to_create_immutables
           children: [
             const VerticalSpacerBox(size: SpacerSize.large),
+
+            //=====================================================
+            //                Ciências Ambientais
+            //=====================================================
+
             InkWell(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -69,9 +74,7 @@ class MestradoPage extends StatelessWidget {
                   ),
                 ],
               ),
-              onTap: () {
-                LinkExterno.launchURL("http://www.ppciam.ufrpe.br/");
-              },
+              onTap: () => launchUrl(Uri.parse("http://www.ppciam.ufrpe.br/")),
             ),
 
             //=====================================================
@@ -116,9 +119,7 @@ class MestradoPage extends StatelessWidget {
                   ),
                 ],
               ),
-              onTap: () {
-                LinkExterno.launchURL("http://www.pgcap.ufrpe.br/");
-              },
+              onTap: () => launchUrl(Uri.parse("http://www.pgcap.ufrpe.br/")),
             ),
 
             //=====================================================
@@ -163,9 +164,7 @@ class MestradoPage extends StatelessWidget {
                   ),
                 ],
               ),
-              onTap: () {
-                LinkExterno.launchURL("https://www.ppgpa.ufrpe.br/");
-              },
+              onTap: () => launchUrl(Uri.parse("https://www.ppgpa.ufrpe.br/")),
             ),
 
             //=====================================================
@@ -210,15 +209,9 @@ class MestradoPage extends StatelessWidget {
                   ),
                 ],
               ),
-              onTap: () {
-                LinkExterno.launchURL("http://profletras.ufrpe.br/");
-              },
+              onTap:() => launchUrl(Uri.parse("http://profletras.ufrpe.br/"))
             ),
 
-
-            const VerticalSpacerBox(size: SpacerSize.huge),
-            const VerticalSpacerBox(size: SpacerSize.huge),
-            const VerticalSpacerBox(size: SpacerSize.huge),
           ],
         ),
       ),

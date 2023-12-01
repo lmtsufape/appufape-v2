@@ -14,7 +14,7 @@ class EngAlimentosPage extends StatelessWidget {
         centerTitle: true,
          backgroundColor: kBack1,
       ),
-      body: const InformationCourse(grau: "Bacharelado", turno: "integral", duracao: "5 anos", vagas: "80 vagas (40 por semestre)", ingresso: "SISU",paginaDestino: "http://ufape.edu.br/CCBEL.CAMUS"),
+      body:  InformationCourse(grau: "Bacharelado", turno: "integral", duracao: "5 anos", vagas: "80 vagas (40 por semestre)", ingresso: "SISU",paginaDestino: Uri.parse("http://ufape.edu.br/CCBEL.CAMUS")),
     );
   }
 }

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:thunderapp/assets/index.dart';
-import 'package:thunderapp/screens/pages/components/launch_url.dart';
 import 'package:thunderapp/shared/constants/app_number_constants.dart';
 import 'package:thunderapp/shared/constants/style_constants.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class InformationCourse extends StatelessWidget {
   const InformationCourse({super.key, required this.grau, required this.turno, required this.duracao, required this.vagas, required this.ingresso, required this.paginaDestino});
@@ -11,7 +11,7 @@ final String turno;
 final String duracao;
 final String vagas;
 final String ingresso;
-final String paginaDestino;
+final Uri paginaDestino;
 
   @override
   Widget build(BuildContext context) {
@@ -220,6 +220,8 @@ final String paginaDestino;
                       //===========================
 
               ElevatedButton(
+                onPressed:
+                (() => launchUrl(paginaDestino)),
                 style: ElevatedButton.styleFrom(
                   backgroundColor:kBack1,
                   
@@ -233,9 +235,7 @@ final String paginaDestino;
                       )
                     ),
                 ),
-                onPressed: () {
-                  LinkExterno.launchURL(paginaDestino);
-                }, 
+                
                   
               )
             ],
