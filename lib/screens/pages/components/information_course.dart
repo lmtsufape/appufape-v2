@@ -76,7 +76,7 @@ final Uri paginaDestino;
                               color: backgroundIconInformation,
                               borderRadius: BorderRadius.circular(50),
                             ),
-                            child: Image.asset(Assets.grau)
+                            child: Image.asset(Assets.grau, scale: 3,)
                             ),
                         const SizedBox(width: marginRight,),
                             Column(
@@ -105,7 +105,7 @@ final Uri paginaDestino;
                               color: backgroundIconInformation,
                               borderRadius: BorderRadius.circular(50),
                             ),
-                            child: Image.asset(Assets.turno)
+                            child: Image.asset(Assets.turno, scale: 3,)
                             ),
                         const SizedBox(width: marginRight,),
 
@@ -135,7 +135,7 @@ final Uri paginaDestino;
                               color: backgroundIconInformation,
                               borderRadius: BorderRadius.circular(50),
                 ),
-                            child: Image.asset(Assets.duracao)
+                            child: Image.asset(Assets.duracao, scale: 3,)
                             ),
                       const SizedBox(width: marginRight,),
                             Column(
@@ -164,7 +164,7 @@ final Uri paginaDestino;
                               color: backgroundIconInformation,
                               borderRadius: BorderRadius.circular(50),
                 ),
-                            child: Image.asset(Assets.vagas)
+                            child: Image.asset(Assets.vagas, scale: 3,)
                             ),
                          const SizedBox(width: marginRight,),
                             Column(
@@ -193,7 +193,7 @@ final Uri paginaDestino;
                               color: backgroundIconInformation,
                               borderRadius: BorderRadius.circular(50),
                 ),
-                            child: Image.asset(Assets.ingresso)
+                            child: Image.asset(Assets.ingresso,  scale: 3,)
                             ),
                         const SizedBox(width: marginRight,),
                             Column(
@@ -220,8 +220,7 @@ final Uri paginaDestino;
                       //===========================
 
               ElevatedButton(
-                onPressed:
-                (() => launchUrl(paginaDestino)),
+                onPressed: (() => launchUrl(paginaDestino)),
                 style: ElevatedButton.styleFrom(
                   backgroundColor:kBack1,
                   

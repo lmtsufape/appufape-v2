@@ -2,6 +2,13 @@ import 'package:thunderapp/screens/menu/menu.dart';
 import 'package:thunderapp/screens/pages/calendario/calendario_page.dart';
 import 'package:thunderapp/screens/pages/contatos/contatos_page.dart';
 import 'package:thunderapp/screens/pages/contatos/docentes/docentes_page.dart';
+import 'package:thunderapp/screens/pages/contatos/docentes/pages/docentes_agronomia.dart';
+import 'package:thunderapp/screens/pages/contatos/docentes/pages/docentes_bcc.dart';
+import 'package:thunderapp/screens/pages/contatos/docentes/pages/docentes_eng_alimentos.dart';
+import 'package:thunderapp/screens/pages/contatos/docentes/pages/docentes_letras.dart';
+import 'package:thunderapp/screens/pages/contatos/docentes/pages/docentes_med_veterinaria.dart';
+import 'package:thunderapp/screens/pages/contatos/docentes/pages/docentes_pedagogia.dart';
+import 'package:thunderapp/screens/pages/contatos/docentes/pages/docentes_zootecnia.dart';
 import 'package:thunderapp/screens/pages/contatos/estrutura/estrutura_ad_page.dart';
 import 'package:thunderapp/screens/pages/contatos/tecnicos/tecnicos_page.dart';
 import 'package:thunderapp/screens/pages/cursos/cursos_page.dart';
@@ -34,12 +41,13 @@ import 'screens/signin/sign_in_screen.dart';
 import 'screens/splash/splash_screen.dart';
 
 class App extends StatelessWidget {
-  const App({Key? key}) : super(key: key);
+  const App({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'App UFAPE',
+      // ignore: deprecated_member_use
       useInheritedMediaQuery: true,
       locale: DevicePreview.locale(context),
       builder: (context, child) {
@@ -89,6 +97,14 @@ class App extends StatelessWidget {
         Screens.pedagogiaPage: (BuildContext context) => const PedagogiaPage(),
         Screens.veterinariaPage: (BuildContext context) => const MedVeterinaria(),
         Screens.zootecniaPage: (BuildContext context) => const ZootecniaPage(),
+        // Screens.informacaoPredio2: (BuildContext context) => const Predio2(),
+        Screens.docentesAgronomia: (BuildContext context) => const DocentesAgronomia(),
+        Screens.docentesBcc: (BuildContext context) => const DocentesBcc(),
+        Screens.docentesEngAlimentos: (BuildContext context) => const DocentesEngAlimentos(),
+        Screens.docentesMedVeterinaria: (BuildContext context) => const DocentesMedVeterinaria(),
+        Screens.docentesZootecnia: (BuildContext context) => const DocentesZootecnia(),
+        Screens.docentesLetras: (BuildContext context) => const DocentesLetras(),
+        Screens.docentesPedagogia: (BuildContext context) => const DocentesPedagogia(),
       },
     );
   }

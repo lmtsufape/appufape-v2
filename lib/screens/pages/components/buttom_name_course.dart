@@ -28,8 +28,7 @@ final SpacerSize horizontalSpacerSize2;
                             color: boxShadowButtom.withOpacity(0.5),
                             spreadRadius: 0,
                             blurRadius: 5,
-                            offset: const Offset(
-                                0, 0), // changes position of shadow
+                            offset: const Offset(0, 0), // changes position of shadow
                           ),
                         ],
                       ),
@@ -38,7 +37,7 @@ final SpacerSize horizontalSpacerSize2;
                           const HorizontalSpacerBox(size: SpacerSize.huge),
                          Align(
                           alignment: Alignment.centerLeft,
-                         child: Image.asset(logoCurso, scale: 0.7,),),
+                         child: Image.asset(logoCurso, scale: 2.8,),),
                            HorizontalSpacerBox(size: horizontalSpacerSize1,),
                            HorizontalSpacerBox(size: horizontalSpacerSize2),
                            HorizontalSpacerBox(size: horizontalSpacerSize2),

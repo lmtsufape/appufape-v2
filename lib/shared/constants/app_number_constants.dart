@@ -16,5 +16,5 @@ const double kHugeSize = 32;
 
  const double widthContainer = 60;
  const double heightContainer = 60;
- const double marginIconeRight = 20;
- const double marginIconeBottom = 20;
+ const double marginRight = 20;
+ const double marginBottom = 20;

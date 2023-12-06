@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:thunderapp/shared/constants/style_constants.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -100,20 +100,22 @@ class _HomeScreenState extends State<HomeScreen> {
                                   spreadRadius: 0,
                                   blurRadius: 3,
                                   offset: const Offset(
-                                      0, 0), // changes position of shadow
+                                      0, 0),
                                 ),
                               ],
                             ),
-                            child: const Center(
+                            child: Center(
                               child: Wrap(
-                                // ignore: prefer_const_literals_to_create_immutables
                                 children: [
-                                  // Image.asset(
-                                  //   Assets.exemplo,
-                                  //   scale: 0.5,
-                                  //   fit: BoxFit.cover,
-                                  //   height: 245,
-                                  // ),
+                                 ClipRRect(
+                                  borderRadius: BorderRadius.circular(40),
+                                   child: Image.asset(
+                                    Assets.exemplo,
+                                    scale: 0.5,
+                                    fit: BoxFit.cover,
+                                    height: 245,
+                                  ),
+                                 ),
                                   // Container(
                                   //   alignment: Alignment.center,
                                   //   child: const Text(
@@ -129,7 +131,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             Navigator.pushNamed(context, Screens.noticias);
                           },
                         ),
-                        const VerticalSpacerBox(size: SpacerSize.medium),
+                        const VerticalSpacerBox(size: SpacerSize.huge),
                         const Align(
                           alignment: Alignment.bottomRight,
                           child: Text('Ver mais notícias',
@@ -481,8 +483,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 color: kText2.withOpacity(0.5),
                                                 spreadRadius: 0,
                                                 blurRadius: 3,
-                                                offset: const Offset(0,
-                                                    0), // changes position of shadow
+                                                offset: const Offset(0,0), // changes position of shadow
                                               ),
                                             ],
                                           ),
@@ -490,9 +491,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                             child: Wrap(
                                               children: [
                                                  Container(
-                                                  alignment: Alignment.topRight,
-                                                  child: Transform.rotate(angle: (45 * 3.1415927)/180, child: Container(
-                                                    child: const Text("Em breve", style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),),)),
+                                                  alignment: Alignment.center,
+                                                  child: Image.asset(Assets.imageEmBreve, scale: 2,)
                                                ),
                                                 Center(
                                                     child: Image.asset(

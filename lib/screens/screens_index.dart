@@ -28,10 +28,18 @@ class Screens {
   static const String noticias = 'pages/noticias/noticias_page.dart';
   static const String ruPage = 'pages/ru/ru_page.dart';
   static const String agronomiaPage = 'pages/cursos/graduacao/agronomia/agronomia.dart';
-  static const String bccPage = 'page/cursos/graduacao/bcc/bcc.dart';
-  static const String engAlimentosPage = 'page/cursos/graduacao/alimentos/alimentos.dart';
-  static const String letrasPage = 'page/cursos/graduacao/letras/letras.dart/';
-  static const String pedagogiaPage = 'page/cursos/graduacao/pedagogia/pedagogia.dart';
-  static const String veterinariaPage = 'page/cursos/graduacao/veterinaria/veterinaria.dart';
-  static const String zootecniaPage = 'page/cursos/graduacao/zootecnia/zootecnia.dart';
+  static const String bccPage = 'pages/cursos/graduacao/bcc/bcc.dart';
+  static const String engAlimentosPage = 'pages/cursos/graduacao/alimentos/alimentos.dart';
+  static const String letrasPage = 'pages/cursos/graduacao/letras/letras.dart/';
+  static const String pedagogiaPage = 'pages/cursos/graduacao/pedagogia/pedagogia.dart';
+  static const String veterinariaPage = 'pages/cursos/graduacao/veterinaria/veterinaria.dart';
+  static const String zootecniaPage = 'pages/cursos/graduacao/zootecnia/zootecnia.dart';
+  static const String informacaoPredio2 = 'pages/predios/predio2.dart';
+  static const String docentesAgronomia = 'pages/contatos/docentes/pages/docentes_agronomia.dart';
+  static const String docentesBcc = 'pages/contatos/docentes/pages/docentes_bcc.dart';
+  static const String docentesEngAlimentos = 'pages/contatos/docentes/pages/docentes_eng_alimentos.dart';
+  static const String docentesMedVeterinaria = 'pages/contatos/docentes/pages/docentes_med_veterinaria.dart';
+  static const String docentesZootecnia = 'pages/contatos/docentes/pages/docentes_zootecnia.dart';
+  static const String docentesLetras = 'pages/contatos/docentes/pages/docentes_letras.dart';
+  static const String docentesPedagogia = 'pages/contatos/docentes/pages/docentes_pedagogia.dart';
 }

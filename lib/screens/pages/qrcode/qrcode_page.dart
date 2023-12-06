@@ -1,4 +1,5 @@
 import 'package:thunderapp/components/utils/vertical_spacer_box.dart';
+import 'package:thunderapp/shared/components/default_alert_dialog.dart';
 import 'package:thunderapp/shared/constants/app_enums.dart';
 import 'package:thunderapp/shared/constants/style_constants.dart';
 import 'package:flutter/material.dart';
@@ -58,17 +59,17 @@ class _QrCodePageState extends State<QrCodePage> {
 
               const VerticalSpacerBox(size: SpacerSize.huge),
               const VerticalSpacerBox(size: SpacerSize.huge),
-              // Center(
-              //   child: (result != null)
-              //       ? Text('${result!.code}')
-              //       : DefaultAlertDialog(
-              //           title: 'Código não identificado ',
-              //           body:
-              //               'Não foi possível identificar um código para leitura.',
-              //           cancelText: 'Tentar Novamente',
-              //           onConfirm: () {},
-              //           confirmText: 'Fechar'),
-              // )
+//               Center(
+//   child: (result != null)
+//       ? Text('${result!.code}', style: const TextStyle(fontSize: 16))
+//       : DefaultAlertDialog(
+//           title: 'Código não identificado ',
+//           body: 'Não foi possível identificar um código para leitura.',
+//           cancelText: 'Tentar Novamente',
+//           onConfirm: () {},
+//           confirmText: 'Fechar'),
+// )
+
             ],
           ),
         ),

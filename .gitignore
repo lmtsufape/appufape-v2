@@ -2,6 +2,9 @@
 pubspec.lock
 *.class
 *.log
+
+/ios/
+/windows/
 *.pyc
 *.swp
 .DS_Store
