@@ -59,17 +59,17 @@ class _QrCodePageState extends State<QrCodePage> {
 
               const VerticalSpacerBox(size: SpacerSize.huge),
               const VerticalSpacerBox(size: SpacerSize.huge),
-              // Center(
-              //   child: (result != null)
-              //       ? Text('${result!.code}')
-              //       : DefaultAlertDialog(
-              //           title: 'Código não identificado ',
-              //           body:
-              //               'Não foi possível identificar um código para leitura.',
-              //           cancelText: 'Tentar Novamente',
-              //           onConfirm: () {},
-              //           confirmText: 'Fechar'),
-              // )
+//               Center(
+//   child: (result != null)
+//       ? Text('${result!.code}', style: const TextStyle(fontSize: 16))
+//       : DefaultAlertDialog(
+//           title: 'Código não identificado ',
+//           body: 'Não foi possível identificar um código para leitura.',
+//           cancelText: 'Tentar Novamente',
+//           onConfirm: () {},
+//           confirmText: 'Fechar'),
+// )
+
             ],
           ),
         ),

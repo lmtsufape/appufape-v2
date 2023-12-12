@@ -1,7 +1,7 @@
 const double kDefaultPadding = 32.0;
 
 
-const double kDefaultBorderRadius = 8.0;
+const double kDefaultBorderRadius = 20;
 
 const double kTinySize = 8;
 const double kSmallSize = 12;
@@ -16,5 +16,5 @@ const double kHugeSize = 32;
 
  const double widthContainer = 60;
  const double heightContainer = 60;
- const double marginIconeRight = 20;
- const double marginIconeBottom = 20;
+ const double marginRight = 20;
+ const double marginBottom = 20;

@@ -11,24 +11,26 @@ final String turno;
 final String duracao;
 final String vagas;
 final String ingresso;
-final String paginaDestino;
+final Uri paginaDestino;
+
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
         backgroundColor: kOnSurfaceColor,
-        body: SafeArea(
+        body: SingleChildScrollView(
+          child: SafeArea(
             child: Center(
               child: Column(
                 children: [
                   Container(
                     width: 450,
-                    height: 600,
+                    height: 550,
                     margin: const EdgeInsets.all(23),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       boxShadow: const [
                       BoxShadow(
-                        color: Color.fromARGB(59, 0, 0, 0),
+                        color: boxShadowButtom,
                         offset: Offset(0, 3),
                         blurRadius: 6.0,
                         spreadRadius: 0.0,
@@ -66,21 +68,18 @@ final String paginaDestino;
                       //===========================
 
                       Row(
-                        
                         children: [
                           Container(
-                             width: widthContainer,
+                            width: widthContainer,
                             height: heightContainer,
-                            margin: const EdgeInsets.only(right: marginIconeRight, bottom: marginIconeBottom),
                             decoration: BoxDecoration(
-                              
-                              color: Colors.black12,
+                              color: backgroundIconInformation,
                               borderRadius: BorderRadius.circular(50),
-                ),
-                            child: Image.asset(Assets.grau)
                             ),
+                            child: Image.asset(Assets.grau, scale: 3,)
+                            ),
+                        const SizedBox(width: marginRight,),
                             Column(
-                            
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const Text('GRAU', style: kTitle7 ),
@@ -91,6 +90,7 @@ final String paginaDestino;
                            )
                         ],
                       ),
+                      const SizedBox(height: marginBottom,),
 
                       //===========================
                       //           turno 
@@ -101,14 +101,14 @@ final String paginaDestino;
                           Container(
                             width: widthContainer,
                             height: heightContainer,
-                            margin: const EdgeInsets.only(right: marginIconeRight, bottom: marginIconeBottom),
                             decoration: BoxDecoration(
-                              
-                              color: Colors.black12,
+                              color: backgroundIconInformation,
                               borderRadius: BorderRadius.circular(50),
-                ),
-                            child: Image.asset(Assets.turno)
                             ),
+                            child: Image.asset(Assets.turno, scale: 3,)
+                            ),
+                        const SizedBox(width: marginRight,),
+
                             Column(
                             
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -121,7 +121,7 @@ final String paginaDestino;
                            )
                         ],
                       ),
-
+                      const SizedBox(height: marginBottom,),
                       //===========================
                       //           DURAÇÃO 
                       //===========================
@@ -131,16 +131,14 @@ final String paginaDestino;
                           Container(
                            width: widthContainer,
                             height: heightContainer,
-                            margin: const EdgeInsets.only(right: marginIconeRight, bottom: marginIconeBottom),
                             decoration: BoxDecoration(
-                              
-                              color: Colors.black12,
+                              color: backgroundIconInformation,
                               borderRadius: BorderRadius.circular(50),
                 ),
-                            child: Image.asset(Assets.duracao)
+                            child: Image.asset(Assets.duracao, scale: 3,)
                             ),
+                      const SizedBox(width: marginRight,),
                             Column(
-                            
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const Text('DURAÇÃO', style: kTitle7 ),
@@ -151,6 +149,7 @@ final String paginaDestino;
                            )
                         ],
                       ),
+                      const SizedBox(height: marginBottom,),
 
                       //===========================
                       //           VAGAS
@@ -161,16 +160,14 @@ final String paginaDestino;
                           Container(
                             width: widthContainer,
                             height: heightContainer,
-                            margin: const EdgeInsets.only(right: marginIconeRight, bottom: marginIconeBottom),
                             decoration: BoxDecoration(
-                              
-                              color: Colors.black12,
+                              color: backgroundIconInformation,
                               borderRadius: BorderRadius.circular(50),
                 ),
-                            child: Image.asset(Assets.vagas)
+                            child: Image.asset(Assets.vagas, scale: 3,)
                             ),
+                         const SizedBox(width: marginRight,),
                             Column(
-                            
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const Text('VAGAS', style: kTitle7 ),
@@ -181,6 +178,7 @@ final String paginaDestino;
                            )
                         ],
                       ),
+                      const SizedBox(height: marginBottom,),
 
                       //===========================
                       //          INGRESSO
@@ -191,16 +189,14 @@ final String paginaDestino;
                           Container(
                             width: widthContainer,
                             height: heightContainer,
-                            margin: const EdgeInsets.only(right: marginIconeRight, bottom: marginIconeBottom),
                             decoration: BoxDecoration(
-                              
-                              color: Colors.black12,
+                              color: backgroundIconInformation,
                               borderRadius: BorderRadius.circular(50),
                 ),
-                            child: Image.asset(Assets.ingresso)
+                            child: Image.asset(Assets.ingresso,  scale: 3,)
                             ),
+                        const SizedBox(width: marginRight,),
                             Column(
-                            
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const Text('INGRESSO', style: kTitle7 ),
@@ -211,11 +207,20 @@ final String paginaDestino;
                            )
                         ],
                       ),
+                      const SizedBox(height: marginBottom,),
+
+                     
                     ],
                   ),
                 ),
               ),
+
+                      //===========================
+                      //   buttom mais informação
+                      //===========================
+
               ElevatedButton(
+                onPressed: (() => launchUrl(paginaDestino)),
                 style: ElevatedButton.styleFrom(
                   backgroundColor:kBack1,
                   
@@ -229,30 +234,16 @@ final String paginaDestino;
                       )
                     ),
                 ),
-                onPressed: () {
-                  launchURL();
-                }, 
+                
                   
               )
             ],
 
             
           ),
-        ))
+        )
+        )
+        )
     );
   }
-
-// ignore: unused_element
-launchURL() async {
-    final url = paginaDestino;
-    // ignore: deprecated_member_use
-    if (await canLaunch(url)) {
-      // ignore: deprecated_member_use
-      await launch(url);
-    } else {
-      throw 'Não foi possível abrir o site: $url';
-    }
-  }
-
 }
-

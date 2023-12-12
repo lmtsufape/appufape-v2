@@ -167,6 +167,7 @@ class CursosPage extends StatelessWidget {
             const VerticalSpacerBox(size: SpacerSize.medium),
 
             //opçao doutorado esta comentado por nao ter ainda na universidade
+            
             // InkWell(
             //   child: Row(
             //     mainAxisAlignment: MainAxisAlignment.center,

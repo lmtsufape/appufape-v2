@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:thunderapp/shared/constants/style_constants.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -100,20 +100,22 @@ class _HomeScreenState extends State<HomeScreen> {
                                   spreadRadius: 0,
                                   blurRadius: 3,
                                   offset: const Offset(
-                                      0, 0), // changes position of shadow
+                                      0, 0),
                                 ),
                               ],
                             ),
-                            child: const Center(
+                            child: Center(
                               child: Wrap(
-                                // ignore: prefer_const_literals_to_create_immutables
                                 children: [
-                                  // Image.asset(
-                                  //   Assets.exemplo,
-                                  //   scale: 0.5,
-                                  //   fit: BoxFit.cover,
-                                  //   height: 245,
-                                  // ),
+                                 ClipRRect(
+                                  borderRadius: BorderRadius.circular(40),
+                                   child: Image.asset(
+                                    Assets.exemplo,
+                                    scale: 0.5,
+                                    fit: BoxFit.cover,
+                                    height: 245,
+                                  ),
+                                 ),
                                   // Container(
                                   //   alignment: Alignment.center,
                                   //   child: const Text(
@@ -129,7 +131,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             Navigator.pushNamed(context, Screens.noticias);
                           },
                         ),
-                        const VerticalSpacerBox(size: SpacerSize.medium),
+                        const VerticalSpacerBox(size: SpacerSize.huge),
                         const Align(
                           alignment: Alignment.bottomRight,
                           child: Text('Ver mais notícias',
@@ -449,15 +451,23 @@ class _HomeScreenState extends State<HomeScreen> {
                                     ))
                               ]),
                         ),
+
+
+                        
                         const VerticalSpacerBox(size: SpacerSize.medium),
                         Center(
+
+                          //===========================================
+                          //                  Botão RU
+                          //===========================================
+
                           child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 InkWell(
                                     onTap: () {
-                                      Navigator.pushNamed(
-                                          context, Screens.ruPage);
+                                      // Navigator.pushNamed(
+                                      //     context, Screens.ruPage);
                                     },
                                     child: Row(
                                       children: [
@@ -467,21 +477,23 @@ class _HomeScreenState extends State<HomeScreen> {
                                           decoration: BoxDecoration(
                                             color: kBack3,
                                             borderRadius:
-                                                const BorderRadius.all(
-                                                    Radius.circular(20)),
+                                                const BorderRadius.all(Radius.circular(20)),
                                             boxShadow: [
                                               BoxShadow(
                                                 color: kText2.withOpacity(0.5),
                                                 spreadRadius: 0,
                                                 blurRadius: 3,
-                                                offset: const Offset(0,
-                                                    0), // changes position of shadow
+                                                offset: const Offset(0,0), // changes position of shadow
                                               ),
                                             ],
                                           ),
                                           child: Center(
                                             child: Wrap(
                                               children: [
+                                                 Container(
+                                                  alignment: Alignment.center,
+                                                  child: Image.asset(Assets.imageEmBreve, scale: 2,)
+                                               ),
                                                 Center(
                                                     child: Image.asset(
                                                   Assets.ru,
@@ -502,8 +514,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                         ),
                                       ],
                                     )),
-                                const HorizontalSpacerBox(
-                                    size: SpacerSize.large),
+
+                                const HorizontalSpacerBox(size: SpacerSize.large),
+
+                          //===========================================
+                          //                  Botão Notícias
+                          //===========================================
+
                                 InkWell(
                                     onTap: () {
                                       Navigator.pushNamed(
@@ -552,59 +569,68 @@ class _HomeScreenState extends State<HomeScreen> {
                                           ),
                                         ),
                                       ],
-                                    )),
-                                const HorizontalSpacerBox(
-                                    size: SpacerSize.large),
-                                InkWell(
-                                    onTap: () {},
-                                    child: Row(
-                                      children: [
-                                        Container(
-                                          width: 120,
-                                          height: 120,
-                                          decoration: BoxDecoration(
-                                            color: kBack3,
-                                            borderRadius:
-                                                const BorderRadius.all(
-                                                    Radius.circular(20)),
-                                            boxShadow: [
-                                              BoxShadow(
-                                                color: kText2.withOpacity(0.5),
-                                                spreadRadius: 0,
-                                                blurRadius: 3,
-                                                offset: const Offset(0,
-                                                    0), // changes position of shadow
-                                              ),
-                                            ],
-                                          ),
-                                          // child: Center(
-                                          //   child: Wrap(
-                                          //     children: [
-                                          //       Center(
-                                          //           child: Image.asset(
-                                          //         Assets.cart,
-                                          //         fit: BoxFit.cover,
-                                          //         height: 55,
-                                          //       )),
-                                          //       Container(
-                                          //         alignment:
-                                          //             Alignment.bottomCenter,
-                                          //         child: const Text(
-                                          //           'Lanches',
-                                          //           style: kTitle4,
-                                          //         ),
-                                          //       ),
-                                          //     ],
-                                          //   ),
-                                          // ),
-                                        ),
-                                      ],
-                                    )),
-                              ]),
+                                    )
+                                    ),
+                                    
+                                const HorizontalSpacerBox(size: SpacerSize.large),
+                                
+                          //===========================================
+                          //                  Botão Lanches
+                          //===========================================
+
+                                Row(
+                                  children: [
+                                    Container(
+                                      width: 120,
+                                      height: 120,
+                                      // decoration: BoxDecoration(
+                                      //   color: kBack3,
+                                      //   borderRadius:
+                                      //       const BorderRadius.all(
+                                      //           Radius.circular(20)),
+                                      //   boxShadow: [
+                                      //     BoxShadow(
+                                      //       color: kText2.withOpacity(0.5),
+                                      //       spreadRadius: 0,
+                                      //       blurRadius: 3,
+                                      //       offset: const Offset(0,
+                                      //           0), // changes position of shadow
+                                      //     ),
+                                      //   ],
+                                      // ),
+                                      // child: Center(
+                                      //   child: Wrap(
+                                      //     children: [
+                                      //       Center(
+                                      //           child: Image.asset(
+                                      //         Assets.help,
+                                      //         fit: BoxFit.cover,
+                                      //         height: 55,
+                                      //       )),
+                                      //      const  Row(
+                                      //       mainAxisAlignment: MainAxisAlignment.center,
+                                      //         children: [
+                                      //           Text("Achados e perdidos", style: kTitle4, )
+                                      //         ],
+                                      //     ),
+                                      //     ],
+                                      //   ),
+                                      // ),
+                                    ),
+                                    
+                                  ],
+                                ),
+                              ]
+                              ),
                         ),
+                        
                       ],
                     ),
                   ),
-                )))));
+                )
+                )
+                )
+                )
+                );
   }
 }

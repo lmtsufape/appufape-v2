@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:thunderapp/components/utils/horizontal_spacer_box.dart';
 import 'package:thunderapp/components/utils/vertical_spacer_box.dart';
-import 'package:thunderapp/screens/pages/components/launchurl.dart';
 import 'package:thunderapp/shared/components/BottomNavigation.dart';
 import 'package:thunderapp/shared/constants/app_enums.dart';
 import 'package:thunderapp/shared/constants/style_constants.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class EspecializacaoPage extends StatelessWidget {
-  const EspecializacaoPage({Key? key}) : super(key: key);
+  const EspecializacaoPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +52,7 @@ class EspecializacaoPage extends StatelessWidget {
                     ),
                     child: const Row(
                       children:  [
-                        HorizontalSpacerBox(size: SpacerSize.huge),
+                        HorizontalSpacerBox(size: SpacerSize.small),
                         HorizontalSpacerBox(size: SpacerSize.small),
                         Text(
                           'Especialização em Questão Agrária',
@@ -67,9 +67,7 @@ class EspecializacaoPage extends StatelessWidget {
                   ),
                 ],
               ),
-              onTap: () {
-
-              },
+              onTap: () => launchUrl(Uri.parse("http://ufape.edu.br/curso-especializa%C3%A7%C3%A3o-em-quest%C3%A3o-agr%C3%A1ria")),
             ),
             const VerticalSpacerBox(size: SpacerSize.medium),
             InkWell(
@@ -94,7 +92,6 @@ class EspecializacaoPage extends StatelessWidget {
                     ),
                     child: const Row(
                       children: [
-                        HorizontalSpacerBox(size: SpacerSize.large),
                         Text(
                           'Especialização em Ensino de Botânica ',
                           style: TextStyle(
@@ -108,13 +105,9 @@ class EspecializacaoPage extends StatelessWidget {
                   ),
                 ],
               ),
-              onTap: () {
-                const LinkExterno(link: "http://ufape.edu.br/curso-especializa%C3%A7%C3%A3o-em-ensino-bot%C3%A2nica",);
-              },
+              onTap: () => launchUrl(Uri.parse("http://ufape.edu.br/curso-especializa%C3%A7%C3%A3o-em-ensino-bot%C3%A2nica")),
             ),
-            const VerticalSpacerBox(size: SpacerSize.huge),
-            const VerticalSpacerBox(size: SpacerSize.huge),
-            const VerticalSpacerBox(size: SpacerSize.huge),
+           
           ],
         ),
       ),

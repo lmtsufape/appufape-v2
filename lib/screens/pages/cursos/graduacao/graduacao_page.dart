@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:thunderapp/assets/index.dart';
-import 'package:thunderapp/components/utils/horizontal_spacer_box.dart';
 import 'package:thunderapp/components/utils/vertical_spacer_box.dart';
+import 'package:thunderapp/screens/pages/components/buttom_name_course.dart';
 import 'package:thunderapp/screens/screens_index.dart';
 import 'package:thunderapp/shared/components/BottomNavigation.dart';
 import 'package:thunderapp/shared/constants/app_enums.dart';
@@ -15,8 +15,9 @@ class GraduacaoPage extends StatelessWidget {
     int selectedIndex = 0;
     Size size = MediaQuery.of(context).size;
     return Scaffold(
+      backgroundColor: kPrimaryColor,
       appBar: AppBar(
-        title: const Text('Graduação', style: kTitle22),
+        title: const Text('Cursos', style: kTitle22),
         centerTitle: true,
         backgroundColor: kBack1,
       ),
@@ -28,353 +29,33 @@ class GraduacaoPage extends StatelessWidget {
           color: kOnSurfaceColor,
           width: size.width,
           padding: const EdgeInsets.all(17),
-          child: Column(
-            // ignore: prefer_const_literals_to_create_immutables
+          child: const Column(
             children: [
-              const VerticalSpacerBox(size: SpacerSize.large),
-              InkWell(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      width: 440,
-                      height: 95,
-                      decoration: BoxDecoration(
-                        color: kBack3,
-                        borderRadius:
-                            const BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [
-                          BoxShadow(
-                            color: kText2.withOpacity(0.5),
-                            spreadRadius: 0,
-                            blurRadius: 3,
-                            offset: const Offset(
-                                0, 0), // changes position of shadow
-                          ),
-                        ],
-                      ),
-                      child: Row(
-                        children: [
-                          const HorizontalSpacerBox(size: SpacerSize.huge),
-                          Image.asset(
-                            Assets.agronomia,
-                            scale: 0.7,
-                          ),
-                          const HorizontalSpacerBox(size: SpacerSize.huge),
-                          const HorizontalSpacerBox(size: SpacerSize.huge),
-                          const HorizontalSpacerBox(size: SpacerSize.medium),
-                          const Text(
-                            'Agronomia',
-                            style: TextStyle(
-                                color: kBack1,
-                                fontSize: 23,
-                                fontWeight: FontWeight.w700),
-                            textAlign: TextAlign.center,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-                onTap: () {
-                   Navigator.pushNamed(context, Screens.agronomiaPage);
-                },
-              ),
-              const VerticalSpacerBox(size: SpacerSize.medium),
-              InkWell(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      width: 440,
-                      height: 95,
-                      decoration: BoxDecoration(
-                        color: kBack3,
-                        borderRadius:
-                            const BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [
-                          BoxShadow(
-                            color: kText2.withOpacity(0.5),
-                            spreadRadius: 0,
-                            blurRadius: 3,
-                            offset: const Offset(
-                                0, 0), // changes position of shadow
-                          ),
-                        ],
-                      ),
-                      child: Row(
-                        children: [
-                          const HorizontalSpacerBox(size: SpacerSize.huge),
-                          Image.asset(
-                            Assets.bcc,
-                            scale: 0.7,
-                          ),
-                          const HorizontalSpacerBox(size: SpacerSize.huge),
-                          const HorizontalSpacerBox(size: SpacerSize.medium),
-                          const Text(
-                            'Ciência da Computação',
-                            style: TextStyle(
-                                color: kBack1,
-                                fontSize: 23,
-                                fontWeight: FontWeight.w700),
-                            textAlign: TextAlign.center,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, Screens.bccPage);
-                },
-              ),
-              const VerticalSpacerBox(size: SpacerSize.medium),
-              InkWell(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      width: 440,
-                      height: 95,
-                      decoration: BoxDecoration(
-                        color: kBack3,
-                        borderRadius:
-                            const BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [
-                          BoxShadow(
-                            color: kText2.withOpacity(0.5),
-                            spreadRadius: 0,
-                            blurRadius: 3,
-                            offset: const Offset(
-                                0, 0), // changes position of shadow
-                          ),
-                        ],
-                      ),
-                      child: Row(
-                        children: [
-                          const HorizontalSpacerBox(size: SpacerSize.huge),
-                          Image.asset(
-                            Assets.alimentos,
-                            scale: 0.7,
-                          ),
-                          const HorizontalSpacerBox(size: SpacerSize.huge),
-                          const Text(
-                            'Engenharia de Alimentos',
-                            style: TextStyle(
-                                color: kBack1,
-                                fontSize: 23,
-                                fontWeight: FontWeight.w700),
-                            textAlign: TextAlign.center,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, Screens.engAlimentosPage);
-                },
-              ),
-              const VerticalSpacerBox(size: SpacerSize.medium),
-              InkWell(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      width: 440,
-                      height: 95,
-                      decoration: BoxDecoration(
-                        color: kBack3,
-                        borderRadius:
-                            const BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [
-                          BoxShadow(
-                            color: kText2.withOpacity(0.5),
-                            spreadRadius: 0,
-                            blurRadius: 3,
-                            offset: const Offset(
-                                0, 0), // changes position of shadow
-                          ),
-                        ],
-                      ),
-                      child: Row(
-                        children: [
-                          const HorizontalSpacerBox(size: SpacerSize.large),
-                          Image.asset(
-                            Assets.veterinaria,
-                            scale: 0.7,
-                          ),
-                          const HorizontalSpacerBox(size: SpacerSize.huge),
-                          const HorizontalSpacerBox(size: SpacerSize.small),
-                          const Text(
-                            'Medicina Veterinária',
-                            style: TextStyle(
-                                color: kBack1,
-                                fontSize: 23,
-                                fontWeight: FontWeight.w700),
-                            textAlign: TextAlign.center,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, Screens.veterinariaPage);
-                },
-              ),
-              const VerticalSpacerBox(size: SpacerSize.medium),
-              InkWell(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      width: 440,
-                      height: 95,
-                      decoration: BoxDecoration(
-                        color: kBack3,
-                        borderRadius:
-                            const BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [
-                          BoxShadow(
-                            color: kText2.withOpacity(0.5),
-                            spreadRadius: 0,
-                            blurRadius: 3,
-                            offset: const Offset(
-                                0, 0), // changes position of shadow
-                          ),
-                        ],
-                      ),
-                      child: Row(
-                        children: [
-                          const HorizontalSpacerBox(size: SpacerSize.large),
-                          Image.asset(
-                            Assets.zootecnia,
-                            scale: 0.7,
-                          ),
-                          const HorizontalSpacerBox(size: SpacerSize.huge),
-                          const HorizontalSpacerBox(size: SpacerSize.huge),
-                          const HorizontalSpacerBox(size: SpacerSize.large),
-                          const Text(
-                            'Zootecnia',
-                            style: TextStyle(
-                                color: kBack1,
-                                fontSize: 23,
-                                fontWeight: FontWeight.w700),
-                            textAlign: TextAlign.center,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, Screens.zootecniaPage);
-                },
-              ),
-              const VerticalSpacerBox(size: SpacerSize.medium),
-              InkWell(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      width: 440,
-                      height: 95,
-                      decoration: BoxDecoration(
-                        color: kBack3,
-                        borderRadius:
-                            const BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [
-                          BoxShadow(
-                            color: kText2.withOpacity(0.5),
-                            spreadRadius: 0,
-                            blurRadius: 3,
-                            offset: const Offset(
-                                0, 0), // changes position of shadow
-                          ),
-                        ],
-                      ),
-                      child: Row(
-                        children: [
-                          const HorizontalSpacerBox(size: SpacerSize.huge),
-                          Image.asset(
-                            Assets.letras,
-                            scale: 0.7,
-                          ),
-                          const HorizontalSpacerBox(size: SpacerSize.huge),
-                          const HorizontalSpacerBox(size: SpacerSize.huge),
-                          const HorizontalSpacerBox(size: SpacerSize.huge),
-                          const HorizontalSpacerBox(size: SpacerSize.small),
-                          const Text(
-                            'Letras',
-                            style: TextStyle(
-                                color: kBack1,
-                                fontSize: 23,
-                                fontWeight: FontWeight.w700),
-                            textAlign: TextAlign.center,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, Screens.letrasPage);
-                },
-              ),
-              const VerticalSpacerBox(size: SpacerSize.medium),
-              InkWell(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      width: 440,
-                      height: 95,
-                      decoration: BoxDecoration(
-                        color: kBack3,
-                        borderRadius:
-                            const BorderRadius.all(Radius.circular(20)),
-                        boxShadow: [
-                          BoxShadow(
-                            color: kText2.withOpacity(0.5),
-                            spreadRadius: 0,
-                            blurRadius: 3,
-                            offset: const Offset(
-                                0, 0), // changes position of shadow
-                          ),
-                        ],
-                      ),
-                      child: Row(
-                        children: [
-                          const HorizontalSpacerBox(size: SpacerSize.large),
-                          const HorizontalSpacerBox(size: SpacerSize.medium),
-                          Image.asset(
-                            Assets.pedagogia,
-                            scale: 0.7,
-                          ),
-                          const HorizontalSpacerBox(size: SpacerSize.huge),
-                          const HorizontalSpacerBox(size: SpacerSize.huge),
-                          const HorizontalSpacerBox(size: SpacerSize.huge),
-                          const Text(
-                            'Pedagogia',
-                            style: TextStyle(
-                                color: kBack1,
-                                fontSize: 23,
-                                fontWeight: FontWeight.w700),
-                            textAlign: TextAlign.center,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, Screens.pedagogiaPage);
-                },
-              ),
-              const VerticalSpacerBox(size: SpacerSize.huge),
-              const VerticalSpacerBox(size: SpacerSize.huge),
-              const VerticalSpacerBox(size: SpacerSize.huge),
+               VerticalSpacerBox(size: SpacerSize.large),
+
+               ButtomNameCourse(logoCurso: Assets.agronomia, nomeDoCurso: "Agronomia", rota: Screens.agronomiaPage,horizontalSpacerSize1: SpacerSize.small, horizontalSpacerSize2: SpacerSize.huge,),
+               VerticalSpacerBox(size: SpacerSize.medium),
+
+               ButtomNameCourse(logoCurso: Assets.bcc, nomeDoCurso: "Ciência da Computação", rota: Screens.bccPage, horizontalSpacerSize1: SpacerSize.huge, horizontalSpacerSize2: SpacerSize.tiny,),
+               VerticalSpacerBox(size: SpacerSize.medium),
+               
+               ButtomNameCourse(logoCurso: Assets.alimentos, nomeDoCurso: "Engenharia de Alimentos", rota: Screens.engAlimentosPage, horizontalSpacerSize1: SpacerSize.small, horizontalSpacerSize2: SpacerSize.small),
+               VerticalSpacerBox(size: SpacerSize.medium),
+
+                ButtomNameCourse(logoCurso: Assets.veterinaria, nomeDoCurso: "Medicina Veterinária", rota: Screens.veterinariaPage, horizontalSpacerSize1: SpacerSize.small, horizontalSpacerSize2: SpacerSize.small),
+               VerticalSpacerBox(size: SpacerSize.medium),
+               
+               ButtomNameCourse(logoCurso: Assets.zootecnia, nomeDoCurso: "Zootecnia", rota: Screens.zootecniaPage, horizontalSpacerSize1: SpacerSize.medium, horizontalSpacerSize2: SpacerSize.huge),
+               VerticalSpacerBox(size: SpacerSize.medium),
+
+               ButtomNameCourse(logoCurso: Assets.letras, nomeDoCurso: "Letras", rota: Screens.letrasPage, horizontalSpacerSize1: SpacerSize.huge, horizontalSpacerSize2: SpacerSize.huge),
+               VerticalSpacerBox(size: SpacerSize.medium),
+
+               ButtomNameCourse(logoCurso: Assets.pedagogia, nomeDoCurso: "Pedagogia", rota: Screens.pedagogiaPage, horizontalSpacerSize1: SpacerSize.huge, horizontalSpacerSize2: SpacerSize.huge),
+
+               VerticalSpacerBox(size: SpacerSize.huge),
+               VerticalSpacerBox(size: SpacerSize.huge),
+               VerticalSpacerBox(size: SpacerSize.huge),
             ],
           ),
         ),

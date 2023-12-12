@@ -38,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
             Center(
                 child: Image.asset(
               Assets.ufape,
-              scale: 0.6,
+              scale: 3,
             )),
             const VerticalSpacerBox(size: SpacerSize.large),
             const VerticalSpacerBox(size: SpacerSize.medium),
@@ -61,7 +61,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   Center(
                       child: Image.asset(
                     Assets.logo,
-                    scale: 1.1,
+                    scale: 2.5,
                   )),
                 ],
               ),

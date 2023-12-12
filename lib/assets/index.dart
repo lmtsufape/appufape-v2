@@ -33,4 +33,8 @@ class Assets {
   static const String ingresso = 'lib/assets/images/ingresso.png';
   static const String grau = 'lib/assets/images/grau.png';
   static const String duracao = 'lib/assets/images/duracao.png';
+  static const String phone = 'lib/assets/images/phone.png';
+  static const String teacher = 'lib/assets/images/teacher.png';
+  static const String rightArrow = 'lib/assets/images/right-arrow.png';
+  static const String imageEmBreve = 'lib/assets/images/em_breve.png';
 }

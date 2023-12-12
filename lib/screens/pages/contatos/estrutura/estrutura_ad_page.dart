@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:thunderapp/assets/index.dart';
+import 'package:thunderapp/screens/pages/contatos/components/contato.dart';
 import 'package:thunderapp/shared/components/BottomNavigation.dart';
 
-import '../../../../shared/constants/app_number_constants.dart';
 import '../../../../shared/constants/style_constants.dart';
 
 class EstruturaAdPage extends StatelessWidget {
@@ -17,22 +18,43 @@ class EstruturaAdPage extends StatelessWidget {
           style: kTitle22,
         ),
         centerTitle: true,
-        toolbarOpacity: 0,
         backgroundColor: kBack1,
       ),
       backgroundColor: kOnSurfaceColor,
       bottomNavigationBar: BottomNavigation(
         selectedIndex: selectedIndex,
       ),
-      body: const Padding(
-        padding: EdgeInsets.all(kDefaultPadding),
-        child: Align(
-            alignment: Alignment.topCenter,
-            child: Text(
-              'Lista de nomes e e-mails da estrutura administrativos da UFAPE',
-              textAlign: TextAlign.center,
-              style: kTitle55,
-            )),
+      body: SingleChildScrollView(
+      
+        child: Center(
+          child: Container(
+            padding: const EdgeInsets.all(17),
+            child:   const Column(
+              children: [
+                Align(
+                  
+                  alignment: Alignment.topCenter,
+                  child: Text("lista com nomes da estrutura administrativa da ufape", style: ktitle700, textAlign: TextAlign.center,),
+                ),
+                 SizedBox(height: 25,),              
+                Contato(nome: "nome do professor", email: "nome 1@gmail.com", area: "Física", logoCurso1: Assets.bcc, logoCurso2: Assets.alimentos , logoCurso3: Assets.agronomia,numeroDeIcons: 2),
+                 SizedBox(height: 20,),
+                Contato(nome: "nome do professor", email: "nome 1@gmail.com", area: "Engenharia de Alimentos", logoCurso1: Assets.bcc, logoCurso2: Assets.alimentos , logoCurso3: Assets.agronomia,numeroDeIcons: 2),
+                 SizedBox(height: 20,),
+                Contato(nome: "nome do professor", email: "nome 1@gmail.com", area: "Coordenador: agronomia", logoCurso1: Assets.bcc, logoCurso2: Assets.alimentos , logoCurso3: Assets.agronomia,numeroDeIcons: 2),
+                 SizedBox(height: 20,),
+                Contato(nome: "nome do professor", email: "nome 1@gmail.com", area: "nome da area", logoCurso1: Assets.bcc, logoCurso2: Assets.alimentos , logoCurso3: Assets.agronomia,numeroDeIcons: 2),
+                 SizedBox(height: 20,),
+                  Contato(nome: "nome do professor", email: "nome 1@gmail.com", area: "nome da area", logoCurso1: Assets.bcc, logoCurso2: Assets.alimentos , logoCurso3: Assets.agronomia,numeroDeIcons: 2),
+                 SizedBox(height: 20,),
+                  Contato(nome: "nome do professor", email: "nome 1@gmail.com", area: "nome da area", logoCurso1: Assets.bcc, logoCurso2: Assets.alimentos , logoCurso3: Assets.agronomia,numeroDeIcons: 2),
+                 SizedBox(height: 20,),
+              
+                
+              ],
+            ),
+            ),
+        ),
       ),
     );
   }

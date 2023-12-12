@@ -85,17 +85,17 @@ class EditaisScreen extends StatelessWidget {
                                 decoration: const BoxDecoration(
                                   shape: BoxShape.circle,
                                 ),
-                                child: Row(
-                                  children: const [
+                                child: const Row(
+                                  children: [
                                     Text(''),
                                   ],
                                 ),
                               ),
                             ],
                           ),
-                          Center(
+                          const Center(
                             child: Row(
-                              children: const [
+                              children: [
                                 HorizontalSpacerBox(size: SpacerSize.huge),
                                 Text(
                                   'Resultado Final PIBAE-PREC-UFAPE',
@@ -144,17 +144,17 @@ class EditaisScreen extends StatelessWidget {
                                 decoration: const BoxDecoration(
                                   shape: BoxShape.circle,
                                 ),
-                                child: Row(
-                                  children: const [
+                                child: const Row(
+                                  children: [
                                     Text(''),
                                   ],
                                 ),
                               ),
                             ],
                           ),
-                          Center(
+                          const Center(
                             child: Row(
-                              children: const [
+                              children: [
                                 HorizontalSpacerBox(size: SpacerSize.huge),
                                 Text(
                                   'Resultado Final PIBAE-PREC-UFAPE',
@@ -225,17 +225,17 @@ class EditaisScreen extends StatelessWidget {
                                 decoration: const BoxDecoration(
                                   shape: BoxShape.circle,
                                 ),
-                                child: Row(
-                                  children: const [
+                                child: const Row(
+                                  children: [
                                     Text(''),
                                   ],
                                 ),
                               ),
                             ],
                           ),
-                          Center(
+                          const Center(
                             child: Row(
-                              children: const [
+                              children: [
                                 HorizontalSpacerBox(size: SpacerSize.huge),
                                 Text(
                                   'Edital PIBEX-UFAPE 2022',

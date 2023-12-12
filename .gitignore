@@ -1,6 +1,10 @@
 # Miscellaneous
+pubspec.lock
 *.class
 *.log
+
+/ios/
+/windows/
 *.pyc
 *.swp
 .DS_Store
@@ -9,6 +13,8 @@
 .history
 .svn/
 migrate_working_dir/
+Thumbs.db
+desktop.ini
 
 # IntelliJ related
 *.iml

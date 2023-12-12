@@ -17,12 +17,14 @@ const Color kDetailColor = Color(0xFF1b2d4f);
 const Color kOnSurfaceColor = Color(0xFFFDFDFD);
 const Color kOnBackgroundColor = Color(0xFF1b2d4f);
 const Color kTextButtonColor = Color.fromARGB(255, 206, 201, 201);
+const Color backgroundIconInformation = Color.fromRGBO(231, 231, 231, 1);
 const Color kTextSign = Colors.blue;
 const Color kButtom = Colors.green;
 const Color kText = Colors.black;
 const Color kButtom2 = Colors.red;
 const Color kTextFirst = Colors.blueGrey;
 const Color kColorBottom = Color.fromARGB(255, 228, 255, 198);
+const Color boxShadowButtom = Color.fromARGB(58, 17, 17, 17);
 const Color kBack1 = Color(0xFFB3093F);
 const Color kBack2 = Color(0xFFFDFDFD);
 const Color kBack3 = Color(0xFFFFFFFF);
@@ -32,11 +34,19 @@ const Color kText3 = Color(0xFF094DB3);
 
 /// ========>TEXT STYLES<=========== */
 
-const TextStyle kBody1 = TextStyle(color: kPrimaryColor, fontSize: 18);
-const TextStyle kcaption1 =
-    TextStyle(color: kPrimaryColor, fontSize: 16, fontWeight: FontWeight.bold);
+const TextStyle kBody1 = TextStyle(
+  color: kPrimaryColor,
+  fontSize: 18);
+
+const TextStyle kcaption1 = TextStyle(
+  color: kPrimaryColor,
+  fontSize: 16,
+  fontWeight: FontWeight.bold);
+
 const TextStyle kcaption2 = TextStyle(
-    color: kOnBackgroundColor, fontSize: 16, fontWeight: FontWeight.bold);
+  color: kOnBackgroundColor,
+  fontSize: 16,
+  fontWeight: FontWeight.bold);
 
 const TextStyle kAppBar = TextStyle(
   fontSize: 18,
@@ -74,10 +84,17 @@ const TextStyle kTitle4 = TextStyle(
 );
 
 const TextStyle kTitle5 = TextStyle(
+  fontFamily: "Quicksand",
   fontSize: 20,
   fontWeight: FontWeight.w700,
   color: kBack1,
   decoration: TextDecoration.underline,
+);
+const TextStyle ktitle700 = TextStyle(
+  fontFamily: "Quicksand",
+  fontSize: 20,
+  fontWeight: FontWeight.w700,
+  color: kText,
 );
 const TextStyle kTitle55 = TextStyle(
   fontSize: 19,
@@ -150,5 +167,10 @@ const TextStyle kCaption1 = TextStyle(
 const TextStyle kCaption2 = TextStyle(
   fontSize: 14,
 );
-/**========>TEXT STYLES<=========== */
+/// ========>TEXT STYLES<===========
 
+const TextStyle kTitle500 = TextStyle(
+  fontSize: 17,
+  fontWeight: FontWeight.w500,
+  color: kText2,
+);
