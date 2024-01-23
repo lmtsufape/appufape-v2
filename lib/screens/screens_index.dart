@@ -42,4 +42,5 @@ class Screens {
   static const String docentesZootecnia = 'pages/contatos/docentes/pages/docentes_zootecnia.dart';
   static const String docentesLetras = 'pages/contatos/docentes/pages/docentes_letras.dart';
   static const String docentesPedagogia = 'pages/contatos/docentes/pages/docentes_pedagogia.dart';
+  static const String horarioOnibusPage= 'pages/horario_de_onibus/horario_onibus_page.dart';
 }

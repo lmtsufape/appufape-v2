@@ -9,7 +9,7 @@ import 'package:thunderapp/shared/constants/style_constants.dart';
 import 'package:flutter/material.dart';
 
 class Menu extends StatelessWidget {
-  const Menu({Key? key}) : super(key: key);
+  const Menu({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -4,7 +4,7 @@ import 'package:thunderapp/components/utils/horizontal_spacer_box.dart';
 import 'package:thunderapp/components/utils/vertical_spacer_box.dart';
 import 'package:thunderapp/screens/home/home_screen_controller.dart';
 import 'package:thunderapp/screens/screens_index.dart';
-import 'package:thunderapp/shared/components/BottomNavigation.dart';
+import 'package:thunderapp/shared/components/bottom_navigation.dart';
 import 'package:thunderapp/shared/constants/app_enums.dart';
 import 'package:flutter/material.dart';
 import 'package:thunderapp/shared/constants/style_constants.dart';
@@ -578,48 +578,50 @@ class _HomeScreenState extends State<HomeScreen> {
                           //                  Botão Lanches
                           //===========================================
 
-                                Row(
+                              InkWell(
+                                onTap: () => Navigator.pushNamed(context, Screens.horarioOnibusPage),
+                                  child: Row(
                                   children: [
                                     Container(
                                       width: 120,
                                       height: 120,
-                                      // decoration: BoxDecoration(
-                                      //   color: kBack3,
-                                      //   borderRadius:
-                                      //       const BorderRadius.all(
-                                      //           Radius.circular(20)),
-                                      //   boxShadow: [
-                                      //     BoxShadow(
-                                      //       color: kText2.withOpacity(0.5),
-                                      //       spreadRadius: 0,
-                                      //       blurRadius: 3,
-                                      //       offset: const Offset(0,
-                                      //           0), // changes position of shadow
-                                      //     ),
-                                      //   ],
-                                      // ),
-                                      // child: Center(
-                                      //   child: Wrap(
-                                      //     children: [
-                                      //       Center(
-                                      //           child: Image.asset(
-                                      //         Assets.help,
-                                      //         fit: BoxFit.cover,
-                                      //         height: 55,
-                                      //       )),
-                                      //      const  Row(
-                                      //       mainAxisAlignment: MainAxisAlignment.center,
-                                      //         children: [
-                                      //           Text("Achados e perdidos", style: kTitle4, )
-                                      //         ],
-                                      //     ),
-                                      //     ],
-                                      //   ),
-                                      // ),
+                                      decoration: BoxDecoration(
+                                        color: kBack3,
+                                        borderRadius:
+                                            const BorderRadius.all(
+                                                Radius.circular(20)),
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: kText2.withOpacity(0.5),
+                                            spreadRadius: 0,
+                                            blurRadius: 3,
+                                            offset: const Offset(0,
+                                                0), // changes position of shadow
+                                          ),
+                                        ],
+                                      ),
+                                      child: Center(
+                                        child: Wrap(
+                                          children: [
+                                            Center(
+                                                child: Image.asset(
+                                              Assets.bus,
+                                              fit: BoxFit.cover,
+                                              height: 55,
+                                            )),
+                                           const  Row(
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                              children: [
+                                                Text("Como chegar", style: kTitle4, )
+                                              ],
+                                          ),
+                                          ],
+                                        ),
+                                      ),
                                     ),
                                     
                                   ],
-                                ),
+                                ))
                               ]
                               ),
                         ),

@@ -8,12 +8,12 @@ class AuthFormField3 extends StatefulWidget {
   final Function(String) onChanged;
 
   const AuthFormField3({
-    Key? key,
+    super.key,
     required this.label,
     required this.isPassword,
     required this.inputType,
     required this.onChanged,
-  }) : super(key: key);
+  });
 
   @override
   State<AuthFormField3> createState() => _AuthFormField3State();

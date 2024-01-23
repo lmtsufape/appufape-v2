@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 
 class PrimaryButton extends StatelessWidget {
   const PrimaryButton({
-    Key? key,
+    super.key,
     required this.text,
     required this.onPressed,
     required this.color,
-  }) : super(key: key);
+  });
   final String text;
   final Function onPressed;
   final Color color;

@@ -7,7 +7,6 @@ class Assets {
   static const String qrCode = 'lib/assets/images/qr_code.png';
   static const String school = 'lib/assets/images/school.png';
   static const String textsnippet = 'lib/assets/images/text_snippet.png';
-  static const String mapa = 'lib/assets/images/mapa.png';
   static const String cart = 'lib/assets/images/cart.png';
   static const String download = 'lib/assets/images/download.png';
   static const String help = 'lib/assets/images/help.png';
@@ -37,4 +36,10 @@ class Assets {
   static const String teacher = 'lib/assets/images/teacher.png';
   static const String rightArrow = 'lib/assets/images/right-arrow.png';
   static const String imageEmBreve = 'lib/assets/images/em_breve.png';
+  static const String imgNoticia1 = 'lib/assets/images/imgNoticia1.png';
+  static const String imgNoticia2 = 'lib/assets/images/imgNoticia2.png';
+  static const String imgNoticia3 = 'lib/assets/images/imgNoticia3.png';
+  static const String bus = 'lib/assets/images/bus.png';
+  // PDF
+  static const String pdfCalendarioAcademico = 'lib/assets/pdfs/calendario_academico.pdf';
 }

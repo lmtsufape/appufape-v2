@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:thunderapp/assets/index.dart';
 import 'package:thunderapp/screens/pages/contatos/components/contato.dart';
-import 'package:thunderapp/shared/components/BottomNavigation.dart';
+import 'package:thunderapp/shared/components/bottom_navigation.dart';
 import 'package:thunderapp/shared/constants/style_constants.dart';
 
 class DocentesAgronomia extends StatefulWidget {

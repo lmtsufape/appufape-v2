@@ -3,7 +3,7 @@ import 'package:thunderapp/shared/constants/app_number_constants.dart';
 import 'package:thunderapp/shared/constants/style_constants.dart';
 
 class RoleChoiceButton extends StatelessWidget {
-  const RoleChoiceButton({Key? key, required this.text}) : super(key: key);
+  const RoleChoiceButton({super.key, required this.text});
   final String text;
 
   @override
