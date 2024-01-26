@@ -7,7 +7,7 @@ import 'package:thunderapp/shared/constants/app_number_constants.dart';
 import 'package:thunderapp/shared/constants/style_constants.dart';
 
 class CarouselScreen extends StatefulWidget {
-  const CarouselScreen({Key? key}) : super(key: key);
+  const CarouselScreen({super.key});
 
   @override
   State<CarouselScreen> createState() => _CarouselScreenState();
@@ -103,8 +103,8 @@ class _CarouselScreenState extends State<CarouselScreen> {
 
 class FirstPage extends StatelessWidget {
   const FirstPage({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -117,8 +117,8 @@ class FirstPage extends StatelessWidget {
 
 class SecondPage extends StatelessWidget {
   const SecondPage({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -20,3 +20,8 @@
 
 - "shared/constants/style_constants.dart" use esse arquivo para mudar varios estilos do app
 - Também tem outros arquivos com informações que podem ser usadas em todo o app
+- para mudar o pdf do calendário acadêmico defina o nome do pdf como "calendario_academico.pdf".
+
+# Possiveis erros:
+
+- o pdf pode nao ser exibido se for usar na web, desktop ou ios então tem que instalar a dependência para essas plataformas.

@@ -25,6 +25,7 @@ import 'package:thunderapp/screens/pages/cursos/graduacao/zootecnia/zootecnia.da
 import 'package:thunderapp/screens/pages/cursos/mestrado/mestrado_page.dart';
 import 'package:thunderapp/screens/pages/editais/editais_screen.dart';
 import 'package:thunderapp/screens/pages/editais/edital_page.dart';
+import 'package:thunderapp/screens/pages/horario_de_onibus/horario_onibus_page.dart';
 import 'package:thunderapp/screens/pages/mapa/mapa_page.dart';
 import 'package:thunderapp/screens/pages/qrcode/qrcode_page.dart';
 import 'package:thunderapp/screens/pages/ru/ru_page.dart';
@@ -105,6 +106,7 @@ class App extends StatelessWidget {
         Screens.docentesZootecnia: (BuildContext context) => const DocentesZootecnia(),
         Screens.docentesLetras: (BuildContext context) => const DocentesLetras(),
         Screens.docentesPedagogia: (BuildContext context) => const DocentesPedagogia(),
+        Screens.horarioOnibusPage: (BuildContext context) => const HorarioOnibusPage(),
       },
     );
   }

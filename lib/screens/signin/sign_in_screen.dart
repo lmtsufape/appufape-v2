@@ -10,7 +10,7 @@ import 'package:thunderapp/shared/constants/app_number_constants.dart';
 import '../../shared/constants/app_enums.dart';
 
 class SignInScreen extends StatelessWidget {
-  const SignInScreen({Key? key}) : super(key: key);
+  const SignInScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
