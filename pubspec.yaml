@@ -49,10 +49,13 @@ dependencies:
   google_fonts: ^6.1.0
   device_preview: ^1.1.0
   google_maps_flutter: ^2.2.2
+  #pdf
   advance_pdf_viewer: ^2.0.1
   pdfx: ^2.5.0
+  #qr-code
   flutter_barcode_scanner: ^2.0.0
   
+  http: ^1.1.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
