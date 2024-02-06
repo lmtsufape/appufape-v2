@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class EmailForm extends StatelessWidget {
-  const EmailForm({Key? key, required this.onChanged}) : super(key: key);
+  const EmailForm({super.key, required this.onChanged});
   final Function(String) onChanged;
   @override
   Widget build(BuildContext context) {

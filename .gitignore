@@ -2,9 +2,10 @@
 pubspec.lock
 *.class
 *.log
-
+android/app/src/main/AndroidManifest.xml
 /ios/
 /windows/
+/macos/
 *.pyc
 *.swp
 .DS_Store
@@ -15,7 +16,9 @@ pubspec.lock
 migrate_working_dir/
 Thumbs.db
 desktop.ini
+.vscode/
 
+/android/app/src/main/AndroidManifest.xml
 # IntelliJ related
 *.iml
 *.ipr

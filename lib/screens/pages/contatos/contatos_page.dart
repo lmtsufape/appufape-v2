@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:thunderapp/components/utils/horizontal_spacer_box.dart';
 import 'package:thunderapp/components/utils/vertical_spacer_box.dart';
 import 'package:thunderapp/screens/screens_index.dart';
-import 'package:thunderapp/shared/components/BottomNavigation.dart';
+import 'package:thunderapp/shared/components/bottom_navigation.dart';
 import 'package:thunderapp/shared/constants/app_enums.dart';
 import 'package:thunderapp/shared/constants/style_constants.dart';
 

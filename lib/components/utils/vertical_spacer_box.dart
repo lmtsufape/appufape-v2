@@ -3,7 +3,7 @@ import 'package:thunderapp/shared/constants/app_enums.dart';
 import 'package:thunderapp/shared/constants/app_number_constants.dart';
 
 class VerticalSpacerBox extends StatelessWidget {
-  const VerticalSpacerBox({Key? key, required this.size}) : super(key: key);
+  const VerticalSpacerBox({super.key, required this.size});
   final SpacerSize size;
   @override
   Widget build(BuildContext context) {

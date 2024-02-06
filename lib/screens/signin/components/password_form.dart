@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class PasswordForm extends StatelessWidget {
-  const PasswordForm({Key? key, required this.onChanged}) : super(key: key);
+  const PasswordForm({super.key, required this.onChanged});
   final Function(String) onChanged;
   @override
   Widget build(BuildContext context) {

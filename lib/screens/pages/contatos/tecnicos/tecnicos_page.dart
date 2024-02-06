@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:thunderapp/assets/index.dart';
 import 'package:thunderapp/screens/pages/contatos/components/contato.dart';
-import 'package:thunderapp/shared/components/BottomNavigation.dart';
+import 'package:thunderapp/shared/components/bottom_navigation.dart';
 import '../../../../shared/constants/style_constants.dart';
 
 class TecnicosPage extends StatelessWidget {
-  const TecnicosPage({Key? key}) : super(key: key);
+  const TecnicosPage({super.key});
 
   @override
   Widget build(BuildContext context) {

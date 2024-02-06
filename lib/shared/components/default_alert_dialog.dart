@@ -5,13 +5,12 @@ import 'package:thunderapp/shared/constants/style_constants.dart';
 
 class DefaultAlertDialog extends StatelessWidget {
   const DefaultAlertDialog(
-      {Key? key,
+      {super.key,
       required this.title,
       required this.body,
       required this.cancelText,
       required this.onConfirm,
-      required this.confirmText})
-      : super(key: key);
+      required this.confirmText});
   final String title;
   final String body;
   final String cancelText;

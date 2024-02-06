@@ -2,14 +2,13 @@ import 'package:flutter/material.dart';
 
 class CustomTextFormField extends StatefulWidget {
   const CustomTextFormField(
-      {Key? key,
+      {super.key,
       this.label,
       this.controller,
       this.keyboardType,
       this.hintText,
       this.isPassword,
-      this.icon})
-      : super(key: key);
+      this.icon});
   final String? label;
   final String? hintText;
   final TextEditingController? controller;
